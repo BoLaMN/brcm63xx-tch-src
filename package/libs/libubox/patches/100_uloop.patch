@@ -1,0 +1,58 @@
+--- a/uloop.c	2018-12-28 23:30:28.000000000 +1100
++++ b/uloop.c	2019-03-01 04:06:50.235000000 +1100
+@@ -559,6 +559,40 @@
+ 	return uloop_status;
+ }
+ 
++int uloop_run(void)
++{
++	struct timeval tv;
++
++	/*
++	 * Handlers are only updated for the first call to uloop_run() (and restored
++	 * when this call is done).
++	 */
++	if (!uloop_run_depth++)
++		uloop_setup_signals(true);
++
++	uloop_status = 0;
++	uloop_cancelled = false;
++	while (!uloop_cancelled)
++	{
++		uloop_gettime(&tv);
++		uloop_process_timeouts(&tv);
++
++		if (do_sigchld)
++			uloop_handle_processes();
++
++		if (uloop_cancelled)
++			break;
++
++		uloop_gettime(&tv);
++		uloop_run_events(uloop_get_next_timeout(&tv));
++	}
++
++	if (!--uloop_run_depth)
++		uloop_setup_signals(false);
++
++	return uloop_status;
++}
++
+ void uloop_done(void)
+ {
+ 	if (poll_fd >= 0) {
+
+--- a/uloop.h	2018-12-28 23:30:28.000000000 +1100
++++ b/uloop.h	2019-03-01 04:05:21.915000000 +1100
+@@ -106,10 +106,7 @@
+ 
+ int uloop_init(void);
+ int uloop_run_timeout(int timeout);
+-static inline int uloop_run(void)
+-{
+-	return uloop_run_timeout(-1);
+-}
++int uloop_run(void);
+ void uloop_done(void);
+ 
+ #endif
