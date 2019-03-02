@@ -341,7 +341,7 @@ define KernelPackage/b43/config
 config PACKAGE_B43_USE_SSB
 	select PACKAGE_kmod-ssb
 	tristate
-	depends on !TARGET_brcm47xx && !TARGET_brcm63xx
+	depends on !TARGET_brcm47xx && !TARGET_brcm63xx && !TARGET_brcm63xx_tch
 	default PACKAGE_kmod-b43 if PACKAGE_B43_BUSES_BCMA_AND_SSB
 	default PACKAGE_kmod-b43 if PACKAGE_B43_BUSES_SSB
 
@@ -570,7 +570,7 @@ define KernelPackage/b43legacy
   URL:=https://wireless.wiki.kernel.org/en/users/drivers/b43
   KCONFIG:= \
   	CONFIG_HW_RANDOM=y
-  DEPENDS+= +kmod-mac80211 +!(TARGET_brcm47xx||TARGET_brcm63xx):kmod-ssb +b43legacy-firmware
+  DEPENDS+= +kmod-mac80211 +!(TARGET_brcm47xx||TARGET_brcm63xx||TARGET_brcm63xx_tch):kmod-ssb +b43legacy-firmware
   FILES:=$(PKG_BUILD_DIR)/drivers/net/wireless/broadcom/b43legacy/b43legacy.ko
   AUTOLOAD:=$(call AutoProbe,b43legacy)
   MENU:=1
