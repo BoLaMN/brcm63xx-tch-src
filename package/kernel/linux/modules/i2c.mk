@@ -205,7 +205,7 @@ endef
 $(eval $(call KernelPackage,i2c-mux))
 
 I2C_MUX_GPIO_MODULES:= \
-  CONFIG_I2C_MUX_GPIO:drivers/i2c/muxes/i2c-mux-gpio
+  CONFIG_I2C_MUX_GPIO:drivers/i2c/muxes/gpio-i2cmux
 
 define KernelPackage/i2c-mux-gpio
   $(call i2c_defaults,$(I2C_MUX_GPIO_MODULES),51)
@@ -220,7 +220,7 @@ endef
 $(eval $(call KernelPackage,i2c-mux-gpio))
 
 I2C_MUX_PCA954x_MODULES:= \
-  CONFIG_I2C_MUX_PCA954x:drivers/i2c/muxes/i2c-mux-pca954x
+  CONFIG_I2C_MUX_PCA954x:drivers/i2c/muxes/pca954x
 
 define KernelPackage/i2c-mux-pca954x
   $(call i2c_defaults,$(I2C_MUX_PCA954x_MODULES),51)
@@ -236,7 +236,7 @@ $(eval $(call KernelPackage,i2c-mux-pca954x))
 
 
 I2C_MUX_PCA9541_MODULES:= \
-  CONFIG_I2C_MUX_PCA9541:drivers/i2c/muxes/i2c-mux-pca9541
+  CONFIG_I2C_MUX_PCA9541:drivers/i2c/muxes/pca9541
 
 define KernelPackage/i2c-mux-pca9541
   $(call i2c_defaults,$(I2C_MUX_PCA9541_MODULES),51)

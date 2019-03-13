@@ -301,25 +301,6 @@ endef
 
 $(eval $(call KernelPackage,ipt-nat6))
 
-
-define KernelPackage/ipt-nat-extra
-  TITLE:=Extra NAT targets
-  KCONFIG:=$(KCONFIG_IPT_NAT_EXTRA)
-  FILES:=$(foreach mod,$(IPT_NAT_EXTRA-m),$(LINUX_DIR)/net/$(mod).ko)
-  AUTOLOAD:=$(call AutoProbe,$(notdir $(IPT_NAT_EXTRA-m)))
-  $(call AddDepends/ipt,+kmod-ipt-nat)
-endef
-
-define KernelPackage/ipt-nat-extra/description
- Netfilter (IPv4) kernel modules for extra NAT targets
- Includes:
- - NETMAP
- - REDIRECT
-endef
-
-$(eval $(call KernelPackage,ipt-nat-extra))
-
-
 define KernelPackage/nf-nathelper
   SUBMENU:=$(NF_MENU)
   TITLE:=Basic Conntrack and NAT helpers
