@@ -1,1 +1,0 @@
-cmd_/home/user/openwrt.ok/extern/broadcom-bsp/bcmdrivers/broadcom/char/vlan/bcm963138/built-in.o :=  rm -f /home/user/openwrt.ok/extern/broadcom-bsp/bcmdrivers/broadcom/char/vlan/bcm963138/built-in.o; arm-openwrt-linux-uclibcgnueabi-ar rcsD /home/user/openwrt.ok/extern/broadcom-bsp/bcmdrivers/broadcom/char/vlan/bcm963138/built-in.o

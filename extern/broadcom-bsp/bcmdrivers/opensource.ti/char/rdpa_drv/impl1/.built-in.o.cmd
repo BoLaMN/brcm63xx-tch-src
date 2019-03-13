@@ -1,1 +1,0 @@
-cmd_/home/user/openwrt_prova/extern/broadcom-bsp/bcmdrivers/opensource/char/rdpa_drv/bcm963138/built-in.o :=  rm -f /home/user/openwrt_prova/extern/broadcom-bsp/bcmdrivers/opensource/char/rdpa_drv/bcm963138/built-in.o; arm-openwrt-linux-uclibcgnueabi-ar rcsD /home/user/openwrt_prova/extern/broadcom-bsp/bcmdrivers/opensource/char/rdpa_drv/bcm963138/built-in.o

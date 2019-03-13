@@ -17,7 +17,7 @@ $(if $(findstring $(space),$(TOPDIR)),$(error ERROR: The path to the OpenWrt dir
 
 BCM_KF:=y
 BRCMDRIVERS_DIR:=$(TOPDIR)/extern/broadcom-bsp/bcmdrivers
-#BCM_USERSPACE_DIR:=$(TOPDIR)/extern/bcm_userspace
+BCM_USERSPACE_DIR:=$(TOPDIR)/extern/bcm_userspace
 SHARED_DIR:=$(TOPDIR)/extern/broadcom-bsp/shared
 INSTALL_MOD_DIR:=extra
 BRCM_BOARD:=bcm963xx

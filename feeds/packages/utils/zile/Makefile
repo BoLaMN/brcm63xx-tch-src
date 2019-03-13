@@ -19,6 +19,7 @@ PKG_MAINTAINER:=Ted Hess <thess@kitschensync.net>
 PKG_LICENSE:=GPL-3.0+
 PKG_LICENSE_FILES:=COPYING
 
+PKG_FIXUP:=autoreconf
 PKG_INSTALL:=1
 
 include $(INCLUDE_DIR)/package.mk
@@ -39,7 +40,12 @@ define Package/zile/description
 endef
 
 CONFIGURE_VARS += \
-	gl_cv_func_getopt_gnu=yes
+	gl_cv_func_getopt_gnu=yes \
+	gl_cv_warn__Wmudflap=no \
+	gl_cv_warn__fmudflap=no
+
+CONFIGURE_ARGS += \
+	--with-ncursesw \
 
 define Package/zile/install
 	$(INSTALL_DIR) $(1)/usr/bin
