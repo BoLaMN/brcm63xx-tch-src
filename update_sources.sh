@@ -2,6 +2,12 @@
 REPO_ROOT="$1"
 ARCHIVE_ROOT="$2"
 
+if [ ! -d "$REPO_ROOT" ] || [ ! -d "$ARCHIVE_ROOT" ]
+then
+    echo "$0 REPO_ROOT ARCHIVE_ROOT"
+    exit 1
+fi
+
 ######################################
 echo -n "Cleaning up broadcom-bsp... "
 
@@ -32,4 +38,6 @@ echo -n "Repacking kernel... "
 
 rm -rf "$REPO_ROOT/dl/linux-3.4.11"
 cp -f "$REPO_ROOT/dl/linux-3.4.11.tar.xz" "$REPO_ROOT/dl/linux-3.4.11.tar.xz.old"
-tar cJf "$REPO_ROOT/dl/linux-3.4.11.tar.xz" "$ARCHIVE_ROOT/kernel/broadcom_kernel/kernel/linux-3.4rt" && echo "done"
+mv "$ARCHIVE_ROOT/kernel/broadcom_kernel/kernel/linux-3.4rt" "$ARCHIVE_ROOT/kernel/broadcom_kernel/kernel/linux-3.4.11"
+tar cJf "$REPO_ROOT/dl/linux-3.4.11.tar.xz" -C "$ARCHIVE_ROOT/kernel/broadcom_kernel/kernel/" linux-3.4.11 . && echo "done"
+mv "$ARCHIVE_ROOT/kernel/broadcom_kernel/kernel/linux-3.4.11" "$ARCHIVE_ROOT/kernel/broadcom_kernel/kernel/linux-3.4rt"
