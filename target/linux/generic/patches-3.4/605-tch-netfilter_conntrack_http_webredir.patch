@@ -111,7 +111,7 @@
  	depends on (IPV6 || IPV6=n)
 --- a/net/netfilter/Makefile
 +++ b/net/netfilter/Makefile
-@@ -45,6 +45,7 @@ obj-$(CONFIG_NF_CONNTRACK_SNMP) += nf_conntrack_snmp.o
+@@ -45,6 +45,7 @@ obj-$(CONFIG_NF_CONNTRACK_SNMP) += nf_co
  obj-$(CONFIG_NF_CONNTRACK_PPTP) += nf_conntrack_pptp.o
  obj-$(CONFIG_NF_CONNTRACK_SANE) += nf_conntrack_sane.o
  obj-$(CONFIG_NF_CONNTRACK_SIP) += nf_conntrack_sip.o
@@ -121,7 +121,7 @@
  obj-$(CONFIG_NF_CONNTRACK_RTSP) += nf_conntrack_rtsp.o
 --- /dev/null
 +++ b/net/netfilter/nf_conntrack_http.c
-@@ -0,0 +1,1080 @@
+@@ -0,0 +1,1121 @@
 +/* HTTP extension for connection tracking.
 + * to redirect HTTP request to given URL */
 +
@@ -161,6 +161,7 @@
 +#define is_hex_num(i) ((i >= '0' && i <= '9') || (i >= 'a' && i <= 'f') || (i >= 'A' && i <= 'F'))
 +
 +static rwlock_t nf_http_lock;
++static DEFINE_SPINLOCK(counter_lock);
 +
 +#define WEBREDIR_SEQ_FILE_MAX_SIZE  2500
 +#define MAX_PORTS 8
@@ -169,7 +170,7 @@
 +static unsigned int ports_c;
 +module_param_array(ports, ushort, &ports_c, 0400);
 +
-+static int keyword_match_cnt[NF_CT_HTTP_MAX_FILTER_KEYWORD_STRINGS];
++static unsigned int keyword_match_cnt[NF_CT_HTTP_MAX_FILTER_KEYWORD_STRINGS];
 +
 +enum webredir_proc_cfg_section{
 +        PROC_CFG_SEC_GLOBAL,
@@ -694,7 +695,9 @@
 +
 +	for (i = 0; i < NF_CT_HTTP_MAX_FILTER_KEYWORD_STRINGS; i++)
 +		if (strlen(cfg->filter_keywords[i]) && strnstr(skb->data + dataoff, cfg->filter_keywords[i], datalen)) {
++			spin_lock_bh(&counter_lock);
 +			keyword_match_cnt[i]++;
++			spin_unlock_bh(&counter_lock);
 +			return true;
 +		}
 +
@@ -838,9 +841,14 @@
 +static void webredir_seq_show_keywords(struct seq_file *seq, struct webredir_cfg *cfg)
 +{
 +	int i, j;
++	unsigned int tmp;
 +
 +	for (i=0; i < NF_CT_HTTP_MAX_FILTER_KEYWORD_STRINGS && cfg->filter_keywords[i][0]; i++) {
-+		seq_printf(seq, "keyword(matched %d times)=", keyword_match_cnt[i]);
++		spin_lock_bh(&counter_lock);
++		tmp = keyword_match_cnt[i];
++		spin_unlock_bh(&counter_lock);
++
++		seq_printf(seq, "keyword(matched %d times)=", tmp);
 +		for (j=0; j < NF_CT_HTTP_MAX_FILTER_KEYWORD_LEN - 1 && cfg->filter_keywords[i][j]; j++)
 +			seq_printf(seq, "%02x ", (unsigned char)(cfg->filter_keywords[i][j]));
 +
@@ -901,7 +909,10 @@
 +	}
 +
 +	memset(cfg, 0, sizeof(struct webredir_cfg));
++
++	spin_lock_bh(&counter_lock);
 +	memset(keyword_match_cnt, 0, sizeof(keyword_match_cnt));
++	spin_unlock_bh(&counter_lock);
 +}
 +
 +static void split_sections(char *buf, int len, char *sections[])
@@ -969,7 +980,7 @@
 +	cfg->mark_mask_value = get_cfg_hex_value(buf, "mark_mask_value");
 +}
 +
-+static void parse_cfg_web_redir(char *buf, struct webredir_cfg *cfg)
++static void parse_cfg_web_redir(char *buf, char *webdirect, struct webredir_cfg *cfg)
 +{
 +	int len = strlen(buf);
 +	int name_len = strlen(proc_cfg_section_names[PROC_CFG_SEC_WEB_REDIR]);
@@ -980,8 +991,9 @@
 +
 +	len -= name_len;
 +	buf += name_len;
-+
-+	g_webredir_cfg.redir_html = kmalloc(len + 1, GFP_KERNEL);
++	
++	g_webredir_cfg.redir_html = webdirect;
++        memset(g_webredir_cfg.redir_html, 0, len + 1); 
 +	memcpy(g_webredir_cfg.redir_html, buf, len + 1);
 +}
 +
@@ -1041,10 +1053,10 @@
 +	}
 +}
 +
-+static int parse_proc_file(char *buf, int len, struct webredir_cfg *cfg)
++static int parse_proc_file(char *buf, int len, char *webdirect)
 +{
 +	char *sections[PROC_CFG_SEC_NUM];
-+
++        struct webredir_cfg *cfg = &g_webredir_cfg;
 +	clean_webredir_cfg(cfg);
 +
 +	memset(sections, 0, PROC_CFG_SEC_NUM);
@@ -1054,7 +1066,7 @@
 +		parse_cfg_global(sections[PROC_CFG_SEC_GLOBAL], cfg);
 +
 +	if (sections[PROC_CFG_SEC_WEB_REDIR])
-+		parse_cfg_web_redir(sections[PROC_CFG_SEC_WEB_REDIR], cfg);
++		parse_cfg_web_redir(sections[PROC_CFG_SEC_WEB_REDIR], webdirect, cfg);
 +
 +	if (cfg->http_filter_enable && sections[PROC_CFG_SEC_HTTP_FILTER])
 +		parse_cfg_http_filter(sections[PROC_CFG_SEC_HTTP_FILTER], cfg);
@@ -1062,11 +1074,30 @@
 +	return 0;
 +}
 +
++static int alloc_webdirect_buf(char *buf, int size, char **webdirect_ptr)
++{
++	int webdirect_size = 0;
++	char *session = strstr(buf, proc_cfg_section_names[PROC_CFG_SEC_WEB_REDIR]);
++	int name_len = 0;
++	ptrdiff_t diff;
++
++	if (session) {
++		name_len = strlen(proc_cfg_section_names[PROC_CFG_SEC_WEB_REDIR]) + 1;
++		diff = session - buf;
++		webdirect_size = size - (int)diff - name_len;
++		*webdirect_ptr = kmalloc(webdirect_size, GFP_KERNEL);
++		if(*webdirect_ptr)
++			return 0;
++	}
++	return -1;
++}
++
 +static ssize_t webredir_proc_file_write(struct file *file, const char __user *buf,
 +				 size_t size, loff_t *ppos)
 +{
-+	char k_buf[WEBREDIR_SEQ_FILE_MAX_SIZE];
++	char k_buf[WEBREDIR_SEQ_FILE_MAX_SIZE] = "";
 +	int ret;
++	char *webdirect = NULL;
 +
 +	if (size == 0 || buf == NULL)
 +		return 0;
@@ -1074,16 +1105,24 @@
 +	if (*ppos != 0)
 +		return -ESPIPE;
 +
-+	if (size > WEBREDIR_SEQ_FILE_MAX_SIZE) {
++	if (size >= WEBREDIR_SEQ_FILE_MAX_SIZE) {
 +		pr_err(WEBREDIR_ERR_HEAD "Should be less than %d\r\n", WEBREDIR_SEQ_FILE_MAX_SIZE);
 +		return -EINVAL;
 +	}
 +
 +	if (copy_from_user(k_buf, buf, size))
 +		return -EFAULT;
-+	k_buf[WEBREDIR_SEQ_FILE_MAX_SIZE-1] = '\0';
 +
-+	ret = parse_proc_file(k_buf, size, &g_webredir_cfg);
++        if (0 != alloc_webdirect_buf(k_buf, size, &webdirect)) {
++		pr_err(WEBREDIR_ERR_HEAD "Section [webredirect] doesn't exist\r\n");
++                return -EINVAL;
++        }
++
++        write_lock(&nf_http_lock);
++
++	ret = parse_proc_file(k_buf, size, webdirect);
++
++        write_unlock(&nf_http_lock);
 +
 +	if (!ret)
 +		return size;
@@ -1142,7 +1181,9 @@
 +		}
 +	}
 +
++	write_lock(&nf_http_lock);
 +	clean_webredir_cfg(&g_webredir_cfg);
++	write_unlock(&nf_http_lock);
 +}
 +
 +static __exit void nf_conntrack_http_fini(void)

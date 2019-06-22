@@ -18,7 +18,7 @@
  		.idVendor           = 0x19d2,
 --- a/drivers/usb/serial/option.c
 +++ b/drivers/usb/serial/option.c
-@@ -879,6 +879,8 @@ static const struct usb_device_id option
+@@ -1236,6 +1236,8 @@ static const struct usb_device_id option
  	{ USB_DEVICE_AND_INTERFACE_INFO(ZTE_VENDOR_ID, 0x0165, 0xff, 0xff, 0xff) },
  	{ USB_DEVICE_AND_INTERFACE_INFO(ZTE_VENDOR_ID, 0x0167, 0xff, 0xff, 0xff),
  	  .driver_info = (kernel_ulong_t)&net_intf4_blacklist },
@@ -26,4 +26,4 @@
 +	  .driver_info = (kernel_ulong_t)&net_intf3_blacklist },
  	{ USB_DEVICE_AND_INTERFACE_INFO(ZTE_VENDOR_ID, 0x0326, 0xff, 0xff, 0xff),
  	  .driver_info = (kernel_ulong_t)&net_intf4_blacklist },
- 	{ USB_DEVICE_AND_INTERFACE_INFO(ZTE_VENDOR_ID, 0x1008, 0xff, 0xff, 0xff),
+ #if defined(CONFIG_BCM_KF_ANDROID) && defined(CONFIG_BCM_ANDROID)

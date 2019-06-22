@@ -46,7 +46,7 @@ static void
 swconfig_trig_set_brightness(struct swconfig_trig_data *trig_data,
 			     enum led_brightness brightness)
 {
-	led_brightness_set(trig_data->led_cdev, brightness);
+	led_set_brightness(trig_data->led_cdev, brightness);
 	trig_data->prev_brightness = brightness;
 }
 

@@ -15,7 +15,7 @@
  		return ip_finish_output2(skb);
 --- a/net/ipv6/ip6_tunnel.c
 +++ b/net/ipv6/ip6_tunnel.c
-@@ -909,6 +909,7 @@ static int ip6_tnl_xmit2(struct sk_buff
+@@ -953,6 +953,7 @@ static int ip6_tnl_xmit2(struct sk_buff
  	u8 proto;
  	int err = -1;
  	int pkt_len;
@@ -23,7 +23,7 @@
  
  	if (!fl6->flowi6_mark)
  		dst = ip6_tnl_dst_check(t);
-@@ -946,9 +947,20 @@ static int ip6_tnl_xmit2(struct sk_buff
+@@ -990,9 +991,20 @@ static int ip6_tnl_xmit2(struct sk_buff
  	if (skb_dst(skb))
  		skb_dst(skb)->ops->update_pmtu(skb_dst(skb), mtu);
  	if (skb->len > mtu) {
@@ -47,7 +47,7 @@
  	}
  
  	/*
-@@ -994,7 +1006,13 @@ static int ip6_tnl_xmit2(struct sk_buff
+@@ -1038,7 +1050,13 @@ static int ip6_tnl_xmit2(struct sk_buff
  	ipv6h->daddr = fl6->daddr;
  	nf_reset(skb);
  	pkt_len = skb->len;

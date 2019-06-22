@@ -2059,7 +2059,7 @@
 +}
 --- a/net/netfilter/nf_conntrack_core.c
 +++ b/net/netfilter/nf_conntrack_core.c
-@@ -357,6 +357,14 @@ destroy_conntrack(struct nf_conntrack *n
+@@ -417,6 +417,14 @@ destroy_conntrack(struct nf_conntrack *n
  #endif /* CONFIG_BCM_RUNNER */
  #endif /* CONFIG_BCM_KF_RUNNER */
  
