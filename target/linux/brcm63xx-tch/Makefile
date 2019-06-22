@@ -6,26 +6,29 @@
 #
 include $(TOPDIR)/rules.mk
 
-#chriskuo+note: for DUMP=1, rules.mk does not include .config
-ARCH:=arm
 BOARD:=brcm63xx-tch
-BOARDNAME:=Broadcom BCM63xx Technicolor
-#chriskuo+e
-CPU_TYPE:=cortex-a9
-CPU_SUBTYPE:=neon
-FEATURES:=squashfs jffs2 usb atm pci pcmcia
-#LINUX_VERSION:=3.4.11
+BOARDNAME:=Broadcom BCM63xx based Technicolor platform
+DEFAULT_SUBTARGET:=VBNTO
+
+LINUX_VERSION:=3.4.11-rt19
 KERNEL_PATCHVER:=3.4
 
-
-include $(INCLUDE_DIR)/target.mk
-
+FEATURES:=squashfs jffs2 usb atm pci pcmcia
 #DEFAULT_PACKAGES += kmod-switch gpioctl
 
 define Target/Description
-	Build firmware images for Broadcom based xDSL/routers
-	currently supports BCM6338, BCM6348 and BCM6358 based devices.
-	(e.g. Inventel Livebox, Siemens SE515, Neufbox 4)
+	Build firmware images for Technicolor Broadcom based xDSL/routers
 endef
+
+include $(INCLUDE_DIR)/target.mk
+
+ifeq ($(BRCM_CHIP),63138)
+  CFLAGS:=-Os -pipe -march=armv7-a -mtune=cortex-a9 -fno-caller-saves -mfpu=neon
+endif
+
+ifeq ($(BRCM_CHIP),63148)
+  CFLAGS:=-Os -pipe -march=armv7-a -mtune=cortex-a15 -fno-caller-saves
+endif
+
 
 $(eval $(call BuildTarget))
