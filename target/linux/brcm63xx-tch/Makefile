@@ -62,6 +62,9 @@ endef
 
 include $(INCLUDE_DIR)/target.mk
 
+KERNEL_DIR:=$(BUILD_DIR)/linux-$(BOARD)_$(SUBTARGET)/linux-3.4.11
+export KERNEL_DIR
+
 ifeq ($(BRCM_CHIP),63138)
   CFLAGS:=-Os -pipe -march=armv7-a -mtune=cortex-a9 -fno-caller-saves -mfpu=neon
 endif
