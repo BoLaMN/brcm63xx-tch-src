@@ -1,4 +1,1 @@
-kernel//home/luke/tch/extern/kernel/broadcom_modules/bcmdrivers/opensource/char/serial/bcm963268/bcm63xx_cons.ko
-kernel//home/luke/tch/extern/kernel/broadcom_modules/bcmdrivers/opensource/char/spudd/bcm963268/spudd.ko
-kernel//home/luke/tch/extern/kernel/broadcom_modules/bcmdrivers/opensource/net/lib/pktdma/bcm963268/bcmPktDmaEthIudma.ko
-kernel//home/luke/tch/extern/kernel/broadcom_modules/bcmdrivers/opensource/net/lib/pktdma/bcm963268/bcmPktDmaBds.ko
+kernel//home/luke/brcm63xx-tch-src/extern/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/char/serial/bcm963138/bcm63xx_cons.ko
