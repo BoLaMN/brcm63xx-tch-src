@@ -1,4 +1,8 @@
 *.o
+*.o.cmd
+*.ko
+*.ko.cmd
+*.mod.c
 .DS_Store
 .*.swp
 /env

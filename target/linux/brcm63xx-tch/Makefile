@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 BOARD:=brcm63xx-tch
 BOARDNAME:=Broadcom BCM63xx based Technicolor platform
 
-DEFAULT_SUBTARGET:=VBNTO
+SUBTARGETS:=VANTF VBNTK VBNTO
 
 LINUX_VERSION:=3.4.11-rt19
 KERNEL_PATCHVER:=3.4
@@ -23,7 +23,7 @@ BCM_USERSPACE_DIR:=$(TOPDIR)/extern/broadcom-bsp/bcm_userspace
 SHARED_DIR:=$(TOPDIR)/extern/broadcom-bsp/bcm_userspace/broadcom_apps/shared
 INSTALL_MOD_DIR:=extra
 BRCM_BOARD:=bcm963xx
-#BRCM_CHIP:=63138
+
 PROFILE:=963138BGWV
 RDPA_PLATFORM=dsl
 VOXXXLOAD=1
