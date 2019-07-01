@@ -10,10 +10,10 @@ define Target/Description
 	Broadcom 63x38 (VBNT-O)
 endef
 
-BCM_SDK=$(TOPDIR)/extern/vant-f_telia_17.2.278_2_20180704
-BRCMDRIVERS_DIR:=$(BCM_SDK)/broadcom_modules/bcmdrivers
-BCM_USERSPACE_DIR:=$(BCM_SDK)/bcm_userspace
-SHARED_DIR:=$(BCM_SDK)/bcm_userspace/broadcom_apps/shared
+BCM_SDK=$(TOPDIR)/extern/broadcom-sdk-416L05
+BRCMDRIVERS_DIR:=$(BCM_SDK)/bcmdrivers
+BCM_USERSPACE_DIR:=
+SHARED_DIR:=$(BCM_SDK)/shared
 
 RDPA_PLATFORM=dsl
 VOXXXLOAD=1
