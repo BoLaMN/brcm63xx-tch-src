@@ -39,11 +39,6 @@ EXTRA_INCLUDES += -I$(INC_BRCMSHARED_PUB_PATH)/rdp -I$(INC_BRCMSHARED_PUB_PATH)/
 
 EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/net/enet/shared
 EXTRA_CFLAGS += -I$(INC_BDMF_PATH)/platform/$(RDPA_PLATFORM) -I$(INC_BRCMDRIVER_PUB_PATH)/$(BRCM_BOARD) -I$(INC_BRCMSHARED_PUB_PATH)/$(BRCM_BOARD)
-EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/rdpa_gpl/impl1/include
-EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/framework
-EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/system
-EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/system/linux
-EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/system/linux/ce
 EXTRA_CFLAGS += $(EXTRA_INCLUDES) $(EXTRA_CFLAGS_RDPA)
 EXTRA_CFLAGS += -Werror -Wall
 

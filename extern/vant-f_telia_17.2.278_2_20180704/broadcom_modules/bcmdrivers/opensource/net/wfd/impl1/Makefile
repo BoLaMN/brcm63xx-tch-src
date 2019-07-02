@@ -48,12 +48,7 @@ EXTRA_CFLAGS += -I$(INC_BRCMSHARED_PUB_PATH)/rdp -I$(INC_BRCMSHARED_PUB_PATH)/rd
 EXTRA_INCLUDES  += -I$(INC_RDPA_PATH) -I$(INC_RDPA_PATH)/autogen \
     -I$(INC_BDMF_PATH)/framework -I$(INC_BDMF_PATH)/system -I$(INC_BDMF_PATH)/system/$(CONFIG_SYSTEM) \
     -I$(INC_BDMF_PATH)/shell -I$(INC_BDMF_PATH)/platform/$(RDPA_PLATFORM) \
-    -I$(INC_BRCMSHARED_PUB_PATH)/bcm963xx -I$(INC_BRCMDRIVER_PUB_PATH)/bcm963xx -I$(BRCMDRIVERS_DIR)/opensource/net/enet/shared \
-    -I$(BRCMDRIVERS_DIR)/broadcom/net/wl/impl22/main/src/include \
-    -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/system \
-    -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/system/linux \
-    -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/system/linux/ce \
-    -I$(BRCMDRIVERS_DIR)/opensource/char/rdpa_mw/impl1
+    -I$(INC_BRCMSHARED_PUB_PATH)/bcm963xx -I$(INC_BRCMDRIVER_PUB_PATH)/bcm963xx -I$(BRCMDRIVERS_DIR)/opensource/net/enet/shared
     
 ifneq ($(strip $(CONFIG_BCM_WLAN)),)
 EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/broadcom/net/wl/bcm9$(BRCM_CHIP)/include
