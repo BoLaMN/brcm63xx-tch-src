@@ -1,5 +1,0 @@
-kernel//home/luke/brcm63xx-tch-src/extern/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/net/xtmrt/bcm963138/bcmxtmrtdrv.ko
-kernel//home/luke/brcm63xx-tch-src/extern/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/char/dectshim/bcm963138/dectshim.ko
-kernel//home/luke/brcm63xx-tch-src/extern/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/char/pcmshim/bcm963138/pcmshim.ko
-kernel//home/luke/brcm63xx-tch-src/extern/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/char/i2c/busses/bcm963138/i2c_bcm6xxx.ko
-kernel//home/luke/brcm63xx-tch-src/extern/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/char/bdmf/bcm963138/bdmf.ko

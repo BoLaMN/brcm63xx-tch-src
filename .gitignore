@@ -3,6 +3,8 @@
 *.ko
 *.ko.cmd
 *.mod.c
+modules.order
+modules.builtin
 .DS_Store
 .*.swp
 /env
