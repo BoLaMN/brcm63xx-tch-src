@@ -1,18 +1,3 @@
-diff -Naur extern.a/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/char/rdpa_mw/impl1/Makefile extern.b/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/char/rdpa_mw/impl1/Makefile
---- extern.a/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/char/rdpa_mw/impl1/Makefile	2017-11-11 01:01:52.000000000 +0100
-+++ extern.b/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/char/rdpa_mw/impl1/Makefile	2017-10-18 18:31:14.000000000 +0200
-@@ -39,6 +39,11 @@
- 
- EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/net/enet/shared
- EXTRA_CFLAGS += -I$(INC_BDMF_PATH)/platform/$(RDPA_PLATFORM) -I$(INC_BRCMDRIVER_PUB_PATH)/$(BRCM_BOARD) -I$(INC_BRCMSHARED_PUB_PATH)/$(BRCM_BOARD)
-+EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/rdpa_gpl/impl1/include
-+EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/framework
-+EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/system
-+EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/system/linux
-+EXTRA_CFLAGS += -I$(BRCMDRIVERS_DIR)/opensource/char/bdmf/impl1/system/linux/ce
- EXTRA_CFLAGS += $(EXTRA_INCLUDES) $(EXTRA_CFLAGS_RDPA)
- EXTRA_CFLAGS += -Werror -Wall
- 
 diff -Naur extern.a/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/net/enet/impl5/bcmenet.c extern.b/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/net/enet/impl5/bcmenet.c
 --- extern.a/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/net/enet/impl5/bcmenet.c	2017-11-11 01:01:52.000000000 +0100
 +++ extern.b/broadcom-bsp/broadcom_modules/bcmdrivers/opensource/net/enet/impl5/bcmenet.c	2017-10-18 23:35:37.000000000 +0200
