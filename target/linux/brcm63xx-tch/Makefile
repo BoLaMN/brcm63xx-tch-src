@@ -20,11 +20,12 @@ DEFAULT_PACKAGES += kmod-switch gpioctl
 BCM_KF:=y
 INSTALL_MOD_DIR:=extra
 BRCM_BOARD:=bcm963xx
+HOSTTOOLS_DIR:=$(TOPDIR)/scripts
 SCRIPT_DIR:=$(TOPDIR)/scripts
 
 PROFILE:=963138BGWV
 
-export BCM_KF INSTALL_MOD_DIR BRCM_BOARD PROFILE SCRIPT_DIR
+export BCM_KF INSTALL_MOD_DIR BRCM_BOARD PROFILE HOSTTOOLS_DIR SCRIPT_DIR
 
 define Target/Description
 	Build firmware images for Technicolor Broadcom based xDSL/routers

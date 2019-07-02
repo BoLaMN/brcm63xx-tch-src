@@ -124,7 +124,7 @@ $(eval $(call LN_RULE, $(CONFIG_BCM_INGQOS), broadcom/char/ingqos, $(LN_NAME), $
 $(eval $(call LN_RULE, $(CONFIG_BCM_BPM), broadcom/char/bpm, $(LN_NAME), $(CONFIG_BCM_BPM_IMPL)))
 $(eval $(call LN_RULE, $(CONFIG_BCM_ARL), broadcom/char/arl, $(LN_NAME), $(CONFIG_BCM_ARL_IMPL)))
 $(eval $(call LN_RULE, $(CONFIG_BCM_BDMF), opensource/char/bdmf, $(LN_NAME), $(CONFIG_BCM_BDMF_IMPL)))
-$(eval $(call LN_RULE, $(CONFIG_BCM_RDPA), broadcom/char/rdpa, $(LN_NAME), $(CONFIG_BCM_RDPA_IMPL)))
+#$(eval $(call LN_RULE, $(CONFIG_BCM_RDPA), broadcom/char/rdpa, $(LN_NAME), $(CONFIG_BCM_RDPA_IMPL)))
 $(eval $(call LN_RULE, $(CONFIG_BCM_RDPA_GPL), opensource/char/rdpa_gpl, $(LN_NAME), $(CONFIG_BCM_RDPA_GPL_IMPL)))
 $(eval $(call LN_RULE, $(CONFIG_BCM_RDPA_GPL), opensource/char/rdpa_gpl_ext, $(LN_NAME), $(CONFIG_BCM_RDPA_GPL_IMPL)))
 $(eval $(call LN_RULE, $(CONFIG_BCM_EPON_STACK), broadcom/char/xenu_epon_stack, $(LN_NAME), $(CONFIG_BCM_EPON_STACK_IMPL)))
