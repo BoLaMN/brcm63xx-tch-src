@@ -88,6 +88,17 @@ define Build/Patch/Default
 	$(if $(QUILT),touch $(PKG_BUILD_DIR)/.quilt_used)
 endef
 
+define Kernel/Patch/Subtarget
+	find $(PLATFORM_DIR) -type l -xtype f -lname "*patches*" -delete
+	for pdir in $$$$(find $(PLATFORM_SUBDIR) -name "patches*" -xtype d -printf "%f\n"); do \
+		mkdir -p $(PLATFORM_DIR)/$$$$pdir ; \
+		for p in $$$$(find -L $(PLATFORM_SUBDIR) -wholename "*/$$$$pdir/*" -type f); do \
+			ln -sf $$$$p $(PLATFORM_DIR)/$$$$pdir/ ; \
+		done ; \
+	done
+	$(call Kernel/Patch/Default)
+endef
+
 kernel_files=$(foreach fdir,$(GENERIC_FILES_DIR) $(FILES_DIR),$(fdir)/.)
 define Kernel/Patch/Default
 	rm -rf $(PKG_BUILD_DIR)/patches; mkdir -p $(PKG_BUILD_DIR)/patches

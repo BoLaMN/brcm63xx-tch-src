@@ -31,7 +31,11 @@ endif
 export HOST_EXTRACFLAGS=-I$(STAGING_DIR_HOST)/include
 
 # defined in quilt.mk
+ifeq ($(PLATFORM_DIR),$(PLATFORM_SUBDIR))
 Kernel/Patch:=$(Kernel/Patch/Default)
+else
+Kernel/Patch:=$(Kernel/Patch/Subtarget)
+endif
 
 KERNEL_GIT_OPTS:=
 ifneq ($(strip $(CONFIG_KERNEL_GIT_LOCAL_REPOSITORY)),"")

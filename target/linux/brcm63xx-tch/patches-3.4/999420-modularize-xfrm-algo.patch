@@ -1,0 +1,29 @@
+diff -u a/net/xfrm/Kconfig b/net/xfrm/Kconfig
+--- a/net/xfrm/Kconfig	2017-10-24 09:38:40.000000000 +0200
++++ b/net/xfrm/Kconfig	2019-06-23 10:57:26.047510500 +0200
+@@ -6,6 +6,11 @@
+        select CRYPTO
+        depends on NET
+ 
++config XFRM_ALGO
++	tristate "Support for XFRM_ALGO module"
++	select XFRM
++	select CRYPTO
++
+ config XFRM_USER
+ 	tristate "Transformation user configuration interface"
+ 	depends on INET && XFRM
+diff -u a/net/xfrm/Makefile b/net/xfrm/Makefile
+--- a/net/xfrm/Makefile	2017-10-24 09:38:40.000000000 +0200
++++ b/net/xfrm/Makefile	2019-06-23 10:57:34.671931100 +0200
+@@ -3,8 +3,9 @@
+ #
+ 
+ obj-$(CONFIG_XFRM) := xfrm_policy.o xfrm_state.o xfrm_hash.o \
+-		      xfrm_input.o xfrm_output.o xfrm_algo.o \
++		      xfrm_input.o xfrm_output.o \
+ 		      xfrm_sysctl.o xfrm_replay.o
+ obj-$(CONFIG_XFRM_STATISTICS) += xfrm_proc.o
++obj-$(CONFIG_XFRM_ALGO) += xfrm_algo.o
+ obj-$(CONFIG_XFRM_USER) += xfrm_user.o
+ obj-$(CONFIG_XFRM_IPCOMP) += xfrm_ipcomp.o
