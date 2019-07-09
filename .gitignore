@@ -1,4 +1,10 @@
 *.o
+*.o.cmd
+*.ko
+*.ko.cmd
+*.mod.c
+modules.order
+modules.builtin
 .DS_Store
 .*.swp
 /env
@@ -8,6 +14,7 @@
 /staging_dir
 /tmp
 /logs
+/feeds
 /feeds.conf
 /files
 /package/openwrt-packages
