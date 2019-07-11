@@ -14,18 +14,12 @@ include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=bankmgr
 PKG_VERSION:=1.0
-PKG_SOURCE_URL:=/src
-PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=584b1258adea34c8f1fa13fadb02164498c410a2
-
 
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 include $(INCLUDE_DIR)/package.mk
-
-
-
 
 define KernelPackage/bankmgr
   SUBMENU:=Technicolor specific kernel modules
@@ -50,6 +44,11 @@ MAKE_OPTS:= \
 	CROSS_COMPILE="$(TARGET_CROSS)" \
 	SUBDIRS="$(PKG_BUILD_DIR)" \
 	$(EXTRA_KCONFIG)
+
+define Build/Prepare
+	mkdir -p $(PKG_BUILD_DIR)
+	$(CP) ./src/$(PKG_NAME)-$(PKG_VERSION)/* $(PKG_BUILD_DIR)/
+endef
 
 define Build/Compile
 	$(MAKE) -C "$(LINUX_DIR)" \
