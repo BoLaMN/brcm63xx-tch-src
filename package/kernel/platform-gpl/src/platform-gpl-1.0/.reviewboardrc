@@ -1,0 +1,2 @@
+REPOSITORY='openwrt:pkg:platform-gpl'
+REVIEWBOARD_URL='http://codereview.rennes.eu.thmulti.com'
