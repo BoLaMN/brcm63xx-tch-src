@@ -301,6 +301,24 @@ endef
 
 $(eval $(call KernelPackage,ipt-nat6))
 
+
+ define KernelPackage/ipt-nat-extra	
+  TITLE:=Extra NAT targets	
+  KCONFIG:=$(KCONFIG_IPT_NAT_EXTRA)	
+  FILES:=$(foreach mod,$(IPT_NAT_EXTRA-m),$(LINUX_DIR)/net/$(mod).ko)	
+  AUTOLOAD:=$(call AutoProbe,$(notdir $(IPT_NAT_EXTRA-m)))	
+  $(call AddDepends/ipt,+kmod-ipt-nat)	
+endef	
+
+ define KernelPackage/ipt-nat-extra/description	
+ Netfilter (IPv4) kernel modules for extra NAT targets	
+ Includes:	
+ - NETMAP	
+ - REDIRECT	
+endef	
+
+ $(eval $(call KernelPackage,ipt-nat-extra))	
+
 define KernelPackage/nf-nathelper
   SUBMENU:=$(NF_MENU)
   TITLE:=Basic Conntrack and NAT helpers
@@ -319,32 +337,6 @@ define KernelPackage/nf-nathelper/description
 endef
 
 $(eval $(call KernelPackage,nf-nathelper))
-
-
-define KernelPackage/nf-nathelper-extra
-  SUBMENU:=$(NF_MENU)
-  TITLE:=Extra Conntrack and NAT helpers
-  KCONFIG:=$(KCONFIG_NF_NATHELPER_EXTRA)
-  FILES:=$(foreach mod,$(NF_NATHELPER_EXTRA-m),$(LINUX_DIR)/net/$(mod).ko)
-  AUTOLOAD:=$(call AutoProbe,$(notdir $(NF_NATHELPER_EXTRA-m)))
-  DEPENDS:=+kmod-nf-nat +kmod-lib-textsearch
-endef
-
-define KernelPackage/nf-nathelper-extra/description
- Extra Netfilter (IPv4) Conntrack and NAT helpers
- Includes:
- - amanda
- - h323
- - mms
- - pptp
- - proto_gre
- - sip
- - snmp_basic
- - broadcast
-endef
-
-$(eval $(call KernelPackage,nf-nathelper-extra))
-
 
 define KernelPackage/ipt-ulog
   TITLE:=Module for user-space packet logging

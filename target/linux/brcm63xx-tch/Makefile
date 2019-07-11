@@ -6,7 +6,6 @@
 #
 include $(TOPDIR)/rules.mk
 
-#chriskuo+note: for DUMP=1, rules.mk does not include .config
 ARCH:=arm
 BOARD:=brcm63xx-tch
 BOARDNAME:=Broadcom BCM63xx Technicolor
@@ -14,9 +13,10 @@ BOARDNAME:=Broadcom BCM63xx Technicolor
 CPU_TYPE:=cortex-a9
 CPU_SUBTYPE:=neon
 FEATURES:=squashfs jffs2 usb atm pci pcmcia
-#LINUX_VERSION:=3.4.11
-KERNEL_PATCHVER:=3.4
 
+LINUX_VERSION:=3.4.11
+LINUX_RELEASE:=rt19
+KERNEL_PATCHVER:=3.4
 
 include $(INCLUDE_DIR)/target.mk
 
