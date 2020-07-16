@@ -1,0 +1,43 @@
+<div class="navbar-default top-navbar" >
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only" translate>Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand" href="/#!overview">
+				<div class="logo"></div>
+			</a>
+		</div>
+		<button title="{{'Logout'|translate}}" class="btn btn-default visible-md visible-lg logout pull-right" ng-click="onLogout()"><i class="fa fa-sign-out"></i></button>
+		<div ng-show="showLogButton" class="dropdown visible-md visible-l:g log-button pull-right" uib-dropdown is-open="status.isopen">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="{{'You have '|translate}}{{log_events.length}}{{' new events'|translate}}">
+				<span class="badge badge-primary">{{log_events.length}}</span>
+			</button>
+			<div class="dropdown-menu pull-right" role="menu">
+				<div class="col-xs-12" ng-show="log_events.length == 0">
+					<div class="" translate>No new events to show</div>
+				</div>
+				<div class="col-xs-12" ng-repeat="ev in log_events track by $index">
+					<div class="log-entry">
+						{{ev.data.message}}	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="visible-md visible-lg mode-picker pull-right">
+			<juci-mode-picker></juci-mode-picker>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<juci-wiki class="navbar-wiki"><i class="juci juci-question juci-2x pull-right"></i></juci-wiki>
+			<ul class="nav navbar-nav">
+				<li class="dropdown" ng-class="isActive(item.path)?'open':''" ng-repeat="item in tree.children track by $index" ng-hide="item.hidden">
+					<a href="{{getHref(item)}}" ng-show="itemVisible(item)" target="{{getHref(item).substring(0,2) === '#!' ? '_self':'_blank'}}" role="button" >{{item.text | translate}} </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

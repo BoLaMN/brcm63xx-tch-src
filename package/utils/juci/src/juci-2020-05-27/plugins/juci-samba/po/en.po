@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "New samba share"
+msgstr ""
+
+msgid "Loading.."
+msgstr ""
+
+msgid "Add folder to share"
+msgstr ""
+
+msgid "Select folder"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Path"
+msgstr ""
+
+msgid "Allowed users"
+msgstr ""
+
+msgid "Allow Guest Access"
+msgstr ""
+
+msgid "Read only?"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "General Settings"
+msgstr ""
+
+msgid "services.samba.info"
+msgstr "General samba settings."
+
+msgid "Workgroup"
+msgstr ""
+
+msgid "Share User Home Directory"
+msgstr ""
+
+msgid "Interface"
+msgstr ""
+
+msgid ""
+"the interface(s) samba will listen on. Samba will not start if no interface "
+"is selected"
+msgstr ""
+
+msgid "Samba Users"
+msgstr ""
+
+msgid "samba.users.info"
+msgstr "Samba Users Configuration"
+
+msgid "Samba Shares"
+msgstr ""
+
+msgid "samba.shares.info"
+msgstr "Samba shares configuration"
+
+msgid "menu-internet-services-samba-title"
+msgstr "Samba"

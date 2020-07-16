@@ -1,0 +1,117 @@
+/* this file contains crap that has no better place */
+/* the goal is to slowly move this to other files */
+@import "./colors.less";
+
+// not used but might be usefull in the future
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+	display: none;
+}
+
+body {
+	font-size: 16px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	color: @theme-heading-color;
+}
+
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.btn-primary, .btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open &>.dropdown-toggle.btn-primary, .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+	color: @theme-primary-text-color;
+	background-color: @theme-primary-color;
+	border-color: @theme-primary-color;
+}
+.btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary.active[disabled], .btn-primary.focus[disabled], .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+	background-color: lighten(@theme-primary-color, 10%);
+	border-color: lighten(@theme-primary-color, 10%);
+}
+.label-danger, .label-error {
+	background-color: @theme-error-color;
+}
+
+.label-warning {
+	background-color: @theme-warning-color;
+}
+
+.label-disabled {
+	background-color: @theme-disabled-color;
+}
+
+.label-success{
+	background-color: @theme-success-color;
+}
+.text-danger, .text-error {
+	color: @theme-error-color;
+}
+
+.text-warning {
+	color: @theme-warning-color;
+}
+
+.text-disabled {
+	color: @theme-disabled-color;
+}
+
+.text-success{
+	color: @theme-success-color;
+}
+
+.juci-container {
+	min-height: 1000px;
+}
+
+a, a:focus, a:hover {
+	color: @theme-link-color;
+}
+
+div.error {
+	color: @theme-div-error-color;
+}
+.modal-backdrop {
+	height: 4000px;
+	z-index: 50;
+}
+
+.disconnected-modal {
+	padding:20px;
+	text-align:center;
+	i {
+		color: @theme-error-color;
+	}
+}
+
+.carousel-indicators {
+	top: auto;
+	bottom: 15px;
+}
+
+h3.panel-title {
+	color: @theme-heading-color;
+}
+
+.field-error {
+	border-left: 4px solid @theme-error-color;
+}
+.clear-both {
+	clear: both;
+}
+div.juci-error, div.juci-warning {
+	margin-top: 10px;
+	font-size: 0.8em;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.no-padding {
+    padding: 0;
+}

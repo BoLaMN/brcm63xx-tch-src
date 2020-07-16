@@ -1,0 +1,60 @@
+{
+	"unauthenticated": {
+		"description": "These extend default unauthenticated acl with some extra things for juci",
+		"read": {
+			"ubus": {
+				"uci": [ 
+					"get",
+					"state",
+					"configs"
+				],
+				"juci.unauthenticated": [
+					 "*"
+				]
+			}, 
+			"uci": [ "juci" ] 
+		}
+	},	
+	"juci-file": {
+		"description": "Accesslist for the $file factory",
+		"read": {
+			"ubus": {
+				"file": [
+					"read_tmp_juci",
+					"write_tmp_juci"
+				]
+			}
+		}
+	},
+	"user-admin": {
+		"description": "Capabilities assigned to administrator user",
+		"read": {
+			"juci": {
+				"capabilities": [ 
+					"can-view-changes"
+				]
+			}
+		}
+	}, 
+	"core": {
+		"description": "Core functions for JUCI (TODO: remove)",
+		"read": {
+			"ubus": {
+				"juci.core": [
+					"default_password",
+					"get_themes"
+				],
+				"session": [
+					"access",
+					"destroy"
+				],
+				"uci": [
+					"*"
+				],
+				"file":[
+					"stat"
+				]
+			}
+		}
+	}
+}

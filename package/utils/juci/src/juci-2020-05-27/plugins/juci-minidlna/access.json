@@ -1,0 +1,21 @@
+{
+	"juci-minidlna": {
+		"description": "JUCI MiniDLNA module",
+		"read": {
+			"uci": [
+				"minidlna"
+			],
+			"ubus": {
+				"router.directory": [
+					"folder_tree",
+					"autocomplete"
+				]
+			}
+		},
+		"write": {
+			"uci": [
+				"minidlna"
+			]
+		}
+	}
+}

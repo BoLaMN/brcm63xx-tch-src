@@ -1,0 +1,22 @@
+{
+	"juci-sysupgrade": {
+		"description": "JUCI Sysupgrade Interface module",
+		"read": {
+			"ubus": {
+				"file": [
+					"write_tmp_juci"
+				],
+				"juci.sysupgrade": [
+					"check", 
+					"test", 
+					"start"
+				]
+			}, 
+			"uci": [ "system" ],
+			"owsd": [ "sysupgrade"]
+		}, 
+		"write": {
+			"uci": [ "system" ]
+		}
+	}
+}

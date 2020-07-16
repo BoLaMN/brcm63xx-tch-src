@@ -1,0 +1,36 @@
+{
+	"juci-event": {
+		"description": "JUCI event module",
+		"read": {
+			"ubus": {
+				"router.system": [
+					"logs"
+				],
+				"juci.system": [
+					"report"
+				]
+			},
+			"owsd": [
+				"system-report"
+			]
+		}
+	},
+	"user-admin": {
+		"read": {
+			"juci": {
+				"capabilities": [
+					"can-download-system-report"
+				]
+			}
+		}
+	},
+	"user-support": {
+		"read": {
+			"juci": {
+				"capabilities": [
+					"can-download-system-report"
+				]
+			}
+		}
+	}
+}

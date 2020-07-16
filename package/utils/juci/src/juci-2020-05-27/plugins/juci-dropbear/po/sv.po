@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Dropbear Instance on Interface: "
+msgstr "Dropbear på interface: "
+
+msgid "ANY"
+msgstr "Alla"
+
+msgid "Please select a instance in the list to remove"
+msgstr "Välj vilken som skall tas bort"
+
+msgid "Unable to remove last instance"
+msgstr "Kunde inte ta bort sista"
+
+msgid "Are you sure you want to remove this instance?"
+msgstr "Är du säker på att du vill ta bort denna? "
+
+msgid "Key ending with"
+msgstr "Nyckel som slutar med"
+
+msgid "You need to insert the public key data!"
+msgstr "Du måste ange din publika nyckel!"
+
+msgid "Paste your key here:"
+msgstr "Skriv din PIN här"
+
+msgid "Add new SSH key"
+msgstr "Lägg till ny SSH nyckel"
+
+msgid "Banner File"
+msgstr "Banner-fil"
+
+msgid ""
+"Name of a file to be printed before the user has authenticated successfully"
+msgstr "Namn på filen som ska användas som banner när användaren loggar in"
+
+msgid "Banner File Path"
+msgstr "Banner-filens sökväg"
+
+msgid "Password Authentication"
+msgstr "Lösenordsautentisering"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Listen Port"
+msgstr "Port"
+
+msgid "Enable Root Password Auth"
+msgstr "Tillåt inloggning med lösenord för root"
+
+msgid "Enable Root Login"
+msgstr "Tillåt inloggning för root"
+
+msgid "Enable Forwarded Ports"
+msgstr "Slå på port-forwarding funktionalitet"
+
+msgid "Interface"
+msgstr "Interface"
+
+msgid "RSA Key File"
+msgstr "RSA nyckelfil"
+
+msgid "DSS Key File"
+msgstr "DNS nyckelfil"
+
+msgid "Connection Keep Alive"
+msgstr "Keep-Alive funktion"
+
+msgid "Idle Timeout"
+msgstr "Timeout inaktivitet"
+
+msgid "Dropbear SSH"
+msgstr "SSH"
+
+msgid "General settings"
+msgstr "Generella Inställningar"
+
+msgid "Start/Stop Service"
+msgstr "Starta/Stoppa tjänsten"
+
+msgid "Start or stop service"
+msgstr "Starta eller stoppa tjänsten"
+
+msgid "Enabled"
+msgstr "Aktiv"
+
+msgid "Enable/Disable starting SSH service during boot"
+msgstr "Slå på/av SSH tjänsten"
+
+msgid "Verbose logging"
+msgstr "Utförlig loggning"
+
+msgid "Set to 1 to enable verbose output by the start script"
+msgstr "Sätt till 1 för att slå på extra logginformation"
+
+msgid "Dropbear Instances"
+msgstr "Dropbear instanser"
+
+msgid "settings.dropbear.instance"
+msgstr "Inställningar för SSH-åtkomst till din router"
+
+msgid "Accepted SSH keys"
+msgstr "Accepterade SSH nycklar"
+
+msgid "menu-settings-management-dropbear-title"
+msgstr "SSH"
+

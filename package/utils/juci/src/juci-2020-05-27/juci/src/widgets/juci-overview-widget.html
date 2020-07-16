@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="title">
+			<a ng-show="href" href="{{href || ''}}"><i class="icon {{icon}}"></i>{{title || ("No Title"|translate) | uppercase}}</a>
+			<div ng-hide="href">
+				<i class="icon {{icon}}"></i>{{title || ("No Title"|translate) | uppercase}}
+			</div>
+			<i class="expand-icon fa fa-expand fa-sm" ng-show="showEdit" ng-click="click()"></i>
+		</h3>
+	</div>
+	<div class="panel-body" style="{{of?'overflow:visible':''}}" ng-transclude>
+	</div>
+</div>

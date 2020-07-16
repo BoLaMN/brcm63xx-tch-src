@@ -1,0 +1,39 @@
+<juci-layout-with-sidebar>
+	<div ng-controller="PageUhttpdSettings">
+		<juci-config-section>
+			<juci-config-heading>{{ 'HTTPD Settings' | translate }}</juci-config-heading>
+			<juci-config-info>{{ 'uhttpd.settings.info' | translate }}</juci-config-info>
+			<juci-config-lines>
+				<juci-config-line title="{{'Max Requests'|translate}}">
+					<input type="number" ng-model="config.max_requests.value" class="form-control" placeholder="{{'Max Requests'|translate}}"/>
+				</juci-config-line>
+				<juci-config-line title="{{'Max Connections'|translate}}">
+					<input type="number" ng-model="config.max_connections.value" class="form-control" placeholder="{{'Max Connections'|translate}}"/>
+				</juci-config-line>
+				<juci-config-line title="{{'Listening IP:Port'|translate}}">
+					<tags-input ng-model="data.ips" placeholder="{{'Add IP:Port'|translate}}" allowed-tags-pattern=".+:.+" on-tag-added="onTagChange()"
+							on-tag-removed="onTagChange()" add-on-space="true"></tags-input>
+				</juci-config-line>
+			</juci-config-lines>
+		</juci-config-section>
+		<juci-config-section>
+			<juci-config-lines>
+				<juci-config-line title="Log UBUS return codes" help="{{'Specify UBUS return codes to log into system log'|translate}}" no-pull>
+					<juci-list-simple-editor ng-model="data.status" get-item-title="$item.label" 
+						on-add-item="addStatusItem()" on-delete-item="deleteStatusItem($item)" hide-buttons="false">
+						<juci-select ng-model="status.selected" ng-items="status.selectable"></juci-select>
+					</juci-list-simple-editor>
+				</juci-config-line>
+				<juci-config-line title="Log only these UBUS calls" help="{{'Will only log status codes above that are returned by these ubus calls'|translate}}" no-pull>
+					<juci-list-simple-editor ng-model="logopts.ubus_method.value" get-item-title="$item"
+						on-add-item="addMethodItem()" on-delete-item="deleteMethodItem($item)">
+						<div class="input-group">
+							<span class="input-group-addon">{{'Object.Method'|translate}}</span>
+							<input type="text" ng-model="data.newMethod" class="form-control">
+						</div>
+					</juci-list-simple-editor>
+				</juci-config-line>
+			</juci-config-lines>
+		</juci-config-section>
+	</div>
+</juci-layout-with-sidebar>

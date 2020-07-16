@@ -1,0 +1,29 @@
+<div>
+	<div class="changes-edit-pane">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th translate>Config</th>
+					<th translate>Section</th>
+					<th translate>Option</th>
+					<th translate>Old value</th>
+					<th translate>New value</th>
+					<th ng-hide="hideBtn"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in model.changes track by $index">
+					<td><div>{{item.config|maxlength:30}}</div></td>
+					<td><div>{{item.section|maxlength:30}}</div></td>
+					<td>
+						<div ng-show="item.option">{{item.option|maxlength:30}}</div>
+						<div ng-show="item.state">{{item.state}}</div>
+					</td>
+					<td><div ng-show="item.ovalue != 'undefined'">{{item.ovalue|maxlength:30}}</div></td>
+					<td><div ng-show="item.uvalue != 'undefined'">{{item.uvalue|maxlength:30}}</div></td>
+					<td><span ng-show="item.type == 'option'" ng-click="onRevertOption($index)" class="clickable pull-right"><i class="fa fa-trash"></i></span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

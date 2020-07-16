@@ -1,0 +1,201 @@
+# invalid json rpc
+{"jsonrpc":"2.0", "id":UBUS_ID, "notmethod":344}
+{"jsonrpc":"2.0","id":UBUS_ID,"error":{"code":-32600,"message":"Invalid Request"}}
+
+# call invalid method
+{"jsonrpc":"2.0", "id":UBUS_ID, "method":"nosuchmethod", "params":["...", 1234]}
+{"jsonrpc":"2.0","id":UBUS_ID,"error":{"code":-32601,"message":"Method not found"}}
+
+# invalid param ubus list
+{"jsonrpc":"2.0", "id":UBUS_ID, "method":"list", "params":["", 12345]}
+{"jsonrpc":"2.0","id":UBUS_ID,"error":{"code":-32602,"message":"Invalid params"}}
+
+# ubus list session
+{"jsonrpc":"2.0", "id":UBUS_ID, "method":"list", "params":["", "session"]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"session":{"create":{"timeout":"number"},"list":{"ubus_rpc_session":"string"},"grant":{"ubus_rpc_session":"string","scope":"string","objects":"array"},"revoke":{"ubus_rpc_session":"string","scope":"string","objects":"array"},"access":{"ubus_rpc_session":"string","scope":"string","object":"string","function":"string"},"set":{"ubus_rpc_session":"string","values":"object"},"get":{"ubus_rpc_session":"string","keys":"array"},"unset":{"ubus_rpc_session":"string","keys":"array"},"destroy":{"ubus_rpc_session":"string"},"login":{"username":"string","password":"string","timeout":"number"}}}]}
+
+# ubus list sessio*
+{"jsonrpc":"2.0", "id":UBUS_ID, "method":"list", "params":["", "sessio*"]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"session":{"create":{"timeout":"number"},"list":{"ubus_rpc_session":"string"},"grant":{"ubus_rpc_session":"string","scope":"string","objects":"array"},"revoke":{"ubus_rpc_session":"string","scope":"string","objects":"array"},"access":{"ubus_rpc_session":"string","scope":"string","object":"string","function":"string"},"set":{"ubus_rpc_session":"string","values":"object"},"get":{"ubus_rpc_session":"string","keys":"array"},"unset":{"ubus_rpc_session":"string","keys":"array"},"destroy":{"ubus_rpc_session":"string"},"login":{"username":"string","password":"string","timeout":"number"}}}]}
+
+# ubus list nonexisting
+{"jsonrpc":"2.0", "id":UBUS_ID, "method":"list", "params":["", "nonexisting"]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[4]}
+
+# invalid params to call
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": ["some", {"invalid":"params"} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"error":{"code":-32602,"message":"Invalid params"}}
+
+# call something forbidden
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "session", "create", {} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[6]}
+
+# call something with missing args
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "session", "login", {"....":"..."} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[2]}
+
+# session list
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "session", "list", {} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"ubus_rpc_session":"SESSION_ID","timeout":300,"expires":300,"acls":{"
+
+# system info
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "system", "info", {}] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"uptime"
+
+# in network config get value of ipaddr in loopback section
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "uci", "get", {"config":"network","section":"loopback","option":"ipaddr"}] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"value":"127.0.0.1"}]}
+
+# which touch
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/usr/bin/which","params":["touch"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"\/bin\/touch\n"}]}
+
+# touch /tmp/test.txt
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"touch","params":["/tmp/test.txt"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0}]}
+
+# cat /tmp/test.txt
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "read", {"path":"/tmp/test.txt"} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[5]}
+
+# echo "new line!" >> /tmp/test.txt
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "write", {"path":"/tmp/test.txt","data":"new line!"} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0]}
+
+# cat /tmp/test.txt
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "read", {"path":"/tmp/test.txt"} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"data":"new line!"}]}
+
+# md5sum /tmp/test.txt
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "md5", {"path":"/tmp/test.txt"} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"md5":"06846e35c1c3a0c25c9867eaf644d099"}]}
+
+# which rm
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/usr/bin/which","params":["rm"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"\/bin\/rm\n"}]}
+
+# rm /tmp/test.txt
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/bin/rm","params":["/tmp/test.txt"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0}]}
+
+# which ps
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/usr/bin/which","params":["ps"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"\/bin\/ps\n"}]}
+
+# ps
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/bin/ps"} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"  PID USER       VSZ STAT COMMAND\n    1 root
+
+# ubus call system board
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "system", "board", {}] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"kernel":"4.
+
+# ubus call iwinfo devices
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "iwinfo", "devices", {}] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"devices":["wlan0"]}]}
+
+# which owsd
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/usr/bin/which","params":["owsd"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"\/usr\/bin\/owsd\n"}]}
+
+# owsd -h
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"owsd","params":["-h"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stderr":"Usage: \/usr\/bin\/owsd [ <options> ]\n  -s <socket>      path to ubus socket [\/var\/run\/ubus.sock]\n  -p <port>        port number [8843]\n  -o <origin>      origin url address to whitelist\n  -c <cert_path>   SSL cert path [\/usr\/share\/owsd\/cert.pem]\n  -k <key_path>    SSL key path [\/usr\/share\/owsd\/key.pem]\n  -w <www_path>    HTTP resources path [\/www]\n\n"}]}
+
+# which grep
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/usr/bin/which","params":["grep"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"\/bin\/grep\n"}]}
+
+# grep owsd /etc/config/owsd
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/bin/grep","params":["owsd","/etc/config/owsd"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"config owsd 'setup'\n"}]}
+
+# touch /tmp/script.sh
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/bin/touch","params":["/tmp/scripts.sh"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0}]}
+
+# echo "ifconfig -a lo | awk '/inet / {print $2, $4}' | sed 's/\addr:" >> /tmp/scripts.sh
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "write", {"path":"/tmp/scripts.sh","data":"ifconfig -a ${1} | awk '/inet / {print $2}'"} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0]}
+
+# which chmod
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/usr/bin/which","params":["chmod"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"\/bin\/chmod\n"}]}
+
+# chmod u+x /tmp/scripts.sh
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/bin/chmod","params":["u+x","/tmp/scripts.sh"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0}]}
+
+# which ash
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/usr/bin/which","params":["ash"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"\/bin\/ash\n"}]}
+
+# ash /tmp/scripts.sh
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/bin/ash","params":["/tmp/scripts.sh","lo"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout":"addr:127.0.0.1\n"}]}
+
+# rm /tmp/scripts.sh
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/bin/rm","params":["/tmp/scripts.sh"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0}]}
+
+# subscribe empty at start
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"subscribe-list", "params": [ "SESSION_ID" ]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,[]]}
+
+# subscribe to event
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"subscribe", "params": [ "SESSION_ID", "bla"]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0]}
+
+# verify it in list
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"subscribe-list", "params": [ "SESSION_ID" ]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,[{"pattern":"bla","ubus_rpc_session":"SESSION_ID"}]]}
+
+# unsubscrube by name
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"unsubscribe", "params": [ "SESSION_ID", "bla"]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0]}
+
+# subscribe to pattern
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"subscribe", "params": [ "SESSION_ID", "foo.*"]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0]}
+
+# verify it in list
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"subscribe-list", "params": [ "SESSION_ID" ]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,[{"pattern":"foo.*","ubus_rpc_session":"SESSION_ID"}]]}
+
+#unsubscribe
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"unsubscribe", "params": [ "SESSION_ID", "foo.*"]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0]}
+
+# big output
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/sbin/logread"} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0,"stdout"
+
+
+# verify empty
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"subscribe-list", "params": [ "SESSION_ID" ]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,[]]}
+
+# subscribe to pattern
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"subscribe", "params": [ "SESSION_ID", "f*"]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0]}
+
+# prepare script which fires events "foo" and "fake"
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "write", {"path":"/tmp/scripts.sh","data":"#!/bin/sh\n( ubus send test123; sleep 1; ubus send fake '{\"a\":0}'; ubus send foo '{\"one\":\"two\"}'; ) &\n"} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0]}
+
+#start expecting foo object
++
+{"jsonrpc":"2.0","method":"event","params":{"type":"foo","data":{"one":"two"},"subscription":{"pattern":"f*","ubus_rpc_session":"SESSION_ID"}}}
+
+# sh /tmp/scripts.sh
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"sh","params":["/tmp/scripts.sh","lo"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[7]}
+
+# rm /tmp/scripts.sh
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "file", "exec", {"command":"/bin/rm","params":["/tmp/scripts.sh"]} ] }
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0,{"code":0}]}
+
+# destroy this session id
+{"jsonrpc":"2.0","id":UBUS_ID,"method":"call", "params": [ "SESSION_ID", "session","destroy",{"session": "SESSION_ID"}]}
+{"jsonrpc":"2.0","id":UBUS_ID,"result":[0]}
+

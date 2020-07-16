@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Allow"
+msgstr "Tillåt"
+
+msgid "Deny"
+msgstr "Förneka"
+
+msgid "UPNP Settings"
+msgstr "UPNP Inställningar"
+
+msgid "internet.services.upnp.info"
+msgstr ""
+"Konfigurera UPNP för att kunna automatiskt öppna port-forwarding på boxen "
+"(användbart för spel och annat) "
+
+msgid "General Settings"
+msgstr "Generella Inställningar"
+
+msgid "Automatically Start Service At Bootup"
+msgstr "Starta servicen automatiskt vid uppstart"
+
+msgid "Enable upnp daemon at boot time"
+msgstr "Aktivera UPnP demon vid uppstart"
+
+msgid "Start / Stop Service"
+msgstr "Starta/Stoppa tjänsten"
+
+msgid "Start/stop upnp daemon (make sure you have WAN connection!)"
+msgstr "Starta/Stoppa UPnP demonen (Se till att du har en WAN anslutning!)"
+
+msgid "Enable UPNP"
+msgstr "Aktivera UPnP"
+
+msgid "Enable UPNP protocol"
+msgstr "Aktivera UPnP protokol"
+
+msgid "Enable NAT-PMP"
+msgstr "Aktivera NAT-PMP"
+
+msgid "Enable NAT-PMP protocol"
+msgstr "Aktivera NAT-PMP protokol"
+
+msgid "Enable secure mode"
+msgstr "Slå på Säkert läge"
+
+msgid "Allow adding forwards only to requesting ip addresses"
+msgstr "Allow adding forwards only to requesting ip addresses"
+
+msgid "Enable additional logging"
+msgstr "Slå på ytterligare-loggning"
+
+msgid "Puts extra debugging information into the system log"
+msgstr "Lägger till extra debugging information till system loggarna"
+
+msgid "Downlink"
+msgstr "Nedlänk"
+
+msgid "Value in KByte/s, informational only"
+msgstr "Värde i KByte/s, endast information"
+
+msgid "Uplink"
+msgstr "Upplänk"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "External Interface"
+msgstr "Yttre Interface"
+
+msgid "Internal Interface"
+msgstr "Innre Interface"
+
+msgid "Advanced Settings"
+msgstr "Avanserade inställningar"
+
+msgid "Device UUID"
+msgstr "Enhets-UUID"
+
+msgid "Announced serial number"
+msgstr "Annonserat serie nummer"
+
+msgid "Serial Number"
+msgstr "Serienummer"
+
+msgid "Announced model number"
+msgstr "Annonserat modell nummer"
+
+msgid "Model Number"
+msgstr "Modell nummer"
+
+msgid "Notify interval"
+msgstr "Notifieringsintervall"
+
+msgid "Clean rules threshold"
+msgstr "Clean rules threshold"
+
+msgid "Clean rules interval"
+msgstr "Clean rules interval"
+
+msgid "Presentation URL"
+msgstr "Presentations URL"
+
+msgid "UPnP lease file"
+msgstr "UPnP lease fil"
+
+msgid "UPnP ACLs"
+msgstr "UPnP ACL listor"
+
+msgid "UPnP Open Ports"
+msgstr "UPnP öppna portar"
+
+msgid "No UPnP ports currently in use"
+msgstr "Inga portar används för tillfället"
+
+msgid "Pkts. cnt."
+msgstr "Antal paket"
+
+msgid "Bytes"
+msgstr "Bytes"
+
+msgid "Target"
+msgstr "Mål"
+
+msgid "Proto."
+msgstr "Protokoll"
+
+msgid "Opt"
+msgstr "Opt"
+
+msgid "Source"
+msgstr "Källa"
+
+msgid "Dest."
+msgstr "Dest."
+
+msgid "Comment"
+msgstr "Kommentarer"
+
+msgid "External ports"
+msgstr "Externa portar"
+
+msgid "Internal addresses"
+msgstr "Intern adress"
+
+msgid "Internal ports"
+msgstr "Interna portar"
+
+msgid "Action"
+msgstr "Åtgärd"
+
+msgid "Sort"
+msgstr ""
+
+msgid "Delete"
+msgstr "Ta bort"
+
+msgid "Packets cnt."
+msgstr "Antal paket"
+
+msgid "Proto"
+msgstr "Protokoll"
+
+msgid "menu-upnpd-settings-title"
+msgstr "UHTTPD"
+
+msgid "menu-upnpd-status-title"
+msgstr "UHTTPD"
+
+

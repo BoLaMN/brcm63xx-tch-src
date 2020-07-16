@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Full auto-negotiation"
+msgstr "Full auto-negotiation"
+
+msgid "Max 100Mb auto-negotiation, full duplex"
+msgstr "Max 100Mb auto-negotiation, full duplex"
+
+msgid "Max 100Mb auto-negotiation, half duplex"
+msgstr "Max 100Mb auto-negotiation, half duplex"
+
+msgid "Max 10Mb auto-negotiation, full duplex"
+msgstr "Max 10Mb auto-negotiation, full duplex"
+
+msgid "Max 10Mb auto-negotiation, half duplex"
+msgstr "Max 10Mb auto-negotiation, half duplex"
+
+msgid "Only 100Mb, full duplex"
+msgstr "Only 100Mb, full duplex"
+
+msgid "Only 100Mb, half duplex"
+msgstr "Only 100Mb, half duplex"
+
+msgid "Only 10Mb, full duplex"
+msgstr "Only 10Mb, full duplex"
+
+msgid "Only 10Mb, half duplex"
+msgstr "Only 10Mb, half duplex"
+
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+msgid "Port speed"
+msgstr "Porthastighet"
+
+msgid "Pause frames"
+msgstr "Paus-frames"
+
+msgid "Ethernet"
+msgstr "Ethernet"
+
+msgid "internet.ethernet.phy.info"
+msgstr "Ethernetportar "
+
+msgid ""
+"This will be the port that will be used to configure the physical ethernet "
+"port as upling port for routing out to the internet."
+msgstr ""
+"Denna port kommer att användas för att sätta upp fysisk uppkoppling till "
+"internet. "
+
+msgid "Ethernet Ports"
+msgstr "Ethernet portar"
+
+msgid "Select uplink port"
+msgstr "Välj port för upplänk"
+
+msgid " socket will be used for passing packets to the internet."
+msgstr ""
+"uppkopplingen kommer att användas för att skicka ut data till internet. "
+
+msgid "menu-network-ethernet-port-title"
+msgstr "Ethernet"

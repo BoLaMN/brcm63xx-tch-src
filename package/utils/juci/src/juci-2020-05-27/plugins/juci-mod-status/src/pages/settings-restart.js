@@ -1,0 +1,72 @@
+/*
+ * Copyright (C) 2015 Inteno Broadband Technology AB. All rights reserved.
+ *
+ * Author: Martin K. Schröder <mkschreder.uk@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * version 2 as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ * 02110-1301 USA
+ */
+
+JUCI.app
+.controller("StatusRestartPageCtrl", function($scope, $rpc, $juciDialog, $tr, gettext){
+	$scope.onRestart = function(){
+		$juciDialog.show(null, {
+			title: $tr(gettext("Reboot")),
+			content: $tr(gettext("Are you sure you want to reboot?")),
+			on_button: function(btn, inst){
+				if(btn.value == "yes"){
+					$rpc.$call("juci.system", "reboot", {}).done(function(){
+						inst.close();
+					});
+					setTimeout(function(){window.location = "/reboot.html";}, 1000);
+				}
+				inst.close();
+			},
+			buttons: [
+				{ label: $tr(gettext("Yes")), value: "yes", primary: true },
+				{ label: $tr(gettext("No")), value: "no" }
+			]
+		});
+	}
+	
+	function waitUntilDown(){
+		var deferred = $.Deferred(); 
+		var rpc = false; 
+		var interval = setInterval(function(){
+			if(!rpc){
+				rpc = true; 
+				$rpc.$call("session", "access").done(function(){
+					
+				}).fail(function(){
+					clearInterval(interval); 
+					deferred.resolve(); 
+				}).always(function(){
+					rpc = false; 
+				}); 
+			}
+		}, 1000); 
+		return deferred.promise(); 
+	}
+	$scope.onConfirmRestart = function(){
+		$scope.showRestartProgress = 1; 
+		$scope.showConfirmation = 0; 
+		$scope.progress = 0; 
+		$rpc.$call("juci.system", "reboot", {}).done(function(){
+			window.location = "/reboot.html"
+		});
+	}
+	$scope.onCancelRestart = function(){
+		$scope.showConfirmation = 0; 
+	}
+}); 

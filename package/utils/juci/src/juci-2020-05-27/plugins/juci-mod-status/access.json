@@ -1,0 +1,15 @@
+{
+	"juci-mod-status": {
+		"description": "JUCI status module",
+		"read": {
+			"ubus": {
+				"juci.system": [
+					"reboot"
+				],
+				"session": [
+					"access"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+<juci-layout-with-sidebar>
+	<div ng-controller="InternetMultiWANPage">
+		<h2>{{ 'MultiWAN Configuration' | translate }}</h2>
+		<tabset>
+			<tab heading="{{'Settings'|translate}}">
+				<juci-config-section>
+					<juci-config-lines>
+						<juci-config-line title="{{'MultiWAN Enabled'|translate}}">
+							<switch ng-model="multiwan.config.enabled.value" class="green"/>
+						</juci-config-line>
+						<juci-config-line title="{{'Default Route'|translate}}">
+							<juci-select ng-items="allInterfaces" ng-model="multiwan.config.default_route.value" />
+						</juci-config-line>
+					</juci-config-lines>
+				</juci-config-section>
+				<juci-config-section>
+					<juci-list-editor ng-items="multiwan['@interface']" item-editor="multiwan-interface-edit" get-item-title="onGetItemTitle($item)" on-create="onAddInterface()" on-delete="onDeleteInterface($item)"/>
+				</juci-config-section>
+			</tab>
+			<tab heading="{{'Traffic Rules'|translate}}">
+				<juci-list-editor ng-items="trafic_rules" item-editor="multiwan-rule-edit"
+				get-item-title="onGetRuleTitle($item)" on-create="onAddRule()" on-delete="onDeleteRule($item)" />
+			</tab>
+		</tabset>
+	</div>
+</juci-layout-with-sidebar>

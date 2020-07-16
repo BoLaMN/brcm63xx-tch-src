@@ -1,0 +1,10 @@
+<div class="alert alert-danger" ng-show="errors.length">
+	<div class="row" ng-repeat="err in errors track by $index">
+		<div class="col-xs-12">
+			<i class="fa fa-times-circle text-danger" />
+			<!--<button class="btn btn-default pull-right" >Hide</button>-->
+			{{(err.message||err)}}
+			<div class="clear-both"></div>
+		</div>
+	</div>
+</div>

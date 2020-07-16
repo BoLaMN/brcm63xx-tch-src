@@ -1,0 +1,21 @@
+<div>
+	<juci-config-lines>
+		<juci-config-line title="{{ 'WiFi Life Interface Configuration' | translate }}"></juci-config-line>
+		<juci-list-editor ng-items="wiLiInterfaces" item-editor="interface-edit" show-icon="true" get-item-title="$item.value" on-create="onCreateSteerIface()" on-delete="onDeleteSteerIface($item)"></juci-list-editor>
+		<juci-config-line title="{{ 'Steering Parameters' | translate}}"></juci-config-line>
+		<juci-list-editor ng-items="params" item-editor="wifilife-param-edit" show-icon="true" get-item-title="$item['.name'].toUpperCase()" hide-buttons="true"></juci-list-editor>
+		<!--
+		* obsolete/not yet implemented? *
+		<juci-expandable title="{{'Steered Clients'|translate}}" open="true" ng-show="0">
+				<table class="table">
+					<thead>
+						<th> MAC <i style="float:right" class="fa "></i></th>
+					</thead>
+					<tr ng-repeat="mac in bssload.victims.value">
+						<td>{{mac}}</td>
+					</tr>
+				</table>
+			</juci-expandable>
+		-->
+	</juci-config-lines>
+</div>

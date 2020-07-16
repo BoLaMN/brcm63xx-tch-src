@@ -1,0 +1,33 @@
+#!/bin/sh
+
+. /usr/share/libubox/jshn.sh
+. /lib/functions.sh
+
+
+case "$1" in
+	list)
+		echo '{ "username" : {}, "firmware": {}, "autocomplete": {} }'
+	;;
+	call)
+		case "$2" in
+			username)
+				username="$(uci -q get juci.login.defaultuser)"
+				#config_load juci  // this is mutch to slow
+				#config_get username login defaultuser "user"
+				json_init
+				json_add_string username "$username"
+				json_dump
+			;;
+			firmware)
+				firmware=$(db show | awk -F"'" '/iopVersion/ {print $2}')
+				json_init
+				json_add_string firmware "$firmware"
+				json_dump
+			;;
+			autocomplete)
+				username="$(uci -q get juci.login.autocomplete)"
+				json_init
+				json_add_string autocomplete "$autocomplete"
+				json_dump
+		esac
+esac

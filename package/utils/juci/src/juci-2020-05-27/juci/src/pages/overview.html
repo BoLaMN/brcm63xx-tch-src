@@ -1,0 +1,36 @@
+<juci-layout-naked>
+	<juci-navbar></juci-navbar>
+	<div ng-controller="OverviewPageCtrl" class="overview-page">
+		<div class="overview-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-7 col-xs-12">
+						<carousel class="overview-status-box">
+							<slide ng-repeat="widget in overviewSliderWidgets" >
+								<div dynamic="widget"/>
+							</slide>
+						</carousel>
+					</div>
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+						<div class="overview-status-box">
+							<div class="overview-status-entries">
+								<div class="row" ng-repeat="widget in overviewStatusWidgets">
+									<div dynamic="widget"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-1"/>
+				</div>
+			</div>
+		</div>
+		<div class="container overview-widgets">
+			<div class="row" ng-repeat="row in overviewWidgetRows">
+				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 overview-box" ng-repeat="widget in row">
+					<div dynamic="widget"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<juci-footer></juci-footer>
+</juci-layout-naked>

@@ -1,0 +1,16 @@
+{
+	"juci-usb": {
+		"description": "JUCI USB Module",
+		"read": {
+			"ubus": {
+				"router.usb":[
+					"status"
+				]
+			},
+			"owsd": [
+				"usb.device.add",
+				"hotplug.usb"
+			]
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"juci-natalie-dect": {
+		"description": "JUCI natalie-dect module",
+		"read": {
+			"ubus": {
+				"dect": [
+					"state",
+					"handset",
+					"status",
+					"call"
+				]
+			},
+			"uci": [
+				"dect"
+			],
+			"owsd": [ "dect" ]
+		},
+		"write": {
+			"uci": [
+				"dect"
+			]
+		}
+	}
+}

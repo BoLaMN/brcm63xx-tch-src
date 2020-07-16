@@ -1,0 +1,14 @@
+<div>
+	<div class="col-xs-2"><i class="fa fa-laptop fa-2x"></i></div>
+	<div class="col-xs-8">
+		{{client.hostname}}<br ng-show="client.hostname"/>
+		{{client.ipaddr}}<br ng-show="client.ip6addr"/>
+		{{client.ip6addr}}
+	</div>
+	<div ng-show="client.connected"> <!--We don't know if disconnected clients are wired or not-->
+		<div class="col-xs-2" style="text-align:right">
+			<i class="juci juci-ethernet juci-2x text-success"></i>
+			<div ng-show="client.linkspeed_short" class="lan-client-status-text"><span style="white-space:nowrap">{{client.linkspeed_short}}</span></div>
+		</div>
+	</div>
+</div>

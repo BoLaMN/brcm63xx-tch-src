@@ -1,0 +1,23 @@
+{
+	"juci-ddns": {
+		"description": "JUCI DDNS module",
+		"read": {
+			"uci": [
+				"network", 
+				"ddns"
+			], 
+			"ubus": {
+				"juci.ddns": [ 
+					"providers",
+					"providers_ipv6",
+					"status"
+				]
+			}
+		},
+		"write": {
+			"uci": [
+				"ddns"
+			]
+		}
+	}
+}

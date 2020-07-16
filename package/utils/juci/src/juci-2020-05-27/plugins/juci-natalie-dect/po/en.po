@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Auto"
+msgstr ""
+
+msgid "On"
+msgstr ""
+
+msgid "Off"
+msgstr ""
+
+msgid "phone.dect.info"
+msgstr "DECT configuration"
+
+msgid "DECT Radio"
+msgstr ""
+
+msgid "Radio Status"
+msgstr ""
+
+msgid "Pair DECT Device (3 min)"
+msgstr ""
+
+msgid "Attempting to Pair"
+msgstr ""
+
+msgid "Trying to Pair"
+msgstr ""
+
+msgid "Pair"
+msgstr ""
+
+msgid "Number"
+msgstr ""
+
+msgid "RFPI"
+msgstr ""
+
+msgid "State"
+msgstr ""
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Action"
+msgstr ""
+
+msgid "menu-voice-dect-title"
+msgstr "DECT "

@@ -1,0 +1,21 @@
+{
+	"juci-dnsmasq-dhcp": {
+		"description": "JUCI DNSMasq-DHCP Server module",
+		"read": {
+			"uci": [
+				"dhcp"
+			],
+			"ubus": {
+				"router.network": [
+					"leases",
+					"dump"
+				]
+			}
+		},
+		"write": {
+			"uci": [
+				"dhcp"
+			]
+		}
+	}
+}

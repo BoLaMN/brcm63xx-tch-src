@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Reboot"
+msgstr ""
+
+msgid "Are you sure you want to reboot?"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Hostname"
+msgstr ""
+
+msgid "IPv4-Address"
+msgstr ""
+
+msgid "MAC-Address"
+msgstr ""
+
+msgid "Leasetime remaining"
+msgstr ""
+
+msgid "No active leases"
+msgstr ""
+
+msgid "MAC address"
+msgstr ""
+
+msgid "Signal"
+msgstr ""
+
+msgid "Noise"
+msgstr ""
+
+msgid "RX Rate"
+msgstr ""
+
+msgid "TX Rate"
+msgstr ""
+
+msgid "Active Connections"
+msgstr ""
+
+msgid "No active stations"
+msgstr ""
+
+msgid "Restart"
+msgstr ""
+
+msgid "status.restart.info"
+msgstr ""
+"This page allows to restart your Internet connection and reboot your router. "
+"Please note that for the entire process all phone, internet and TV services "
+"will be temporarily unavailable. "
+
+msgid "Click here to restart your device"
+msgstr ""
+
+msgid "Connections"
+msgstr ""
+
+msgid "DHCP Leases"
+msgstr ""
+
+msgid "Active Stations"
+msgstr ""
+
+msgid "menu-status-status-network-title"
+msgstr "Network Status"
+
+msgid "menu-status-title"
+msgstr "Status"
+
+msgid "menu-settings-restart-title"
+msgstr "Restart"

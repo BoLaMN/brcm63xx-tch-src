@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Source addr:"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Destination addr:"
+msgstr ""
+
+msgid "UDP"
+msgstr ""
+
+msgid "TCP"
+msgstr ""
+
+msgid "ICMP"
+msgstr ""
+
+msgid "LAN"
+msgstr ""
+
+msgid "WAN"
+msgstr ""
+
+msgid "WAN6"
+msgstr ""
+
+msgid "Load Balancer (Performance)"
+msgstr ""
+
+msgid "Load Balancer (Compability)"
+msgstr "Load Balancer (Compatibility)"
+
+msgid "Load Balancer Distribution"
+msgstr ""
+
+msgid "Health Monitor Method"
+msgstr ""
+
+msgid "Health Monitor Interval"
+msgstr ""
+
+msgid "Health Monitor ICMP Host(s)"
+msgstr ""
+
+msgid "Health Monitor ICMP Timeout"
+msgstr ""
+
+msgid "Attempts Before WAN Failover"
+msgstr ""
+
+msgid "Attempts Before WAN Recovery"
+msgstr ""
+
+msgid "Failover Traffic Destination"
+msgstr ""
+
+msgid "DNS Server(s)"
+msgstr ""
+
+msgid "Source Address"
+msgstr ""
+
+msgid "Leave empty for all"
+msgstr ""
+
+msgid "Destination Address"
+msgstr ""
+
+msgid "Protocol"
+msgstr ""
+
+msgid "Ports"
+msgstr ""
+
+msgid "WAN Uplink"
+msgstr ""
+
+msgid "MultiWAN Configuration"
+msgstr ""
+
+msgid "Basic Settings"
+msgstr ""
+
+msgid "MultiWAN Enabled"
+msgstr ""
+
+msgid "Default Route"
+msgstr ""
+
+msgid "Multi-WAN Traffic Rules"
+msgstr ""
+
+msgid "menu-internet-multiwan-title"
+msgstr "MultiWAN"

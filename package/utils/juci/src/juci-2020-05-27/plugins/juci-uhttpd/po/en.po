@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "HTTPD Settings"
+msgstr "HTTPD Settings"
+
+msgid "uhttpd.settings.info"
+msgstr "Configuration for uHTTPd micro web server. "
+
+msgid "WWW-root"
+msgstr ""
+
+msgid "WWW-root path"
+msgstr ""
+
+msgid "UBUS Prefix"
+msgstr ""
+
+msgid "ex. /ubus"
+msgstr ""
+
+msgid "Max Requests"
+msgstr ""
+
+msgid "Max Connections"
+msgstr ""
+
+msgid "Specify UBUS return codes to log into system log"
+msgstr ""
+
+msgid "Will only log status codes above that are returned by these ubus calls"
+msgstr ""
+
+msgid "Object.Method"
+msgstr ""
+
+msgid "menu-page-uhttpd-settings-title"
+msgstr "HTTPD"

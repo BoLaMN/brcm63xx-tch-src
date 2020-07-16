@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "You need to select a netmode!"
+msgstr "Du måste välja en netmode!"
+
+msgid ""
+"Changing netmode will reset your configuration completely to match that "
+"netmode. Do you want to continue?"
+msgstr ""
+"Detta kommer att återställa dina inställningar till tillverkarens "
+"konfiguration. Vill du fortsätta? "
+
+msgid "Select Preset"
+msgstr "Välj inställningspaket"
+
+msgid "Reset Configuration"
+msgstr "Återställ inställningar"
+
+msgid "modal.netmode.select.info"
+msgstr "Välj NetMode"
+
+msgid "Apply"
+msgstr "Verkställ"
+
+msgid "Cancel"
+msgstr "Avbryt"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "No profiles available"
+msgstr "Inga profiler tillgängliga"
+
+msgid "Change Profile"
+msgstr "Ändra Profil"

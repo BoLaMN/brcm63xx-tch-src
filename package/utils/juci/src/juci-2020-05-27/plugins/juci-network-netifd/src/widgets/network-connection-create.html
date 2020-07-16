@@ -1,0 +1,11 @@
+<div>
+	<juci-config-lines>
+		<juci-config-line title="{{'Interface Name'|translate}}" error="evalName()">
+			<input type="text" class="form-control" ng-model="model.name" />
+		</juci-config-line>
+		<juci-config-line title="{{'Interface type'|translate}}">
+			<juci-select ng-model="model.type" ng-items="interfaceTypes"></juci-select>
+		</juci-config-line>
+	</juci-config-lines>
+	<div class="alert alert-danger" ng-repeat="error in model.errors track by $index" ng-show="model.errors.length > 0">{{error}}</div>
+</div>

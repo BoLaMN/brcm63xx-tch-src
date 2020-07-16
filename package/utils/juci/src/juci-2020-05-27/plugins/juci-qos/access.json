@@ -1,0 +1,20 @@
+{
+	"juci-qos": {
+		"description": "JUCI Quality-of-service Configuration",
+		"read": {
+			"ubus": {
+				"dsl": [
+					"status"
+				]
+			},
+			"uci": [
+				"qos"
+			]
+		},
+		"write": {
+			"uci": [
+				"qos"
+			]
+		}
+	}
+}

@@ -1,0 +1,25 @@
+choice
+	prompt "Select IPC Bus"
+	default OWSD_USE_UBUS
+	depends on PACKAGE_owsd
+	help
+		Select which IPC bus to compile owsd for
+
+config OWSD_USE_DBUS
+	bool "Use DBUS"
+
+config OWSD_USE_UBUS
+	bool "Use UBUS"
+
+config OWSD_USE_DBUS_UBUS
+	bool "Use UBUS and DBUS"
+
+endchoice
+
+config OWSD_UPROXYD
+	bool "Enable UBUS Proxy Daemon"
+	default y if OWSD_USE_UBUS || OWSD_USE_DBUS_UBUS
+        help
+          Enabling uproxyd automates detection of other
+	  UBUS-X enabled devices in the network
+

@@ -1,0 +1,305 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "LAN does not have IPv6 configured"
+msgstr ""
+
+msgid "Minutes"
+msgstr ""
+
+msgid "Hour"
+msgstr ""
+
+msgid "Hours"
+msgstr ""
+
+msgid "IPv4"
+msgstr ""
+
+msgid "IPv6"
+msgstr ""
+
+msgid "Hostname(s) for "
+msgstr ""
+
+msgid "DHCP Pool Start"
+msgstr ""
+
+msgid "DHCP Pool Size"
+msgstr ""
+
+msgid "DHCP Lease Time"
+msgstr ""
+
+msgid "Lease Time"
+msgstr ""
+
+msgid "Connection"
+msgstr ""
+
+msgid "Network"
+msgstr ""
+
+msgid "Hostname"
+msgstr ""
+
+msgid "Add a host"
+msgstr ""
+
+msgid "Family"
+msgstr ""
+
+msgid "IPv4 Address"
+msgstr ""
+
+msgid "IPv6 Address"
+msgstr ""
+
+msgid "Hostnames"
+msgstr ""
+
+msgid "DHCPv4 leases"
+msgstr ""
+
+msgid "DHCPv6 leases"
+msgstr ""
+
+msgid "Active DHCP Leases"
+msgstr ""
+
+msgid "IPv4-Address"
+msgstr ""
+
+msgid "MAC-Address"
+msgstr ""
+
+msgid "Leasetime remaining"
+msgstr ""
+
+msgid "There are no active leases"
+msgstr ""
+
+msgid "IPv6-Address"
+msgstr ""
+
+msgid "DUID"
+msgstr ""
+
+msgid "MAC"
+msgstr ""
+
+msgid "IPv6 Unique ID"
+msgstr ""
+
+msgid "IPv6 Address ID"
+msgstr ""
+
+msgid "Add Host"
+msgstr ""
+
+msgid "Static DHCP"
+msgstr ""
+
+msgid "Device Name"
+msgstr ""
+
+msgid "MAC Address"
+msgstr ""
+
+msgid "IP Address"
+msgstr ""
+
+msgid "DUID (IPv6)"
+msgstr ""
+
+msgid "Host ID (IPv6)"
+msgstr ""
+
+msgid "DHCP Server"
+msgstr ""
+
+msgid "DHCP Settings"
+msgstr ""
+
+msgid "General Settings"
+msgstr ""
+
+msgid "Local domain"
+msgstr ""
+
+msgid "Local domain suffix appended to DHCP names and hosts file entries"
+msgstr ""
+
+msgid "Log queries"
+msgstr ""
+
+msgid "Write received DNS requests to syslog"
+msgstr ""
+
+msgid "Leasefile"
+msgstr ""
+
+msgid "file where given DHCP-leases will be stored"
+msgstr ""
+
+msgid "Ignore resolve file"
+msgstr ""
+
+msgid "Resolve file"
+msgstr ""
+
+msgid "local DNS file"
+msgstr ""
+
+msgid "Ignore Hosts file"
+msgstr ""
+
+msgid "Advanced Settings"
+msgstr ""
+
+msgid "Domain required"
+msgstr ""
+
+msgid "Do not forward DNS-Requests without DNS-Name"
+msgstr ""
+
+msgid "Authoritative"
+msgstr ""
+
+msgid "This is the only DHCP in the local network"
+msgstr ""
+
+msgid "Filter private"
+msgstr ""
+
+msgid "Do not forward reverse lookups for local networks"
+msgstr ""
+
+msgid "Filter useless"
+msgstr ""
+
+msgid "Do not forward requests that cannot be answered by public name servers"
+msgstr ""
+
+msgid "Localise queries"
+msgstr ""
+
+msgid ""
+"Localise hostname depending on the requesting subnet if multiple IPs are "
+"available"
+msgstr ""
+
+msgid "Local server"
+msgstr ""
+
+msgid ""
+"Local domain specification. Names matching this domain are never forwarded "
+"and resolved from DHCP or hosts files only"
+msgstr ""
+
+msgid "Expand hosts"
+msgstr ""
+
+msgid "Add local domain suffix to names served from hosts files"
+msgstr ""
+
+msgid "No negative cache"
+msgstr ""
+
+msgid "Do not cache negative replies, e.g. for not existing domains"
+msgstr ""
+
+msgid "Strict order"
+msgstr ""
+
+msgid "DNS servers will be queried in the order of the resolvfile"
+msgstr ""
+
+msgid "Bogus NX Domain Override"
+msgstr ""
+
+msgid "List of hosts that supply bogus NX domain results"
+msgstr ""
+
+msgid "ex. 67.215.65.132"
+msgstr ""
+
+msgid "DNS forwarding"
+msgstr ""
+
+msgid "List of DNS servers to forward requests to"
+msgstr ""
+
+msgid "ex. /example.org/10.1.2.3"
+msgstr ""
+
+msgid "Rebind protection"
+msgstr ""
+
+msgid "Discard upstream RFC1918 responses"
+msgstr ""
+
+msgid "Allow localhost"
+msgstr ""
+
+msgid ""
+"Allow upstream responses in the 127.0.0.0/8 range, e.g. for RBL services"
+msgstr ""
+
+msgid "Domain whitelist"
+msgstr ""
+
+msgid "List of domains to allow RFC1918 responses for"
+msgstr ""
+
+msgid "ex. ihost.netflix.com"
+msgstr ""
+
+msgid "DNS server port"
+msgstr ""
+
+msgid "Listening port for inbound DNS queries"
+msgstr ""
+
+msgid "DNS query port"
+msgstr ""
+
+msgid "Fixed source port for outbound DNS queries"
+msgstr ""
+
+msgid "Max DHCP leases"
+msgstr ""
+
+msgid "Maximum allowed number of active DHCP leases"
+msgstr ""
+
+msgid "Max. EDNS0 packet size"
+msgstr ""
+
+msgid "Maximum allowed size of EDNS.0 UDP packets"
+msgstr ""
+
+msgid "Max. concurrent queries"
+msgstr ""
+
+msgid "Maximum allowed number of concurrent DNS queries"
+msgstr ""
+
+msgid "Hostname Entries"
+msgstr ""
+
+msgid "menu-dhcp-status-title"
+msgstr "DHCP"
+
+msgid "menu-dhcp-settings-title"
+msgstr "DHCP/DNS"

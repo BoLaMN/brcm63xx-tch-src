@@ -1,0 +1,317 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid ""
+"This will reset your configuration to factory defaults and reboot the router. Do you want to "
+"continue?"
+msgstr ""
+"Detta kommer att återställa dina inställningar till tillverkarens "
+"konfiguration och starta om routern"
+
+msgid ""
+"Configuration has been restored. You need to reboot the device for settings "
+"to take effect! Do you want to reboot now?"
+msgstr ""
+"Konfigurationen har återställts. En omstart krävs för att inställningarna "
+"skall ta effekt! Vill du starta om nu?"
+
+msgid "Passwords do not match!"
+msgstr "Lösenorden stämmer inte överens!"
+
+msgid "Are you sure you want to save backup without password?"
+msgstr "Är du säker på att du vill spara backup utan lösenord? "
+
+msgid ""
+"Was unable to set password. Please make sure you have entered correct "
+"current password!"
+msgstr ""
+"Kunde inte ställa in lösenordet. Kontrollera att nuvarande lösenord är rätt!"
+
+msgid "Hostname"
+msgstr "Datornamn"
+
+msgid "Model"
+msgstr "Modell"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "Release"
+msgstr "Release Version"
+
+msgid "Firmware Version"
+msgstr "Firmware version"
+
+msgid "Local Time"
+msgstr "Lokaltid"
+
+msgid "Uptime"
+msgstr "Upptid"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "System Load Avg. (1m)"
+msgstr "Systemets Genomsnittliga last (1m)"
+
+msgid "Kernel Version"
+msgstr "Kärnans version"
+
+msgid "Filesystem"
+msgstr "Filsystem"
+
+msgid "Target"
+msgstr "Mål"
+
+msgid "Usage"
+msgstr "Användning"
+
+msgid "Shared"
+msgstr "Delad"
+
+msgid "Buffered"
+msgstr "Buffrad"
+
+msgid "Swap"
+msgstr "Swap"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "List of NTP servers"
+msgstr "Listan med NTP servrar"
+
+msgid "NTP Settings"
+msgstr "NTP Inställningar"
+
+msgid "Backup Settings"
+msgstr "Skapa en backup av inställnigarna"
+
+msgid "settings.config.info"
+msgstr ""
+"Spara dina inställningar, återställa tidigare sparade inställningar och "
+"återställ EasyBox till fabrikstillstånd.Din EasyBox kan spara din "
+"konfiguration till en dator. Vi rekommenderar att alltid spara dina senaste "
+"ändrade inställningar till en dator."
+
+msgid "Save settings to computer"
+msgstr "Spara konfigurationen till fil"
+
+msgid "Save"
+msgstr "Spara"
+
+msgid "Restore settings from a configuration saved on a computer"
+msgstr "Återställ konfigurationsinställnignar från fil på din dator"
+
+msgid "Load"
+msgstr "Ladda upp"
+
+msgid "Factory Settings"
+msgstr "Fabriksinställningar"
+
+msgid "Reset restores the factory default settings of your gateway"
+msgstr "Reset återställer fabriksinställningarna på din gateway"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Save Configuration to Computer"
+msgstr "Ladda ner inställningar"
+
+msgid "Comments"
+msgstr "Kommentarer"
+
+msgid "New Password"
+msgstr "Nytt lösenord"
+
+msgid "Re-type password"
+msgstr "Skriv lösenord igen"
+
+msgid "Select configuration backup to upload"
+msgstr "Välj konfigurationsbackup för uppladdning"
+
+msgid "Backup file password"
+msgstr "Lösenord för backupfil"
+
+msgid "Password (if encrypted)"
+msgstr "Lösenord (om du vill kryptera)"
+
+msgid "Start upgrade"
+msgstr "Påbörja uppgradering"
+
+msgid "Upgrade"
+msgstr "Uppgradera"
+
+msgid "Please add a comment describing this configuration"
+msgstr "Kommentar som beskriver konfigurationen"
+
+msgid "Energy Settings"
+msgstr "Energi-inställningar"
+
+msgid "settings.energy.info"
+msgstr "Minska energiförbrukningen genom att stänga av oanvända funktioner."
+
+msgid "USB Port"
+msgstr "USB Port"
+
+msgid "Status-LED"
+msgstr "Status-LED"
+
+msgid "Power-LED"
+msgstr "Power-LED"
+
+msgid "Power-LED Brightness"
+msgstr "Power-LED Ljusstyrka"
+
+msgid "Missing uci config boardpanel."
+msgstr "Saknar uci config-panel"
+
+msgid "Configure Buttons"
+msgstr ""
+
+msgid "settings.management.buttons.info"
+msgstr "Management"
+
+msgid "Configure LEDs"
+msgstr ""
+
+msgid "settings.management.leds.info"
+msgstr "Enable/disable the LEDs on your router"
+
+msgid "Management"
+msgstr "Management"
+
+msgid "system.management.info"
+msgstr "Här kan du öppna tillgång till olika tjänster från WAN sidan"
+
+msgid "Change Account Passwords"
+msgstr "Ändra lösenord"
+
+msgid "settings.password.info"
+msgstr ""
+"Ställ en ny Easybox lösenord för att begränsa hanteringsåtkomst till routern."
+
+msgid "Change password for user"
+msgstr "Ändra lösenord för användare"
+
+msgid "Change Password"
+msgstr "Ändra lösenord"
+
+msgid "Services"
+msgstr "Tjänster"
+
+msgid "Priority"
+msgstr "Prioritet"
+
+msgid "Service"
+msgstr "Tjänst"
+
+msgid "Enable"
+msgstr "Aktivera"
+
+msgid "Action"
+msgstr "Handling"
+
+msgid "settings.system.general"
+msgstr "Systeminställningar"
+
+msgid "Set to Browser Time"
+msgstr "Sätt till webbläsarens tid"
+
+msgid "Timezone"
+msgstr "Tidszon"
+
+msgid "Time servers (NTP)"
+msgstr "Tids servrar (NTP)"
+
+msgid "General System Settings"
+msgstr "Generella Inställningar"
+
+msgid "Loading"
+msgstr "Laddar..."
+
+msgid "Manage Router Users Rights"
+msgstr "Hantera Router användares rättigheter"
+
+msgid "System Status"
+msgstr "Systemstatus"
+
+msgid "Memory"
+msgstr "Minne"
+
+msgid "Storage"
+msgstr "Utrymme"
+
+msgid "Unsaved changes"
+msgstr "Osparade ändringar"
+
+msgid "Total number of processes: "
+msgstr "Totalt antal prosesser: "
+
+msgid "Total CPU usage: "
+msgstr "Total CPU användning: "
+
+msgid "status.system.processes.info"
+msgstr "Här kan du se processer som körs"
+
+msgid "Processes"
+msgstr "Processer"
+
+msgid "System processes and CPU usage."
+msgstr "Systemets prosesser och CPU användning"
+
+msgid "Running Processes"
+msgstr "Processer"
+
+msgid "menu-settings-management-title"
+msgstr "Management"
+
+msgid "menu-settings-energy-title"
+msgstr "Energispar"
+
+msgid "menu-internet-services-ntp-title"
+msgstr "NTP"
+
+msgid "menu-status-system-title"
+msgstr "Systemstatus"
+
+msgid "menu-settings-uci-title"
+msgstr "UCI"
+
+msgid "menu-settings-title"
+msgstr "System"
+
+msgid "menu-settings-management-buttons-title"
+msgstr "Buttons"
+
+msgid "menu-settings-hardware-leds-title"
+msgstr "LEDs"
+
+msgid "menu-settings-password-title"
+msgstr "Lösenord"
+
+msgid "menu-settings-system-title"
+msgstr "Systeminställningar"
+
+msgid "menu-settings-services-title"
+msgstr "Tjänster"
+
+msgid "menu-settings-users-title"
+msgstr "Användare"
+
+msgid "menu-settings-configuration-title"
+msgstr "Backup"
+
+msgid "menu-status-system-processes-title"
+msgstr "Processer"
+

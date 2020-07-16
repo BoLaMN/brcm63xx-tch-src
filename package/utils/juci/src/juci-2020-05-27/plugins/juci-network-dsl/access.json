@@ -1,0 +1,27 @@
+{
+	"juci-network-dsl": {
+		"description": "JUCI Network Device Configuration module",
+		"read": {
+			"ubus": {
+				"router.dsl": [
+					"stats"
+				],
+				"dsl": [
+					"status",
+					"stats"
+				]
+			},
+			"uci": [
+				"dsl"
+			]
+		}
+	},
+	"juci-network-dsl-admin": {
+		"description": "JUCI Network Device Configuration module admin",
+		"write": {
+			"uci": [
+				"dsl"
+			]
+		}
+	}
+}

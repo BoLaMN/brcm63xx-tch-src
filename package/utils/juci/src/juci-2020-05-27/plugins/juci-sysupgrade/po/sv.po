@@ -1,0 +1,182 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid ""
+"A new system software upgrade is available. Do you want to visit upgrade "
+"page and upgrade now?"
+msgstr "Nytt version av mjukvaran är tillgänglig. Vill du uppgradera nu? "
+
+msgid "Verifying firmware image"
+msgstr "Verifierar firmwarefil"
+
+msgid "Image check failed"
+msgstr "Test av filen misslyckades"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Error: "
+msgstr "Fel:"
+
+msgid "No upgrade has been found!"
+msgstr "Ingen uppgradering hittades"
+
+msgid "Online upgrade check failed"
+msgstr "Online uppgraderingstest misslyckades"
+
+msgid "USB upgrade check failed"
+msgstr "USB uppgraderingstest misslyckades. "
+
+msgid "Do you want to keep your configuration?"
+msgstr "Vill du spara inställningarna?"
+
+msgid ""
+"If you answer yes then your configuration will be saved before the upgrade "
+"and restored after the upgrade has completed. If you choose 'no' then all "
+"your current configuration will be reset to defaults."
+msgstr ""
+"Om du svarar ja så kommer dina inställningar att bevaras under "
+"uppgraderingen. "
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nej"
+
+msgid "Abort"
+msgstr "Avbryt"
+
+msgid "The server returned an error"
+msgstr "Servern returnerade ett fel"
+
+msgid "Upload completed!"
+msgstr "Uppladdningen slutförd"
+
+msgid ".w (JFFS Image)"
+msgstr ".w (JFFS Mjukvara)"
+
+msgid ".y (UBIFS Image)"
+msgstr ".y (UBIS Mjukvara)"
+
+msgid "fs_image (RAW Rootfs Image)"
+msgstr "fs_image (RAW Rootfs Mjukvara)"
+
+msgid "You need to select a network!"
+msgstr "Du måste välja ett nätverk!"
+
+msgid "Select image to upgrade"
+msgstr "Välj firmware för uppladdning"
+
+msgid "New software is available"
+msgstr "Ny uppgradering finns tillgänglig!"
+
+msgid "Firmware Upgrade"
+msgstr "Uppgradering"
+
+msgid "settings.upgrade.info"
+msgstr ""
+"Här kan du uppdatera programvaran på din EasyBox. Om det behövs, är det "
+"möjligt att uppdatera Easybox inbyggda programvaran manuellt. Dina nuvarande "
+"inställningar kommer inte att påverkas av programvara uppgradering "
+"förfarande."
+
+msgid "Current Firmware Version"
+msgstr "Nuvarande mjukvaruversion"
+
+msgid "Online Update"
+msgstr "Online-uppgradering"
+
+msgid "settings.upgrade.online.info"
+msgstr ""
+"Klicka på \"Sök efter uppdatering\" för att starta en online-"
+"programvaruuppgradering. Om en ny firmware finns, kommer det att installeras "
+"automatiskt på din EasyBox (Internet-anslutning krävs)."
+
+msgid "Check for Upgrade"
+msgstr "Sök efter uppdatering"
+
+msgid "Install Upgrade"
+msgstr "Installera uppgradering"
+
+msgid "USB Firmware Upgrade"
+msgstr "USB Uppgradering"
+
+msgid "settings.upgrade.usb.info"
+msgstr ""
+"Det är möjligt att uppdatera firmware från en fil som sparats på ett USB-"
+"minne ansluten till USB-porten på din EasyBox. Klicka på \"Install Update\" "
+"för att starta uppgraderingen av automatiska firmware. Observera att det bör "
+"finnas en enda firmware-fil att den bör vara placerad under huvudkatalogen "
+"(ingen sökning i undermappar)."
+
+msgid "Manual Firmware Upgrade"
+msgstr "Manuell uppgradering"
+
+msgid "settings.upgrade.manual.info"
+msgstr ""
+"Det är möjligt att uppdatera firmware från fil en sparad uppdatering. Den "
+"senaste versionen kan hittas på www.dsl-easybox.de."
+
+msgid "Select firmware file to upload"
+msgstr "Välj firmware för uppladdning"
+
+msgid "Start upgrade"
+msgstr "Påbörja uppgradering"
+
+msgid "Upgrade"
+msgstr "Uppgradera"
+
+msgid "Online upgrade is disabled"
+msgstr "Online uppgradering är avaktiverad. "
+
+msgid "USB upgrade is disabled"
+msgstr "USB uppgradering är avaktiverad. "
+
+msgid "Close"
+msgstr "Stäng"
+
+msgid "Upgrade Options"
+msgstr "Uppgraderingsalternativ"
+
+msgid "settings.upgrade.options.info"
+msgstr "Här kan du uppgradera mjukvaran på boxen till senaste versionen"
+
+msgid "URL for file with latest image filename"
+msgstr "URL för filen som innehåller sökvägen till senaste upgrade"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Upgrade URL base path"
+msgstr "Bas-URL för uppgraderingen"
+
+msgid "HTTP Directory"
+msgstr "HTTP mapp"
+
+msgid "Firmware image extension"
+msgstr "Firmware filtyp"
+
+msgid "Online Upgrade"
+msgstr "Online-uppgradering"
+
+msgid "USB Upgrade"
+msgstr "USB uppgradering"
+
+msgid "menu-settings-upgrade-title"
+msgstr "Uppgradera"
+
+msgid "menu-settings-upgrade-options-title"
+msgstr "Uppgradera"
+
+

@@ -50,17 +50,12 @@ define Host/Prepare
   $(call Host/Prepare/Default)
 endef
 
-ifeq ($(HOST_OS),Darwin)
-  HOST_CFLAGS += -I/usr/local/opt/openssl/include
-  HOST_LDFLAGS += -L/usr/local/opt/openssl/lib
-endif
-
 HOST_CONFIGURE_VARS = \
 	CC="$(HOSTCC)" \
 	CFLAGS="$(HOST_CFLAGS)" \
 	CPPFLAGS="$(HOST_CPPFLAGS)" \
 	LDFLAGS="$(HOST_LDFLAGS)" \
-	SHELL="$(SHELL)"
+	CONFIG_SHELL="$(SHELL)"
 
 HOST_CONFIGURE_ARGS = \
 	--target=$(GNU_HOST_NAME) \
@@ -82,9 +77,9 @@ define Host/Configure/Default
 	$(if $(HOST_CONFIGURE_PARALLEL),+)(cd $(HOST_BUILD_DIR)/$(3); \
 		if [ -x configure ]; then \
 			$(CP) $(SCRIPT_DIR)/config.{guess,sub} $(HOST_BUILD_DIR)/$(3)/ && \
+			$(HOST_CONFIGURE_VARS) \
 			$(2) \
 			$(HOST_CONFIGURE_CMD) \
-			$(HOST_CONFIGURE_VARS) \
 			$(HOST_CONFIGURE_ARGS) \
 			$(1); \
 		fi \
@@ -136,7 +131,7 @@ define Host/Exports/Default
   $(1) : export STAGING_PREFIX=$$(STAGING_DIR_HOST)
   $(1) : export PKG_CONFIG_PATH=$$(STAGING_DIR_HOST)/lib/pkgconfig
   $(1) : export PKG_CONFIG_LIBDIR=$$(STAGING_DIR_HOST)/lib/pkgconfig
-  $(1) : export CCACHE_DIR:=$(STAGING_DIR_HOST)/ccache
+  $(1) : export CCACHE_DIR:=$(if $(CCACHE_HOST_DIR),$(CCACHE_HOST_DIR),$(STAGING_DIR_HOST)/ccache)
 endef
 Host/Exports=$(Host/Exports/Default)
 

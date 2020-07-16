@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Source addr:"
+msgstr "Källaddress:"
+
+msgid "All"
+msgstr ""
+
+msgid "Destination addr:"
+msgstr "Destinationsaddress:"
+
+msgid "UDP"
+msgstr "UDP"
+
+msgid "TCP"
+msgstr "TCP"
+
+msgid "ICMP"
+msgstr "ICMP"
+
+msgid "LAN"
+msgstr "LAN"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "WAN6"
+msgstr "WAN6"
+
+msgid "Load Balancer (Performance)"
+msgstr "Load Balancer (Performance)"
+
+msgid "Load Balancer (Compability)"
+msgstr "Load Balancer (Compability)"
+
+msgid "Load Balancer Distribution"
+msgstr "Load Balancer Distribution"
+
+msgid "Health Monitor Method"
+msgstr "Health Monitor Method"
+
+msgid "Health Monitor Interval"
+msgstr "Health Monitor Interval"
+
+msgid "Health Monitor ICMP Host(s)"
+msgstr "Health Monitor ICMP Host(s)"
+
+msgid "Health Monitor ICMP Timeout"
+msgstr "Health Monitor ICMP Timeout"
+
+msgid "Attempts Before WAN Failover"
+msgstr "Attempts Before WAN Failover"
+
+msgid "Attempts Before WAN Recovery"
+msgstr "Attempts Before WAN Recovery"
+
+msgid "Failover Traffic Destination"
+msgstr "Failover Traffic Destination"
+
+msgid "DNS Server(s)"
+msgstr "DNS-servrar"
+
+msgid "Source Address"
+msgstr "Käll IP-adress"
+
+msgid "Leave empty for all"
+msgstr "Lämna tom för alla"
+
+msgid "Destination Address"
+msgstr "Destinations-address"
+
+msgid "Protocol"
+msgstr "Protokol"
+
+msgid "Ports"
+msgstr "Portar"
+
+msgid "WAN Uplink"
+msgstr "WAN uplänk"
+
+msgid "MultiWAN Configuration"
+msgstr ""
+
+msgid "Basic Settings"
+msgstr "inställningar"
+
+msgid "MultiWAN Enabled"
+msgstr "MultiWAN aktiverad"
+
+msgid "Default Route"
+msgstr "Default-rutt"
+
+msgid "Multi-WAN Traffic Rules"
+msgstr "MultiWAN trafikregler"
+
+msgid "menu-internet-multiwan-title"
+msgstr "MultiWAN"
+

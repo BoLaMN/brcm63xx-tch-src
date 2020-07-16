@@ -1,0 +1,43 @@
+# How To Use Juci LocalServer
+
+
+Step 0. Make sure your mashine is propperly setup (in iopsys repo run ./iop setup_host)
+
+Step 1. Download JUCI:
+	git clone git@dev.iopsys.eu:iopsys/juci.git
+	cd juci
+
+Step 2. Checkout devel branch:
+	git checkout devel
+
+Step 3. Create a Makefile.local:
+	copy example-Makefile.local to Makefile.local (cp example-Makefile.local Makefile.local)
+	or write your own. This file should contain a list of all plugins that will be compiled when you build locally.
+	Make sure that Makefile.local has local=yes in it.
+
+Step 4. build JUCI:
+	run "make debug"
+
+Step 5. (optional) create juci-local-server config file.
+	copy example.localserver.conf to .localserver.conf (cp example.localserver.conf .localserver.conf)
+	or write your own. This file MUST only contain a single valid JSON object with the keys
+	"port": <port and "host": <your box> all other keys will be ignored
+
+Step 6. Start local server:
+	This is a script that should run in the background all the time so best is to start it in its own taab.
+	(If you have setup config you can skip the rest of this step).
+	To specify on what ip the remote ubus is add the --host <host> flag to the command, default 192.168.1.1
+	To specify on what port the server should run add --port <port> flag to the command, default 3000
+	./juci-local-server [--port <PORT>] [--host <HOST>]
+
+Step 7. Open gui in browser:
+	In browser go to localhost:PORT and the server will take html and js files from your bin/ directory and make all
+	ubus calls etc on the box at the HOST ip
+
+Step 8. Make changes:
+	to make changes and see them in browser just run make debug and reload the page in browser.
+	(MIGHT BE FIXED)If the change includes css files you have to run make clean && make debug for the changes to take affect
+
+
+IMPORTANT: if you make any changes to a file that is not html/js/css/less you need to update the box
+	with the new files (access.json etc).

@@ -1,0 +1,12 @@
+{
+	"juci-igmpinfo": {
+		"description": "JUCI IPTV/IGMP module",
+		"read": {
+			"ubus": {
+				"router.net": [
+					"igmp_snooping"
+				]
+			}
+		}
+	}
+}

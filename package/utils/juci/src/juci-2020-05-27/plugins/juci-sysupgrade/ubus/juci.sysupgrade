@@ -1,0 +1,130 @@
+#!/bin/sh
+
+. /usr/share/libubox/jshn.sh
+
+case "$1" in
+	list)
+		echo '{ "test":{"path":"str"}, "start":{"path":"str","keep":"str"}, "check":{"type":"str"}, "create-backup":{"pass":"str"}, "restore-backup":{"pass":"str"}, "features":{} }'
+	;;
+	call)
+		case "$2" in
+			features)
+				json_init
+				json_add_boolean comment 0
+				if [ -n "$(openssl version 2>/dev/null)" ]; then
+					json_add_boolean encryption 1
+				else
+					json_add_boolean encryption 0
+				fi
+				json_dump
+			;;
+			create-backup)
+				output=""
+
+				read input
+				json_load "$input"
+				json_get_var pass pass ""
+
+				if [ -n "$pass" ]; then
+					output="$(sysupgrade --create-backup /tmp/juci/backup.tar.gz -p $pass)"
+				else
+					output="$(sysupgrade --create-backup /tmp/juci/backup.tar.gz)"
+				fi
+
+				json_init
+				json_add_string output "$output"
+				json_dump
+			;;
+			restore-backup)
+				error=""
+				stdout=""
+
+				read input
+				json_load "$input"
+				json_get_var pass pass ""
+
+				if [ -n "$pass" ]; then
+					decrypt="$(openssl des3 -d -in /tmp/juci/backup.tar.gz -out /tmp/juci/backup.tar.gz.dec -pass pass:$pass 2>/dev/null && echo OK)"
+					if [ "$decrypt" == "OK" ]; then
+						mv /tmp/juci/backup.tar.gz.dec /tmp/juci/backup.tar.gz
+						stdout="$(sysupgrade --restore-backup /tmp/juci/backup.tar.gz)"
+					else
+						error="Invalid Password!"
+					fi
+				else
+					result="$(sysupgrade --restore-backup /tmp/juci/backup.tar.gz)"
+					if [ "result" == "" ]; then
+						stdout="$result"
+					else
+						error="$result"
+					fi
+				fi
+
+				json_init
+				if [ -n "$stdout" ]; then
+					json_add_string stdout "$stdout"
+				else
+					json_add_string error "$error"
+				fi
+				json_dump
+			;;
+			check)
+				read input
+				json_load "$input"
+				json_get_var type type
+
+				json_init
+				case "$type" in
+					online)
+						online="$(sysupgrade --online 2>/dev/null)"
+						if [ $? -eq 0 ]; then
+							json_add_string online "$online"
+						else
+							json_add_string error "$online"
+						fi
+					;;
+					usb)
+						usb="$(sysupgrade --usb 2>/dev/null)"
+						if  [ $? -eq 0 ]; then
+							json_add_string usb "$usb"
+						else
+							json_add_string error "$usb"
+						fi
+					;;
+				esac
+				json_dump
+			;;
+			start)
+				read input
+				json_load "$input"
+				json_get_var keep keep "yes"
+				json_get_var path path "/tmp/juci/firmware.bin"
+
+				keep_flag=""
+
+				if [ "$keep" == "soft" ]; then
+					keep_flag="-S"
+				elif [ "$keep" == "no" ]; then
+					keep_flag="-n"
+				fi
+				sysupgrade $keep_flag $path >/dev/null 2>&1 &
+				echo "sysupgrade $keep_flag $path >/dev/null 2>&1 &" >/dev/console
+
+				json_init
+				json_add_string "sysupgrade" "upgrade"
+				json_dump
+			;;
+			test)
+				read input
+				json_load "$input"
+				json_get_var path path "/tmp/juci/firmware.bin"
+
+				sysupgrade --test $path >/dev/null 2>&1 &
+
+				json_init
+				json_add_string "sysupgrade" "test"
+				json_dump
+			;;
+		esac
+	;;
+esac

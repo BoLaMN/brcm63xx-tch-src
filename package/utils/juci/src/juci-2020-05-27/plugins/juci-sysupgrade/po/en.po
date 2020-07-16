@@ -1,0 +1,189 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid ""
+"A new system software upgrade is available. Do you want to visit upgrade "
+"page and upgrade now?"
+msgstr ""
+
+msgid "Do you want to keep your configuration?"
+msgstr ""
+
+msgid ""
+"If you answer yes then your configuration will be saved before the upgrade "
+"and restored after the upgrade has completed. If you choose 'no' then all "
+"your current configuration will be reset to defaults."
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Abort"
+msgstr ""
+
+msgid "Image check failed"
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Error: "
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-sysupgrade/src/pages/settings-upgrade.js
+msgid "New Software Available!"
+msgstr ""
+
+msgid "No upgrade has been found!"
+msgstr ""
+
+msgid "USB upgrade check failed"
+msgstr ""
+
+msgid "Online upgrade check failed"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-sysupgrade/src/pages/settings-upgrade.js
+msgid "Downloading and verifying image..."
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-sysupgrade/src/pages/settings-upgrade.js
+msgid "Uploading"
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-sysupgrade/src/pages/settings-upgrade.js
+msgid "Verifying image..."
+msgstr ""
+
+# /home/reidar/juci/plugins/juci-sysupgrade/src/pages/settings-upgrade.js
+msgid "Verifying"
+msgstr ""
+
+msgid "The server returned an error"
+msgstr ""
+
+msgid "Upload completed!"
+msgstr ""
+
+msgid ".w (JFFS Image)"
+msgstr ""
+
+msgid ".y (UBIFS Image)"
+msgstr ""
+
+msgid "fs_image (RAW Rootfs Image)"
+msgstr ""
+
+msgid "You need to select a network!"
+msgstr ""
+
+msgid "Select image to upgrade"
+msgstr ""
+
+msgid "New software is available"
+msgstr ""
+
+msgid "Firmware Upgrade"
+msgstr ""
+
+msgid "settings.upgrade.info"
+msgstr "Here you can upgrade the software on your router."
+
+msgid "Current Firmware Version"
+msgstr ""
+
+msgid "Online Update"
+msgstr ""
+
+msgid "settings.upgrade.online.info"
+msgstr ""
+"Click \"Check for Update\" to start an online software upgrade. If a newer "
+"firmware is found, it will be automatically installed on your router "
+"(Internet connection required)."
+
+msgid "Check for Upgrade"
+msgstr ""
+
+msgid "Install Upgrade"
+msgstr ""
+
+msgid "USB Firmware Upgrade"
+msgstr ""
+
+msgid "settings.upgrade.usb.info"
+msgstr ""
+"It is possible to update the firmware from a file saved on a USB storage "
+"attached to the USB port of your router. Click \"Install Update\" to start "
+"the automatic firmware upgrade. Please note that there should be only one "
+"firmware file on the storage and that one shall be located under the main "
+"directory (no search under subfolders)."
+
+msgid "Manual Firmware Upgrade"
+msgstr ""
+
+msgid "settings.upgrade.manual.info"
+msgstr "It is possible to update the firmware from a saved update file."
+
+msgid "Select firmware file to upload"
+msgstr ""
+
+msgid "Start upgrade"
+msgstr ""
+
+msgid "Upgrade"
+msgstr ""
+
+msgid "Online upgrade is disabled"
+msgstr ""
+
+msgid "USB upgrade is disabled"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Upgrade Options"
+msgstr ""
+
+msgid "settings.upgrade.options.info"
+msgstr "Configure system upgrade options. "
+
+msgid "URL for file with latest image filename"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "Upgrade URL base path"
+msgstr ""
+
+msgid "HTTP Directory"
+msgstr ""
+
+msgid "Firmware image extension"
+msgstr ""
+
+msgid "Online Upgrade"
+msgstr ""
+
+msgid "USB Upgrade"
+msgstr ""
+
+msgid "menu-settings-upgrade-title"
+msgstr "Firmware Upgrade"
+
+msgid "menu-settings-upgrade-options-title"
+msgstr "Options"

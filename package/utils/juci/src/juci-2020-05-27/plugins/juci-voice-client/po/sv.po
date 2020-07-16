@@ -1,0 +1,835 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "SIP users needs a name"
+msgstr "SIP användare behöver ett namn"
+
+msgid "SIP users needs a valid extension"
+msgstr "SIP användare behöver ett korrekt tillägg"
+
+msgid "Today"
+msgstr "Idag"
+
+msgid "Enabled"
+msgstr "Aktiv"
+
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+msgid "Fixed"
+msgstr "Fast"
+
+msgid "Adaptive"
+msgstr "Adaptiv"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nej"
+
+msgid "Australia"
+msgstr "Australien"
+
+msgid "Belgium"
+msgstr "Belgien"
+
+msgid "Brazil"
+msgstr "Brasilien"
+
+msgid "Chile"
+msgstr "Chile"
+
+msgid "China"
+msgstr "China"
+
+msgid "Czech"
+msgstr "Tjeckien"
+
+msgid "Denmark"
+msgstr "Danmark"
+
+msgid "ETSI"
+msgstr "ETSI"
+
+msgid "Finland"
+msgstr "Finland"
+
+msgid "France"
+msgstr "Frankrike"
+
+msgid "Germany"
+msgstr "Tyskland"
+
+msgid "Hungary"
+msgstr "Ungern"
+
+msgid "India"
+msgstr "Indien"
+
+msgid "Italy"
+msgstr "Italien"
+
+msgid "Japan"
+msgstr "Japan"
+
+msgid "Netherlands"
+msgstr "Holland"
+
+msgid "New Zealand"
+msgstr "Nya Zeland"
+
+msgid "North America"
+msgstr "Nordamerika"
+
+msgid "Spain"
+msgstr "Spanien"
+
+msgid "Sweden"
+msgstr "Sverige"
+
+msgid "Switzerland"
+msgstr "Schweiz"
+
+msgid "Norway"
+msgstr "Norge"
+
+msgid "Taiwan"
+msgstr "Taiwan"
+
+msgid "United Kingdom"
+msgstr "England "
+
+msgid "United Arab Emirates"
+msgstr "Förenade arabemiraten"
+
+msgid "CFG TR57"
+msgstr "CFG TR57"
+
+msgid "off"
+msgstr "av"
+
+msgid "Unknown"
+msgstr "Okänd"
+
+msgid "on"
+msgstr "på"
+
+msgid "Off"
+msgstr "Av"
+
+msgid "Transparent"
+msgstr "Transparent"
+
+msgid "Conservative"
+msgstr "Konservativ"
+
+msgid "Aggressive"
+msgstr "Aggressiv"
+
+msgid "White noise"
+msgstr "White noise"
+
+msgid "Hot noise"
+msgstr "Hot noise"
+
+msgid "Spectrum estimate"
+msgstr "Spectrum estimate"
+
+msgid "TLS v1"
+msgstr "TLS v1"
+
+msgid "SSL v2"
+msgstr "SSL v2"
+
+msgid "SSL v3"
+msgstr "SSL v3"
+
+msgid "Listen on all interfaces"
+msgstr "Lyssna på alla interface"
+
+msgid "Congestion"
+msgstr "Upptaget"
+
+msgid "Info"
+msgstr "Information"
+
+msgid "Compatibility"
+msgstr "Kompabilitet"
+
+msgid "RFC 2833"
+msgstr "RFC 2833"
+
+msgid "SIP INFO"
+msgstr "SIP INFO"
+
+msgid "Inband"
+msgstr "Inband"
+
+msgid "No Mailbox"
+msgstr "Ingen Mejlbox"
+
+msgid "Select Codec"
+msgstr "Välj Codec"
+
+msgid "G 723.1"
+msgstr "G 723.1"
+
+msgid "GSM"
+msgstr "GSM"
+
+msgid "G.711MuLaw"
+msgstr "G.711MuLaw"
+
+msgid "G. 726"
+msgstr "G. 726"
+
+msgid "iLBC"
+msgstr "iLBC"
+
+msgid "G. 729a"
+msgstr "G. 729a"
+
+msgid "G.711ALaw"
+msgstr "G.711ALaw"
+
+msgid "UDP"
+msgstr "UDP"
+
+msgid "TCP"
+msgstr "TCP"
+
+msgid "TLS"
+msgstr "TLS"
+
+msgid "Account "
+msgstr "Konto"
+
+msgid "Direct"
+msgstr "Direkt"
+
+msgid "No Account"
+msgstr "Inga Konton"
+
+msgid "Advanced Line Settings"
+msgstr "Avancerade Linje Inställningar"
+
+msgid "Locale selecton"
+msgstr "Land sektion"
+
+msgid "A restart is required for country changes to take effect"
+msgstr "En omstart behövs för att land ändringen skall slutföras"
+
+msgid "Enable Jitter Buffer"
+msgstr "Aktivera Jitter Buffer"
+
+msgid "Force Jitter Buffer"
+msgstr "Tvinga Jitter Buffer"
+
+msgid "Jitter Buffer implementation"
+msgstr "Jitter Buffer implementering"
+
+msgid "Maximum Jitter Buffer size [ms]"
+msgstr "Maximum Jitter Buffer size [ms]"
+
+msgid "Enable Packet Loss Concealment"
+msgstr "Aktivera döljande av paket förlust"
+
+msgid "Inter-digit timeout [ms]"
+msgstr "Inter-digit timeout [ms]"
+
+msgid "Custom Dialplan"
+msgstr "Manuell Dialplan"
+
+msgid "Enable incomming dialplan"
+msgstr "Aktivera inkommande dialplan"
+
+msgid "Enable outgoing dialplan"
+msgstr "Aktivera utgående dialplan"
+
+msgid "Enable custom hangup"
+msgstr "Aktivera egna påläggningar"
+
+msgid "All ports Extension"
+msgstr "Telefontillägg"
+
+msgid "Test Audio Extension"
+msgstr "Testa Ljudtillägg"
+
+msgid "Test Echo Extension"
+msgstr "Testa echotillägg"
+
+msgid "Voice"
+msgstr "Voiceportar"
+
+msgid "Schedule"
+msgstr "Schemaläggning"
+
+msgid "ONLINE"
+msgstr "ONLINE"
+
+msgid "OFFLINE"
+msgstr "OFFLINE"
+
+msgid "Name"
+msgstr "Namn"
+
+msgid "Internal Number"
+msgstr "Intern nummer"
+
+msgid "Outgoing Calls Number"
+msgstr "Utgående nummer"
+
+msgid "Select Outgoing Number"
+msgstr "Välj utgående tel. nummer"
+
+msgid "Call Waiting"
+msgstr "Samtal väntar"
+
+msgid "Call ID Restriction"
+msgstr "Call-id restriktion"
+
+msgid "Voice Activity Detection"
+msgstr "Voice Activity Detection"
+
+msgid "Comfort Noice Generation"
+msgstr "Comfort Noice Generation"
+
+msgid "Echo cancellation"
+msgstr "Echo cancellation"
+
+msgid "Transmit gain"
+msgstr "Sändnings vinst"
+
+msgid "Receive gain"
+msgstr "Mottagen vinst"
+
+msgid "Voice Lines"
+msgstr "Voiceportar"
+
+msgid "phone.lines.info"
+msgstr "Inställningar för telefonianslutningar"
+
+msgid "Phone Lines"
+msgstr "Telefonlinjer"
+
+msgid "Advanced SIP Settings"
+msgstr "Avancerade SIP inställningar"
+
+msgid "Sip Proxy servers"
+msgstr "Sip Proxy server"
+
+msgid "Allow incomming calls from the specified proxies"
+msgstr "Tillåt inkommande sammtal från den specifierade proxien"
+
+msgid "Add SIP Proxy"
+msgstr "Lägg till SIP proxy"
+
+msgid "Bind Interface"
+msgstr "Bindnings Interface"
+
+msgid "WAN Interface to bind to (listen on)"
+msgstr "WAN interface att binda mot (lyssna på)"
+
+msgid "Bindport"
+msgstr "Bindningsport"
+
+msgid "UDP Port to bind to (listen on)"
+msgstr "UDP Port att binda mot (lyssna på)"
+
+msgid "User Agent"
+msgstr "Användaragent"
+
+msgid "Allow the SIP header User-Agent to be customized"
+msgstr "Tillåt SIP header User-Agent att bli ändrad"
+
+msgid "RTP Port Range"
+msgstr "RTP portintervall"
+
+msgid "DTMF Mode"
+msgstr "DTMF Mode"
+
+msgid "Register Interval"
+msgstr "Registrerings intervall"
+
+msgid "Time in seconds between registration attempts"
+msgstr "Tid i sekunder mellan registrerings försök"
+
+msgid "Realm"
+msgstr "Rike"
+
+msgid ""
+"Realm for digest authentication, set this to your host name or domain name"
+msgstr ""
+"Realm for digest authentication, set this to your host name or domain name"
+
+msgid "Localnet"
+msgstr "Lokalt nät"
+
+msgid "Network addresses that are considered inside of the NATted network"
+msgstr "Nätverksaddress som övervägs inuti det NATade nätverket"
+
+msgid "Add Localnet"
+msgstr "Lägg till lokalt nät"
+
+msgid "Register Timeout"
+msgstr "Registreringstimeout"
+
+msgid "Time before giving up a registration attempt"
+msgstr "Tid innan registrerings försök uppges"
+
+msgid "Register Attempts"
+msgstr "Registrerings försök"
+
+msgid ""
+"Number of registration attempts before giving up (Set to 0 or empty to try "
+"forever)"
+msgstr "Antal registrerings försök (Sett till 0 eller tom för eviga försök)"
+
+msgid "Register Back-off Attempts"
+msgstr "Register Back-off Attempts"
+
+msgid ""
+"Number of registration attempts before entering back-off state (Set to 0 or "
+"empty to disable)"
+msgstr ""
+"Antal registrerings försök innan back-off tillstånd (Set till 0 eller tom "
+"för att inaktivera)"
+
+msgid "Register Back-off Timeout"
+msgstr "Register Back-off Timeout"
+
+msgid "Time before giving up a registration attempt in back-off state"
+msgstr "Tid innan registrerings försök ges upp i back-off tillstånd"
+
+msgid "Remote Hold"
+msgstr "Remote Hold"
+
+msgid "Send hold events to proxy (Let network handle music on hold)"
+msgstr "Send hold events to proxy (Let network handle music on hold)"
+
+msgid "SRV Lookup"
+msgstr "SRV Lookup"
+
+msgid "Enable DNS SRV lookup"
+msgstr "Aktivera DNS server uppslagningar"
+
+msgid "DNS Manager"
+msgstr "DNS Hanterare"
+
+msgid "Enable Asterisk DNS manager"
+msgstr "Aktivera Asterisk DNS hantering"
+
+msgid "DNS Manager Refresh Interval"
+msgstr "DNS Hanterarens Uppdaterings intervall"
+
+msgid "Refresh intervall"
+msgstr "Uppdaterings intervall"
+
+msgid "Line suffix in contact header"
+msgstr "Linje suffix i kontakt-huvudet"
+
+msgid ""
+"Add a suffix indicating which lines are called to the sip contact header"
+msgstr ""
+"lägg till suffix i sip contakt-huvudet för att indikera vilka linjer som "
+"blir uppringda"
+
+msgid "SIP DiffServ"
+msgstr "SIP Diff Server"
+
+msgid "Differentiated services/TOS for SIP data. Recommended value: cs3"
+msgstr "Differentiated services/TOS for SIP data. Recommended value: cs3"
+
+msgid "Audio DiffServ"
+msgstr "Ljud DiffServ"
+
+msgid "Differentiated services/TOS for Audio data. Recommended value: ef"
+msgstr "Differentiated services/TOS for Audio data. Recommended value: ef"
+
+msgid "Congestion tone"
+msgstr "Upptaget signal"
+
+msgid "Tone to play on congestion"
+msgstr "Ljud att spela upp vid upptaget"
+
+msgid "STUN server"
+msgstr "STUN Server"
+
+msgid "Leave empty to disable the STUN monitor"
+msgstr "Lämna tom för att inaktivera STUN övervakning"
+
+msgid "TLS/SSL Version"
+msgstr "TLS/SSL Version"
+
+msgid "Cipher string"
+msgstr "Cipher Sträng"
+
+msgid "Trusted CA"
+msgstr "Betrodd CA"
+
+msgid "Don't forget to press save to save your changes"
+msgstr "Glöm inte att spara dina ändringar"
+
+msgid "Account Name"
+msgstr "Kontonamn"
+
+msgid "Incoming calls to"
+msgstr "Inkommande samtal till"
+
+msgid "Mailbox"
+msgstr "Mejlbox"
+
+msgid "SIP domain name"
+msgstr "SIP domännamn"
+
+msgid "Domain name"
+msgstr "Domännamn"
+
+msgid "SIP Username"
+msgstr "SIP Användarnamn"
+
+msgid " The User id for the account, may be a phone number"
+msgstr "Användar ID för kontot, kan vara ett telefonnummer"
+
+msgid "User"
+msgstr "Användare"
+
+msgid "SIP Authentication Name"
+msgstr "SIP Autentiserings namn"
+
+msgid "Used in combination with password to register against SIP server"
+msgstr "Använd i kombination med lösenord för att registrera mot SIP server"
+
+msgid "Auth User"
+msgstr "Användarnamn"
+
+msgid "SIP Password"
+msgstr "SIP Lösenord"
+
+msgid ""
+"When your password is saved, it disappears from this field and is not "
+"displayed for your protection. The previously saved password will be changed "
+"only when you enter a value different from the saved one."
+msgstr ""
+"När ditt lösenord sparas så försvinner det från detta fält för säkerhets "
+"skull. Det tidigare sparade lösenordet vill endast bli ändrat om du anger "
+"ett annat värde än det sparade."
+
+msgid "wifi-iface.show_password"
+msgstr "Visa Lösenord"
+
+msgid "Display Name"
+msgstr "Uppvisnings namn"
+
+msgid "Display name used in Caller Id"
+msgstr "Uppvisningsnamn som visas på Caller ID"
+
+msgid "Preferred codecs"
+msgstr "Föredragen kodex"
+
+msgid "GSM packetization"
+msgstr "GSM packetization"
+
+msgid "G.723.1 packetization"
+msgstr "G.723.1 packetization"
+
+msgid "G.711MuLaw packetization"
+msgstr "G.711MuLaw packetization"
+
+msgid "G. 726 packetization"
+msgstr "G. 726 packetization"
+
+msgid "iLBC packetization"
+msgstr "iLBC packetization"
+
+msgid "G. 729a packetization"
+msgstr "G. 729a packetization"
+
+msgid "G.711ALaw packetization"
+msgstr "G.711ALaw packetization"
+
+msgid "Autoframing"
+msgstr "Autoframing"
+
+msgid "Negotiate packetization at call establishment"
+msgstr "Negotiate packetization at call establishment"
+
+msgid "SIP Transport"
+msgstr "SIP Transport"
+
+msgid "Encryption"
+msgstr "Kryptering"
+
+msgid "Use Secure Real-time Transport Protocol (SRTP)"
+msgstr "Använd Secure Real-time Transport Protocol (SRTP)"
+
+msgid "Use as Fax"
+msgstr "Använd som fax"
+
+msgid ""
+"Indicate that this SIP account will be used for a fax machine. This will "
+"force some settings to enable inband fax."
+msgstr ""
+"Indikera att detta SIP konto kommer att bli använt med en fax. Detta kommer "
+"att tvinga inställningar för att möjliggöra inkommande fax."
+
+msgid "SIP Server/Registrar"
+msgstr "SIP Server"
+
+msgid "Optional"
+msgstr "Frivillig"
+
+msgid "SIP Server"
+msgstr "SIP Server"
+
+msgid "SIP Server/Registrar Port"
+msgstr "SIP Server/Registrar Port"
+
+msgid "SIP Server Port"
+msgstr "SIP Server port"
+
+msgid "SIP Outbound Proxy"
+msgstr "SIP utgående proxy"
+
+msgid "SIP Proxy"
+msgstr "SIP proxy"
+
+msgid "SIP Outbound Proxy Port"
+msgstr "SIP Utgående Proxy Port"
+
+msgid "SIP Proxy Port"
+msgstr "SIP proxy"
+
+msgid "Incoming Phone Lines"
+msgstr "Inkommande telefonlinor"
+
+msgid "SIP Accounts"
+msgstr "SIP Konton"
+
+msgid "Extension"
+msgstr "Telefontillägg"
+
+msgid "Extension for this user"
+msgstr "tillägg för den här användaren"
+
+msgid "Username"
+msgstr "Användarnamn"
+
+msgid "The User id for the account (defaultuser)"
+msgstr "Användar id för kontot (standard användaren)"
+
+msgid "Password"
+msgstr "SIP Lösenord"
+
+msgid "Call out using SIP provider"
+msgstr "Ring med SIP kontot"
+
+msgid "Host"
+msgstr "Värd"
+
+msgid "Host for this user (leave empty for dynamic)"
+msgstr "Värd för den här användaren (lämna tom för dynamisk)"
+
+msgid "Qualify"
+msgstr "Kvalificera"
+
+msgid "Check that user is reachable"
+msgstr "Kolla så att användaren är nåbar"
+
+msgid "SIP Users"
+msgstr "SIP Användare"
+
+msgid "Voice Status"
+msgstr "Telefonstatus"
+
+msgid "status.voice.info"
+msgstr "Information om telefoni. "
+
+msgid "Your Phone Numbers"
+msgstr "Dina telefonnummer"
+
+msgid "status.voice_lines.info"
+msgstr "Status för telefoniuppkopplingar. "
+
+msgid "Your Phone Lines"
+msgstr "Dina telefonlinjer"
+
+msgid "Domain"
+msgstr "Domän"
+
+msgid "Registration interval (s)"
+msgstr "Registrerings intervall"
+
+msgid "Last registration"
+msgstr "Sista registreringen"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "State"
+msgstr "Tillstånd"
+
+msgid "Voice service is not available!"
+msgstr "Telefoni är inte tillgänglig"
+
+msgid "Custom Dialplan Settings"
+msgstr "Custom Dialplan Settings"
+
+msgid "Call Log"
+msgstr "Samtalslogg"
+
+msgid "phone.call_log.info"
+msgstr "Inställningar för samtalslogg"
+
+msgid "Show calls for"
+msgstr "Visa samtal för"
+
+msgid "Select phone"
+msgstr "Välj telefon"
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "Time"
+msgstr "Tid"
+
+msgid "External Number"
+msgstr "Extern nummer"
+
+msgid "Your number"
+msgstr "Ditt nummer"
+
+msgid "Duration"
+msgstr "Varaktighet"
+
+msgid "Phone"
+msgstr "Telefoni"
+
+msgid "Number Blocking"
+msgstr "Nummerblockering"
+
+msgid "phone.number_blocking.info"
+msgstr ""
+"Behåll kontrollen över dina räkningar och blockera utgående samtal till "
+"oönskade nummer."
+
+msgid "Outgoing Number Blocking"
+msgstr "Utgående samtalsblockering"
+
+msgid "Phone Extension"
+msgstr "Telefontillägg"
+
+msgid "Block connections to all foreign numbers"
+msgstr "Blockera samtal till alla nummer i utlandet"
+
+msgid "Block connections to all special rate numbers"
+msgstr "Blockera samtal till specialnummer"
+
+msgid "Incoming Number Blocking"
+msgstr "Inkommande nummberblockering"
+
+msgid "Do not allow connections from these numbers"
+msgstr "Blockera samtal från dessa nummer."
+
+msgid "Outgoing Calls"
+msgstr "Utgående Samtal"
+
+msgid ""
+"You can also block ranges of numbers.For example: '0160#' blocks all numbers "
+"starting with '0160'."
+msgstr ""
+"Du kan också blockera ett intervall. Till exempel: \"0160#\" blockerar alla "
+"nummer som börjar med \"0160\"."
+
+msgid "Incoming Calls"
+msgstr "Inkommande samtal"
+
+msgid "Ringing Schedule"
+msgstr "Telefonischema"
+
+msgid "phone.schedule.info"
+msgstr "Definiera scheman när dina telefoner bör eller inte bör ringa."
+
+msgid "During this time ringing is"
+msgstr "Denna tid är telefonsamtal"
+
+msgid "Select Schedule Mode"
+msgstr "Välj schemaläggningstyp"
+
+msgid "Add a new Ringing Schedule"
+msgstr "Lägg till nytt schema"
+
+msgid "Phone Number"
+msgstr "Telefonnummer"
+
+msgid "Select Phone Number"
+msgstr "Välj telefonnummer"
+
+msgid "Day"
+msgstr "Dag"
+
+msgid "Number"
+msgstr "Nummer"
+
+msgid "Speed Dialing"
+msgstr "Snabbuppringning"
+
+msgid "phone.speed_dialing.info"
+msgstr "Inställningar för snabbuppringning"
+
+msgid "Remove all entries from speed dial list"
+msgstr "Ta bort alla nummer från snabbuppringningslistan"
+
+msgid "Clear"
+msgstr "Rensa"
+
+msgid "menu-voice-sip-users-title"
+msgstr "SIP användare"
+
+msgid "menu-status-phone-title"
+msgstr "Status"
+
+msgid "menu-voice-title"
+msgstr "Telefoni"
+
+msgid "menu-voice-number-blocking-title"
+msgstr "Nummerblockering"
+
+msgid "menu-voice-advanced-settings-dialplan-title"
+msgstr "Dialplan inställningar"
+
+msgid "menu-voice-advanced-settings-sip-title"
+msgstr "SIP inställningar"
+
+msgid "menu-voice-call-log-title"
+msgstr "Samtals historik"
+
+msgid "menu-voice-advanced-settings-lines-title"
+msgstr "Linje inställningar"
+
+msgid "menu-voice-sip-accounts-title"
+msgstr "SIP Konton"
+
+msgid "menu-voice-lines-title"
+msgstr "Telefon linjer"
+
+msgid "menu-voice-speed-dialing-title"
+msgstr "Snabbuppringning"
+
+msgid "menu-voice-ringing-schedule-title"
+msgstr "Schemaläggning"
+
+msgid "menu-voice-advanced-settings-title"
+msgstr "Avancerade inställningar"
+

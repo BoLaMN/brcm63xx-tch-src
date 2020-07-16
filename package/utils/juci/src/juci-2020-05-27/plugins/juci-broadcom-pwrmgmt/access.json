@@ -1,0 +1,15 @@
+{
+	"juci-broadcom-pwrmgmt": {
+		"description": "Broadcom power management plugin",
+		"read": {
+			"uci": [
+				"power_mgmt"
+			]
+		},
+		"write": {
+			"uci": [
+				"power_mgmt"
+			]
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"juci-netmode": {
+		"description": "JUCI Netmode support module for iopsys",
+		"read": {
+			"ubus": {
+				"router.wireless": [
+					"scan",
+					"scanresults"
+				],
+				"repeater": [
+					"set_creds"
+				]
+			}, 
+			"uci": [
+				"netmode",
+				"wireless",
+				"juci"
+			],
+			"owsd": [ "wifi-repeater-success" ]
+		}, 
+		"write": {
+			"uci": [
+				"netmode",
+				"wireless",
+				"juci"
+			]
+		}
+	}
+}

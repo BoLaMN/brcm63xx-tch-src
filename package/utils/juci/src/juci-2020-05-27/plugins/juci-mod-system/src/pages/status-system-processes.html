@@ -1,0 +1,26 @@
+<juci-layout-with-sidebar>
+	<div ng-controller="StatusSystemProcesses">
+		<h2 translate>Processes</h2>
+		<p translate>System processes and CPU usage.</p>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<b>{{'Total number of processes: '|translate}}{{processes.length}}</b><br/>
+				<b>{{'Total CPU usage: '|translate}}{{getCpuUsage()}}</b>
+			</div>
+		</div>
+		<accordion close-others="false">
+			<accordion-group is-open="isopen">
+				<accordion-heading>Click here to view details <i class="fa fa-chevron-circle-{{isopen ? 'down' : 'right'}}"></i></accordion-heading>
+				<h2 translate>Running Processes</h2>
+				<juci-config-info>{{'status.system.processes.info'|translate}}</juci-config-info>
+				<table class="table">
+					<thead>
+						<th ng-repeat="column in columns track by $index" style="cursor:pointer;background-color: {{column == order?'#ddd':'white'}};" ng-click="setOrder(column)">{{column}}<i style="float:right" ng-show="column == order" class="fa fa-caret-{{reverse?'down':'up'}}"></i></th></thead>
+					<tr ng-repeat="proc in processes | orderBy : order : reverse : orderFunction">
+						<td ng-repeat="column in columns track by $index">{{proc[column]}}</td>
+					</tr>
+				</table>
+			</accordion-group>
+		</accordion>
+	</div>
+</juci-layout-with-sidebar>

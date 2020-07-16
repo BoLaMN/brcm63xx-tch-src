@@ -1,0 +1,313 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "LAN does not have IPv6 configured"
+msgstr "LAN har inte IPv6 konfigurerat"
+
+msgid "Minutes"
+msgstr "Minuter"
+
+msgid "Hour"
+msgstr "Timme"
+
+msgid "Hours"
+msgstr "Timmar"
+
+msgid "IPv4"
+msgstr "IPv4"
+
+msgid "IPv6"
+msgstr "IPv6"
+
+msgid "Hostname(s) for "
+msgstr "Datornamn för "
+
+msgid "DHCP Pool Start"
+msgstr "DHCP Pool Start"
+
+msgid "DHCP Pool Size"
+msgstr "DHCP Pool storlek"
+
+msgid "DHCP Lease Time"
+msgstr "DHCP-lease tid"
+
+msgid "Lease Time"
+msgstr "Leasetid"
+
+msgid "Connection"
+msgstr "Uppkoppling"
+
+msgid "Network"
+msgstr "Nätverk"
+
+msgid "Hostname"
+msgstr "Datornamn"
+
+msgid "Add a host"
+msgstr "Lägg till en värd"
+
+msgid "Family"
+msgstr "Familj"
+
+msgid "IPv4 Address"
+msgstr "IPv4-adress"
+
+msgid "IPv6 Address"
+msgstr "IPv6-adress"
+
+msgid "Hostnames"
+msgstr "värdnamn"
+
+msgid "DHCPv4 leases"
+msgstr "DHCPv4 Leasar"
+
+msgid "DHCPv6 leases"
+msgstr "DHCPv6 Leasar"
+
+msgid "Active DHCP Leases"
+msgstr "Activa DHCP Leasar"
+
+msgid "IPv4-Address"
+msgstr "IPv4-Adress"
+
+msgid "MAC-Address"
+msgstr "MAC-Adress"
+
+msgid "Leasetime remaining"
+msgstr "Återstående lease-tid"
+
+msgid "There are no active leases"
+msgstr "Det finns Inga aktiva leasar"
+
+msgid "IPv6-Address"
+msgstr "IPv6-Adress"
+
+msgid "DUID"
+msgstr "DUID"
+
+msgid "MAC"
+msgstr "MAC"
+
+msgid "IPv6 Unique ID"
+msgstr "IPv6 unikt ID"
+
+msgid "IPv6 Address ID"
+msgstr "IPv6-adress ID"
+
+msgid "Add Connected Host"
+msgstr "Lägg till enhet"
+
+msgid "Static DHCP"
+msgstr "Statisk DHCP"
+
+msgid "Device Name"
+msgstr "Enhetsnamn"
+
+msgid "MAC Address"
+msgstr "MAC-adress"
+
+msgid "IP Address"
+msgstr "IP-adress"
+
+msgid "DUID (IPv6)"
+msgstr "IPv6 DUID"
+
+msgid "Host ID (IPv6)"
+msgstr "IPv6 Värd-ID"
+
+msgid "DHCP Server"
+msgstr "DHCP server"
+
+msgid "DHCP Settings"
+msgstr "Generella Inställningar"
+
+msgid "General Settings"
+msgstr "Generella Inställningar"
+
+msgid "Local domain"
+msgstr "Lokalt domän"
+
+msgid "Local domain suffix appended to DHCP names and hosts file entries"
+msgstr "lokal domän suffix läggs till på DHCP värdnamns inlägg"
+
+msgid "Log queries"
+msgstr "Log förfrågningar"
+
+msgid "Write received DNS requests to syslog"
+msgstr "Skriv mottagna DNS förfrågningar till system loggen"
+
+msgid "Leasefile"
+msgstr "Leasetid"
+
+msgid "file where given DHCP-leases will be stored"
+msgstr "Fil i vilken DHCP leasar sparas"
+
+msgid "Ignore resolve file"
+msgstr "Ignorera resolv filen"
+
+msgid "Resolve file"
+msgstr "Resolv fil"
+
+msgid "local DNS file"
+msgstr "local DNS fil"
+
+msgid "Ignore Hosts file"
+msgstr "Ignorera Värd fil"
+
+msgid "Advanced Settings"
+msgstr "avancerade inställningar"
+
+msgid "Domain required"
+msgstr "Domän behövs"
+
+msgid "Do not forward DNS-Requests without DNS-Name"
+msgstr "Vidarebefodra inte DNS förfrågningar utan DNS namn"
+
+msgid "Authoritative"
+msgstr "Authoritative"
+
+msgid "This is the only DHCP in the local network"
+msgstr "Detta är den enda DHCP i nätverket"
+
+msgid "Filter private"
+msgstr "Filtrera privat"
+
+msgid "Do not forward reverse lookups for local networks"
+msgstr "Vidarebefodra inte bakvända uppslag för lokala nätverk"
+
+msgid "Filter useless"
+msgstr "Filtrera värdelösa"
+
+msgid "Do not forward requests that cannot be answered by public name servers"
+msgstr ""
+"Vidarebefodra inte förfrågningar som inte kan svaras på av de publika namn-"
+"servrarna"
+
+msgid "Localise queries"
+msgstr "Localise queries"
+
+msgid ""
+"Localise hostname depending on the requesting subnet if multiple IPs are "
+"available"
+msgstr ""
+"Localise hostname depending on the requesting subnet if multiple IPs are "
+"available"
+
+msgid "Local server"
+msgstr "Lokal server"
+
+msgid ""
+"Local domain specification. Names matching this domain are never forwarded "
+"and resolved from DHCP or hosts files only"
+msgstr ""
+"Lokal domän specifikation. Namn som matchar detta domän kommer aldrig att "
+"vidarebefodras och resolv endast från DHCP eller värd filer"
+
+msgid "Expand hosts"
+msgstr "Expandera värdar"
+
+msgid "Add local domain suffix to names served from hosts files"
+msgstr "Lägg till locala domän suffix till namn tilldelade från värd filer"
+
+msgid "No negative cache"
+msgstr "Inga negativa cashes"
+
+msgid "Do not cache negative replies, e.g. for not existing domains"
+msgstr "Casha inte negativa svar tex. för att domän inte existerar"
+
+msgid "Strict order"
+msgstr "Strikt ordning"
+
+msgid "DNS servers will be queried in the order of the resolvfile"
+msgstr "DNS servrar kommer att frågas i ordnignen som fås av resolvfile"
+
+msgid "Bogus NX Domain Override"
+msgstr "Bogus NX Domän överskrivning"
+
+msgid "List of hosts that supply bogus NX domain results"
+msgstr "Lista värdar som anger bogus NX domän resultat"
+
+msgid "ex. 67.215.65.132"
+msgstr "ex. 67.215.65.132"
+
+msgid "DNS forwarding"
+msgstr "DNS Vidarebefordring"
+
+msgid "List of DNS servers to forward requests to"
+msgstr "Lista av DNS servrar att vidarebefodra förfrågningar till"
+
+msgid "ex. /example.org/10.1.2.3"
+msgstr "ex. /example.org/10.1.2.3"
+
+msgid "Rebind protection"
+msgstr "Rebind protection"
+
+msgid "Discard upstream RFC1918 responses"
+msgstr "Förkasta uppströms RFC1918 svar"
+
+msgid "Allow localhost"
+msgstr "Tillåt lokalvärd"
+
+msgid ""
+"Allow upstream responses in the 127.0.0.0/8 range, e.g. for RBL services"
+msgstr "Tillåt uppströms svar i 127.0.0.0/8 räckvidden, tex. RBL services"
+
+msgid "Domain whitelist"
+msgstr "Domän whitelist"
+
+msgid "List of domains to allow RFC1918 responses for"
+msgstr "Lista av domän att tillåta RFC1918 svar för"
+
+msgid "ex. ihost.netflix.com"
+msgstr "ex. ihost.netflix.com"
+
+msgid "DNS server port"
+msgstr "DNS-server port"
+
+msgid "Listening port for inbound DNS queries"
+msgstr "Port att lyssna efter inkommande DNS förfrågningar på"
+
+msgid "DNS query port"
+msgstr "DNS förfrågnings port"
+
+msgid "Fixed source port for outbound DNS queries"
+msgstr "Fixerad källport för utgående DNS förfrågningar"
+
+msgid "Max DHCP leases"
+msgstr "Max antal DHCP Leasar"
+
+msgid "Maximum allowed number of active DHCP leases"
+msgstr "Maximalt tillåtna DHCP leasar"
+
+msgid "Max. EDNS0 packet size"
+msgstr "Max EDNS0 paket storlek"
+
+msgid "Maximum allowed size of EDNS.0 UDP packets"
+msgstr "Maximala tillåtna storlek på EDNS.0 UDP paket"
+
+msgid "Max. concurrent queries"
+msgstr "Max samverkande förfrågningar"
+
+msgid "Maximum allowed number of concurrent DNS queries"
+msgstr "Maximalt tillåtet antal samverkande DNS förfrågningar"
+
+msgid "Hostname Entries"
+msgstr "Värdnamnsinlägg"
+
+msgid "menu-dhcp-status-title"
+msgstr "DHCP Status"
+
+msgid "menu-dhcp-settings-title"
+msgstr "DHCP Inställningar"
+
+

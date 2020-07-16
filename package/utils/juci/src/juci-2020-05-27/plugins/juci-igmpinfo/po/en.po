@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Unable to retreive igmptable from device!"
+msgstr ""
+
+msgid "IGPM TV Status"
+msgstr ""
+
+msgid "status.tv.info"
+msgstr ""
+"This page allows to verify the connection status of your IPTV Services."
+
+msgid "Connection Status"
+msgstr ""
+
+msgid "IGMP TV Channels"
+msgstr ""
+
+msgid "Group IP"
+msgstr ""
+
+msgid "Client IP"
+msgstr ""
+
+msgid "LAN Port"
+msgstr "LAN Port"
+
+msgid "WAN Port"
+msgstr ""
+
+msgid "Timeout"
+msgstr ""
+
+msgid "menu-status-tv-title"
+msgstr "IGMP"

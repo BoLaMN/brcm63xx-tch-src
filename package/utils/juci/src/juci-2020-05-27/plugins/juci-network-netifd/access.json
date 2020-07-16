@@ -1,0 +1,77 @@
+{
+	"juci-network-netifd": {
+		"description": "JUCI Network Configuration module",
+		"read": {
+			"ubus": {
+				"juci.network": [
+					"has_link",
+					"ifup",
+					"load",
+					"nameservers",
+					"services",
+					"protocols",
+					"online"
+				],
+				"network.device": [
+					"status"
+				],
+				"juci.system": [
+					"reboot"
+				],
+				"juci.modems": [
+					"list"
+				],
+				"network.interface": [
+					"dump"
+				],
+				"network.interface.*": [
+					"up",
+					"down"
+				],
+				"router.graph": [
+					"client_traffic"
+				],
+				"router.network": [
+					"dump",
+					"ports",
+					"clients"
+				],
+				"router.net": [
+					"arp",
+					"ip_conntrack",
+					"ipv4_routes",
+					"ipv6_routes",
+					"ipv6_neigh"
+				],
+				"router.usb": [
+					"status"
+				],
+				"router.wireless": [
+					"radios"
+				],
+				"router.port": [
+					"status"
+				],
+				"dsl": [
+					"status"
+				],
+				"file": [
+					"read_tmp_juci"
+				]
+			},
+			"uci": [
+				"network",
+				"dhcp"
+			],
+			"owsd": [
+				"client",
+				"network.interface"
+			]
+		},
+		"write": {
+			"uci": [
+				"network"
+			]
+		}
+	}
+}

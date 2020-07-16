@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Dropbear Instance on Interface: "
+msgstr ""
+
+msgid "ANY"
+msgstr ""
+
+msgid "Please select a instance in the list to remove"
+msgstr ""
+
+msgid "Unable to remove last instance"
+msgstr ""
+
+msgid "Are you sure you want to remove this instance?"
+msgstr ""
+
+msgid "Key ending with"
+msgstr ""
+
+msgid "You need to insert the public key data!"
+msgstr ""
+
+msgid "Paste your key here:"
+msgstr ""
+
+msgid "Add new SSH key"
+msgstr ""
+
+msgid "Banner File"
+msgstr ""
+
+msgid ""
+"Name of a file to be printed before the user has authenticated successfully"
+msgstr ""
+
+msgid "Banner File Path"
+msgstr ""
+
+msgid "Password Authentication"
+msgstr ""
+
+msgid "Port"
+msgstr ""
+
+msgid "Listen Port"
+msgstr "Listen Port"
+
+msgid "Enable Root Password Auth"
+msgstr ""
+
+msgid "Enable Root Login"
+msgstr ""
+
+msgid "Enable Forwarded Ports"
+msgstr ""
+
+msgid "Interface"
+msgstr "Interface"
+
+msgid "RSA Key File"
+msgstr ""
+
+msgid "DSS Key File"
+msgstr ""
+
+msgid "Connection Keep Alive"
+msgstr ""
+
+msgid "Idle Timeout"
+msgstr ""
+
+msgid "Dropbear SSH"
+msgstr ""
+
+msgid "General settings"
+msgstr ""
+
+msgid "Start/Stop Service"
+msgstr ""
+
+msgid "Start or stop service"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Enable/Disable starting SSH service during boot"
+msgstr ""
+
+msgid "Verbose logging"
+msgstr ""
+
+msgid "Set to 1 to enable verbose output by the start script"
+msgstr ""
+
+msgid "Dropbear Instances"
+msgstr ""
+
+msgid "settings.dropbear.instance"
+msgstr "Configure settings for multiple instances of SSH server. "
+
+msgid "Accepted SSH keys"
+msgstr ""
+
+msgid "menu-settings-management-dropbear-title"
+msgstr "SSH"

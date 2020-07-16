@@ -1,0 +1,89 @@
+	<juci-layout-with-sidebar>
+	<div ng-controller="SettingsConfigurationCtrl">
+		<juci-config-section>
+			<juci-config-heading>{{ 'Backup Configuration' | translate }}</juci-config-heading>
+			<juci-config-info>{{ 'settings.config.info' | translate }}</juci-config-info>
+			<juci-config-lines>
+				<juci-config-line title="{{'Save configuration'|translate}}">
+					<button class="btn btn-lg btn-default" ng-click="onSaveConfig()">{{'Save'|translate}}</button>
+				</juci-config-line>
+				<juci-config-line title="{{'Restore configuration'|translate}}">
+					<button class="btn btn-lg btn-default" ng-click="onRestoreConfig()">{{'Load'|translate}}</button>
+				</juci-config-line>
+			</juci-config-lines>
+		</juci-config-section>
+		<juci-config-section>
+			<h3>{{'Factory Reset'|translate}}</h3>
+			<juci-config-lines>
+				<juci-config-line title="{{'Factory reset to default configuration'|translate}}">
+				</juci-config-line>
+				<div ng-hide="soft.is_repeater">
+				<juci-config-line title="{{'Soft reset'|translate}}" help="{{'Save some settings over the factory reset'|translate}}">
+					<div class="input-group"> <switch class="green" ng-model="soft.soft"/> </div>
+				</juci-config-line>
+				<hr />
+				<juci-config-line ng-show="soft.soft" title="{{'WiFi settings'|translate}}">
+					<div class="input-group"> <switch class="green" ng-model="soft.wifi"/> </div>
+				</juci-config-line>
+				<juci-config-line ng-show="soft.soft" title="{{'Port redirects'|translate}}">
+					<div class="input-group"> <switch class="green" ng-model="soft.fw_redirect"/> </div>
+				</juci-config-line>
+				<juci-config-line ng-show="soft.soft" title="{{'Parental rules'|translate}}">
+					<div class="input-group"> <switch class="green" ng-model="soft.fw_parental"/> </div>
+				</juci-config-line>
+				<juci-config-line ng-show="soft.soft" title="{{'User password'|translate}}">
+					<div class="input-group"> <switch class="green" ng-model="soft.passwd_user"/> </div>
+				</juci-config-line>
+				<juci-config-line ng-show="soft.soft" title="{{'ICE config'|translate}}">
+					<div class="input-group"> <switch class="green" ng-model="soft.ice"/> </div>
+				</juci-config-line>
+				</div>
+				<juci-config-line>
+					<button class="btn btn-lg btn-default pull-right" ng-click="onReset()">{{'Reset'|translate}}</button>
+				</juci-config-line>
+			</juci-config-lines>
+		</juci-config-section>
+		<modal title="{{'Save Configuration to Computer'|translate}}" data-backdrop="static" ng-show="showModal" on-accept="onAcceptModal()" on-dismiss="onDismissModal()" dismiss-label="Cancel" accept-label="Continue">
+			<juci-config-line title="{{'Password protection'|translate}}">
+				<switch class="green" ng-model="data.encryptBackup" />
+			</juci-config-line>
+			<form ng-submit="onAcceptModal()" name="backupForm" autocomplete="off" ng-show="data.encryptBackup">
+				<input type="submit" ng-hide="true" />
+				<div class="form-group" ng-show="features.comment">
+					<label translate>Please add a comment describing this configuration</label>
+					<textarea class="form-control" placeholder="{{'Comments'|translate}}..." name="comment"/>
+				</div>
+				<div class="form-group">
+					<label translate>Backup file password</label>
+					<input type="password" ng-disabled="!features.encryption" class="form-control" placeholder="{{'New Password'|translate}}" name="pass" ng-model="data.pass"/>
+				</div>
+				<div class="form-group">
+					<label translate>Re-type password</label>
+					<input type="password" ng-disabled="!features.encryption" class="form-control" placeholder="{{'Re-type password'|translate}}" name="pass_repeat" ng-model="data.pass_repeat"/>
+				</div>
+				<div class="alert alert-danger" ng-show="!features.encryption" 
+					translate>Encryption of backups has been disabled (please make sure you have openssl cli utility installed!)</div>
+				<div class="alert alert-danger" ng-show="passwordError" 
+					translate>Encryption password may only contain letters a-z, A-Z and numbers 0-9.</div>
+			</form>
+		</modal>
+		<modal title="{{'Downloading Backup'|translate}}" ng-show="showStatus" data-backdrop="static" data-keyboard="false">
+			<h2 style="text-align:center;"><i class="fa fa-spinner fa-spin fa-2x"></i></h2>
+		</modal>
+		<modal title="Load New Configuration" data-backdrop="static" ng-show="showUploadModal" on-accept="onUploadConfig()" on-dismiss="onCancelRestore()" dismiss-label="Cancel" accept-label="Continue">
+			<form autocomplete="off" ng-submit="onUploadConfig()">
+				<input type="submit" ng-hide="true">
+				<juci-config-lines>
+					<juci-config-line title="{{'Pick configuration backup to upload'|translate}}">
+						<input type="file" id="upload" class="btn btn-default btn-file" name="filedata" />
+					</juci-config-line>
+					<juci-config-line title="{{'Backup file password'|translate}}">
+						<input type="password" class="form-control" name="pass" ng-disabled="!features.encryption" ng-model="data.pass" placeholder="{{'Password (if encrypted)'|translate}}"/>
+					</juci-config-line>
+					<div class="alert alert-danger" ng-show="!features.encryption" 
+						translate>Uploading encrypted backups is not supported (requires openssl cli utility installed on the router!)</div>
+				</juci-config-lines>
+			</form>
+		</modal>
+	</div>
+</juci-layout-with-sidebar>

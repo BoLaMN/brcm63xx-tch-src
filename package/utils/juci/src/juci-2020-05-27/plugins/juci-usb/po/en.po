@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "USB"
+msgstr ""
+
+msgid "No usb devices connected!"
+msgstr ""
+
+msgid "USB Devices"
+msgstr "USB Devices"
+
+msgid "usb.devices.info"
+msgstr "USB device information"
+
+msgid "Device ID"
+msgstr "Device ID"
+
+msgid "Vendor ID"
+msgstr ""
+
+msgid "Vendor Name"
+msgstr ""
+
+msgid "Device Name"
+msgstr "Device Name"
+
+msgid "menu-status-usb-title"
+msgstr "USB"

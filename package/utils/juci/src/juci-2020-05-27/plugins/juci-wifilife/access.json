@@ -1,0 +1,26 @@
+{
+	"juci-wifilife": {
+		"description": "JUCI wifilife plugin",
+		"read": {
+			"ubus": {
+				"wifix": [
+					"stations",
+					"list_neighbor"
+				],
+				"router.net": [
+					"arp"
+				]
+			},
+			"uci": [
+				"wireless",
+				"wifilife"
+			]
+		},
+		"write": {
+			"uci": [
+				"wireless",
+				"wifilife"
+			]
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"juci-samba": {
+		"description": "JUCI Samba module",
+		"read": {
+			"uci": [
+				"samba"
+			],
+			"ubus": {
+				"router.directory": [
+					"folder_tree",
+					"autocomplete"
+				],
+				"juci.system": [
+					"passwd_entries"
+				],
+				"router.usb": [
+					"status"
+				]
+			}
+		}, 
+		"write": {
+			"uci": [
+				"samba"
+			]
+		}
+	}
+}

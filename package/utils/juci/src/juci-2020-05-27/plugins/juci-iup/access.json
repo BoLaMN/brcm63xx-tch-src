@@ -1,0 +1,26 @@
+{
+	"juci-iup": {
+		"description": "JUCI iup module",
+		"read": {
+			"ubus": {
+				"juci.iup": [
+					"backup"
+				],
+				"file": [
+					"read_tmp_juci"
+				]
+			},
+			"uci": [
+				"provisioning"
+			],
+			"juci-backup-iup": [
+				"download"
+			]
+		},
+		"write": {
+			"uci": [
+				"provisioning"
+			]
+		}
+	}
+}

@@ -1,0 +1,46 @@
+<div>
+	<juci-config-line title="{{'DHCP Pool Start'|translate}}" error="dhcp.start.error" help="{{'IPv4'|translate}}">
+		<input class="form-control pull-right" style="width: 60px;" ng-model="dhcp.start.value" placeholder="1"></input>
+	</juci-config-line>
+	<juci-config-line title="{{'DHCP Pool Size'|translate}}" error="dhcp.limit.error" help="{{'IPv4'|translate}}">
+		<input class="form-control pull-right" style="width: 60px;" ng-model="dhcp.limit.value" placeholder="1"></input>
+	</juci-config-line>
+	<juci-config-line title="{{'DHCP Lease Time'|translate}}" help="{{'IPv4 and IPv6'|translate}}">
+		<juci-select ng-model="dhcp.leasetime.value" ng-items="dhcpLeaseTimes" placeholder="{{dhcp.leasetime.value}}"/>
+	</juci-config-line>
+	<juci-expandable ng-hide="hideAdvanced" title="{{'Advanced Settings'|translate}}" open="false">
+		<juci-dhcp-options-editor option="dhcp.dhcp_option" option-forced="dhcp.dhcp_option_force"></juci-dhcp-options-editor>
+		<hr />
+		<juci-config-line title="{{'Dynamic DHCP'|translate}}">
+			<switch ng-model="dhcp.dynamicdhcp.value" class="green" ></switch>
+		</juci-config-line>
+		<juci-config-line title="{{'Force'|translate}}">
+			<switch ng-model="dhcp.force.value" class="green" ></switch>
+		</juci-config-line>
+		<!-- TODO: Add? Was implemented in luci
+		<juci-config-line title="{{'IPv4 Netmask'|translate}}">
+			<juci-select ng-model="dhcp.TODO.value" ng-items="IPv4Values" placeholder="{{'TODO'|translate}}"/>
+		</juci-config-line-->
+	</juci-expandable>
+	<juci-expandable ng-hide="hideIpv6" title="{{'IPv6 Settings'|translate}}" open="false">
+		<juci-config-line title="{{'DHCPv6-Service'|translate}}">
+			<juci-select ng-model="dhcp.dhcpv6.value" ng-items="dhcpv6Values" placeholder=" "/>
+		</juci-config-line>
+		<juci-config-line title="{{'DHCPv6-Mode'|translate}}" ng-show="dhcp.dhcpv6.value === 'server'">
+			<juci-select ng-model="dhcp.management_level.value" ng-items="managementLevels" />
+		</juci-config-line>
+		<juci-config-line title="{{'Router Advertisement-Service'|translate}}">
+			<juci-select ng-model="dhcp.ra.value" ng-items="raValues" placeholder=" "/>
+		</juci-config-line>
+		<juci-config-line title="{{'NDP-Proxy'|translate}}">
+			<juci-select ng-model="dhcp.ndp.value" ng-items="ndpValues" placeholder=" "/>
+		</juci-config-line>
+		<!-- TODO: Add? Was implemented in luci
+		<juci-config-line title="{{'DHCPv6-Mode'|translate}}">
+			<juci-select ng-model="dhcp.ra_management.value" ng-items="ra_managementValues" placeholder=" "/>
+		</juci-config-line>
+		<juci-config-line title="{{'Master'|translate}}">
+			<switch ng-model="dhcp.master.value" class="green" ></switch>
+		</juci-config-line>-->
+	</juci-expandable>
+</div>

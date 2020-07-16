@@ -1,0 +1,105 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JUCI\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: Inteno\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.10\n"
+
+# /home/jamu/GIT/juci/plugins/juci-network-ethernet/src/pages/page-network-ethernet-phy.js
+msgid "Port Speed"
+msgstr "Portin nopeus"
+
+# /home/jamu/GIT/juci/plugins/juci-network-ethernet/src/pages/page-network-ethernet-phy.js
+msgid "None"
+msgstr "Ei mitään"
+
+msgid "Full auto-negotiation"
+msgstr "Täysin automaattinen neuvottelu"
+
+msgid "Max 100Mb auto-negotiation, full duplex"
+msgstr "Max 100Mb automaattinen yhteydenmuodostus, kaksisuuntainen"
+
+msgid "Max 100Mb auto-negotiation, half duplex"
+msgstr "Max 100Mb automaattinen yhteydenmuodostus, vuorosuuntainen"
+
+msgid "Max 10Mb auto-negotiation, full duplex"
+msgstr "Max 10Mb automaattinen yhteydenmuodostus, kaksisuuntainen"
+
+msgid "Max 10Mb auto-negotiation, half duplex"
+msgstr "Max 10Mb automaattinen yhteydenmuodostus, vuorosuuntainen"
+
+msgid "Only 100Mb, full duplex"
+msgstr "Vain 100Mb, kaksisuuntainen"
+
+msgid "Only 100Mb, half duplex"
+msgstr "Vain 100Mb, vuorosuuntainen"
+
+msgid "Only 10Mb, full duplex"
+msgstr "Vain 10Mb, kaksisuuntainen"
+
+msgid "Only 10Mb, half duplex"
+msgstr "Vain 10Mb, vuorosuuntainen"
+
+msgid "Disabled"
+msgstr "Pois käytöstä"
+
+# /home/jamu/GIT/juci/plugins/juci-network-ethernet/src/widgets/network-device-ethernet-port-edit.js
+msgid "Only 1000Mb"
+msgstr "Vain 1000Mb"
+
+# /home/jamu/GIT/juci/plugins/juci-network-ethernet/src/widgets/network-device-ethernet-port-edit.js
+msgid "Only 100Mb"
+msgstr "Vain 100Mb"
+
+msgid "Port speed"
+msgstr "Portin nopeus"
+
+msgid "Pause frames"
+msgstr "Taukokehykset"
+
+msgid "Ethernet"
+msgstr "Ethernet portit"
+
+msgid "Ethernet Ports"
+msgstr "Ethernet portit"
+
+msgid "internet.ethernet.phy.info"
+msgstr "Ethernet porttien konfigurointi"
+
+# /home/jamu/GIT/juci/plugins/juci-network-ethernet/src/pages/page-network-ethernet-phy.html
+msgid "Fiber Ports"
+msgstr "Kuituportit"
+
+# /home/jamu/GIT/juci/plugins/juci-network-ethernet/src/pages/page-network-ethernet-phy.html
+msgid "Uplink port"
+msgstr "Internetportti"
+
+# /home/jamu/GIT/juci/plugins/juci-network-ethernet/src/pages/page-network-ethernet-phy.html
+msgid "This is used to configure the ethernet port as internet uplink."
+msgstr "Tätä porttia käytetään Internet-porttina"
+
+msgid "menu-page-network-ethernet-phy-title"
+msgstr "Ethernet"
+
+# /home/jamu/GIT/juci/plugins/juci-network-ethernet/src/pages/page-network-ethernet-phy.html
+msgid "page-network-ethernet-phy-title"
+msgstr "Ethernet"
+
+#~ msgid "This will be the port that will be used to configure the physical ethernet port as upling port for routing out to the internet."
+#~ msgstr "Tätä porttia käytetään Internetporttina"
+
+# /home/jari/GIT/IOPSYS/juci/plugins/juci-network-ethernet/src/pages/page-network-ethernet-phy.html
+#~ msgid "This device will be used in a bridge"
+#~ msgstr "Liitäntää käytetään sillatussa yhteydessä."
+
+#~ msgid "Select uplink port"
+#~ msgstr "Valitse Internetportti"
+
+#~ msgid " socket will be used for passing packets to the internet."
+#~ msgstr "käytetään internetyhteytenä"

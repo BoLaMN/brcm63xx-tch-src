@@ -1,0 +1,64 @@
+<juci-layout-with-sidebar>
+	<div ng-controller="McproxyPageCtrl">
+		<juci-config-heading>{{ 'Multicast Proxy'|translate}}</juci-config-heading>
+		<!--<juci-config-info>{{'Change settings for the Multicast proxy'|translate}}</juci-config-info>-->
+		<juci-config-line title="{{'Enable'|translate}}" >
+			<switch class="green" ng-model="mcproxy.disabled.value" inverted/>
+		</juci-config-line>
+		<juci-config-line title="{{'Protocol'|translate}}">
+			<juci-select ng-items="protocol" ng-model="mcproxy.protocol.value"/>
+		</juci-config-line>
+		<juci-config-line title="{{'Query Interval'|translate}}" error="mcproxy.query_interval.error">
+			<input type="number" class="form-control" ng-model="mcproxy.query_interval.value" placeholder="{{'ex: 120'|translate}}"
+			min="0"/>
+		</juci-config-line>
+		<juci-config-line title="{{'Query Response Interval'|translate}}" error="mcproxy.query_response_interval.error">
+			<input type="number" class="form-control" ng-model="mcproxy.query_response_interval.value" placeholder="{{'ex: 10'|translate}}"
+			min="0"/>
+		</juci-config-line>
+		<juci-config-line title="{{'Last Member Query Interval'|translate}}" error="mcproxy.last_memeber_query_interval.error">
+			<input type="number" class="form-control" ng-model="mcproxy.last_member_query_interval.value" placeholder="{{'ex: 10'|translate}}"
+			min="0"/>
+		</juci-config-line>
+		<juci-config-line title="{{'Robustness Value'|translate}}" error="mcproxy.robustness_value.error">
+			<input type="number" class="form-control" ng-model="mcproxy.robustness_value.value" placeholder="{{'ex: 2'|translate}}"
+			min="0"/>
+		</juci-config-line>
+		<juci-config-line title="{{'Max Groups'|translate}}" error="mcproxy.max_groups.error">
+			<input type="number" class="form-control" ng-model="mcproxy.max_groups.value" placeholder="{{'64'|translate}}"
+			min="0"/>
+		</juci-config-line>
+		<juci-config-line title="{{'Max Sources'|translate}}" error="mcproxy.max_sources.error">
+			<input type="number" class="form-control" ng-model="mcproxy.max_sources.value" placeholder="{{'32'|translate}}"
+			min="0"/>
+		</juci-config-line>
+		<juci-config-line title="{{'Snooping Exceptions'|translate}}">
+			<div class="col-xs-12 form-group" ng-repeat="entry in exception track by $index">
+				<div class="col-sm-10">
+					<input type="text" class="form-control" ng-disabled="true" ng-model="entry" />
+				</div>
+				<!--<div class="col-sm-2">
+					<button style="margin-right:15px;" class="btn btn-default pull-right" ng-click="onUpdateIp(entry, $index)">Update</button>
+				</div>-->
+				<div class="col-sm-2">
+					<button style="margin-right:0px;" class="btn btn-default pull-right" ng-click="onRemoveIp(entry, $index)"><i class="fa fa-trash-o"></i></button>
+				</div>
+			</div>
+			<div class="col-xs-12 form-group">
+				<div class="col-sm-10">
+					<input type="text" class="form-control" ng-model="McastIp" placeholder="{{'Multicast Address'|translate}}"/>
+					<juci-error value="McastIpErr" />
+				</div>
+				<div class="col-sm-2">
+					<button style="margin-right:0px;" class="btn btn-default pull-right"
+						ng-click="onAddIp(McastIp, $index)">Add</button>
+				</div>
+			</div>
+		</juci-config-line>
+		<juci-config-line title="{{'Instances'|translate}}"></juci-config-line>
+		<juci-config-section>
+			<juci-list-editor ng-items="allInstances" item-editor="mc-instance-edit" get-item-title="getmcInstanceTitle($item)"
+					on-create="onAddInstance()" on-delete="onDeleteInstance($item)"></juci-list-editor>
+		</juci-config-section>
+	</div>
+</juci-layout-with-sidebar>

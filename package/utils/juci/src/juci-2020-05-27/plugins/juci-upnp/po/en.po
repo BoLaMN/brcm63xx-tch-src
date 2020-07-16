@@ -1,0 +1,177 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Allow"
+msgstr ""
+
+msgid "Deny"
+msgstr ""
+
+msgid "UPNP Settings"
+msgstr ""
+
+msgid "internet.services.upnp.info"
+msgstr "Configure UPNP and ports"
+
+msgid "General Settings"
+msgstr ""
+
+msgid "Automatically Start Service At Bootup"
+msgstr ""
+
+msgid "Enable upnp daemon at boot time"
+msgstr ""
+
+msgid "Start / Stop Service"
+msgstr ""
+
+msgid "Start/stop upnp daemon (make sure you have WAN connection!)"
+msgstr ""
+
+msgid "Enable UPNP"
+msgstr ""
+
+msgid "Enable UPNP protocol"
+msgstr ""
+
+msgid "Enable NAT-PMP"
+msgstr ""
+
+msgid "Enable NAT-PMP protocol"
+msgstr ""
+
+msgid "Enable secure mode"
+msgstr ""
+
+msgid "Allow adding forwards only to requesting ip addresses"
+msgstr ""
+
+msgid "Enable additional logging"
+msgstr ""
+
+msgid "Puts extra debugging information into the system log"
+msgstr ""
+
+msgid "Downlink"
+msgstr ""
+
+msgid "Value in KByte/s, informational only"
+msgstr ""
+
+msgid "Uplink"
+msgstr ""
+
+msgid "Port"
+msgstr ""
+
+msgid "External Interface"
+msgstr ""
+
+msgid "Internal Interface"
+msgstr ""
+
+msgid "Advanced Settings"
+msgstr ""
+
+msgid "Device UUID"
+msgstr ""
+
+msgid "Announced serial number"
+msgstr ""
+
+msgid "Serial Number"
+msgstr ""
+
+msgid "Announced model number"
+msgstr ""
+
+msgid "Model Number"
+msgstr ""
+
+msgid "Notify interval"
+msgstr ""
+
+msgid "Clean rules threshold"
+msgstr ""
+
+msgid "Clean rules interval"
+msgstr ""
+
+msgid "Presentation URL"
+msgstr ""
+
+msgid "UPnP lease file"
+msgstr ""
+
+msgid "UPnP ACLs"
+msgstr ""
+
+msgid "UPnP Open Ports"
+msgstr ""
+
+msgid "No UPnP ports currently in use"
+msgstr ""
+
+msgid "Pkts. cnt."
+msgstr ""
+
+msgid "Bytes"
+msgstr ""
+
+msgid "Target"
+msgstr ""
+
+msgid "Proto."
+msgstr ""
+
+msgid "Opt"
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+msgid "Dest."
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "External ports"
+msgstr ""
+
+msgid "Internal addresses"
+msgstr ""
+
+msgid "Internal ports"
+msgstr ""
+
+msgid "Action"
+msgstr ""
+
+msgid "Sort"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Packets cnt."
+msgstr ""
+
+msgid "Proto"
+msgstr ""
+
+msgid "menu-upnpd-settings-title"
+msgstr "UPNP"
+
+msgid "menu-upnpd-status-title"
+msgstr "UPNP"

@@ -1,0 +1,1058 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Standard Container"
+msgstr "Standard-behållare"
+
+msgid "Browse directory"
+msgstr "Välj mapp"
+
+msgid "Music"
+msgstr "Musik"
+
+msgid "Video"
+msgstr "Videofilmer"
+
+msgid "Pictures"
+msgstr "Bilder"
+
+msgid "Add folder to share"
+msgstr "Lägg till mapp som du vill dela"
+
+msgid "Loading.."
+msgstr "Laddar..."
+
+msgid "All types"
+msgstr "Alla typer"
+
+msgid "Video only"
+msgstr "Endast videofilmer"
+
+msgid "Audio only"
+msgstr "Endast ljudfiler"
+
+msgid "Pictures only"
+msgstr "Endast bilder"
+
+msgid "Media type"
+msgstr "Media typer"
+
+msgid "Select folder"
+msgstr "Välj mapp"
+
+msgid "Enable"
+msgstr "Aktivera"
+
+msgid "General Settings"
+msgstr "Generella Inställningar"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Port for HTTP (descriptions, SOAP, media transfer) traffic."
+msgstr "Port för HTTP (beskrivning, SOAP, mediaöverförings) traffik."
+
+msgid "Network"
+msgstr "Nätverk"
+
+msgid "Network interfaces to serve."
+msgstr "Nätverks gränssnitt att tjäna"
+
+msgid "Friendly Name"
+msgstr "Friendly Namn"
+
+msgid ""
+"Set this if you want to customize the name that shows up on your clients."
+msgstr "Ställ in detta om du vill ändra namnet som visas upp hos klienterna."
+
+msgid "Root Container"
+msgstr "Root-behållare"
+
+msgid "Media Directories"
+msgstr "Mediamappar"
+
+msgid "Album-Art Names"
+msgstr "Album-Art Namn"
+
+msgid "This is a list of file names to check for when searching for album art."
+msgstr ""
+"Detta är en lista av filnamn att söka efter för att hitta album omslagsbilder"
+
+msgid "write list of album-art names"
+msgstr "Skriv in lista av album-art filnamn"
+
+msgid "Advanced settings"
+msgstr "Avancerade inställningar"
+
+msgid "Database directory"
+msgstr "Databas mapp"
+
+msgid "Log directory"
+msgstr "Log mapp"
+
+msgid "Enable inotify"
+msgstr "Aktivera Inotify"
+
+msgid ""
+"Set this to enable inotify monitoring to automatically discover new files."
+msgstr ""
+"Sett detta för att möjliggöra inotify monitorering att automatiskt upptäcka "
+"nya filer."
+
+msgid "Enable TIVO"
+msgstr "Aktivera NAT"
+
+msgid ""
+"Set this to enable support for streaming .jpg and .mp3 files to a TiVo "
+"supporting HMO."
+msgstr ""
+"Ställ in detta för att lägga till support för att streama .jpg och .mp3 "
+"filer till ett TiVo enheter"
+
+msgid "Strict to DLNA standard"
+msgstr "Strikt mot DLNA standarden"
+
+msgid "Presentation URL"
+msgstr "Pressentations URL"
+
+msgid "Notify interval"
+msgstr "notifieringsintervall"
+
+msgid "Notify interval in seconds."
+msgstr "Notifierings intervall i sekunder"
+
+msgid "Announced serial number"
+msgstr "Angett Serie nummer"
+
+msgid ""
+"Serial number the miniDLNA daemon will report to clients in its XML "
+"description."
+msgstr ""
+"Serienummer som miniDLNA demonen kommer att rapportera till klienterna i XML "
+"beskrivningen"
+
+msgid "Announced model number"
+msgstr "Angett modell nummer"
+
+msgid ""
+"Model number the miniDLNA daemon will report to clients in its XML "
+"description."
+msgstr ""
+"Modelnummer som miniDLNA demonen kommer att rapportera till klienterna i XML "
+"beskrivningen"
+
+msgid "miniSSDP socket"
+msgstr "miniSSDP anslutning"
+
+msgid "Specify the path to the MiniSSDPd socket."
+msgstr "Ange sökväg till miniSSDPd anslutiningen."
+
+msgid "MiniDLNA"
+msgstr "MiniDLNA"
+
+msgid ""
+"MiniDLNA is server software with the aim of being fully compliant with DLNA/"
+"UPnP-AV clients."
+msgstr ""
+"MiniDLNA är en server mjukvara vars mål är att vara fullt kompatibel med "
+"DLNA och UPnP-AV klienter"
+
+msgid "menu-internet-services-minidlna-title"
+msgstr "MiniDLNA"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

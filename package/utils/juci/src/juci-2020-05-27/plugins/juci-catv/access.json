@@ -1,0 +1,26 @@
+{
+	"juci-catv": {
+		"description": "JUCI CATV module",
+		"read": {
+			"uci": [
+				"catv"
+			],
+			"ubus": {
+				"catv": [
+					"get-all",
+					"vendornumber"
+				]
+			}
+		},
+		"write": {
+			"uci": [
+				"catv"
+			],
+			"ubus": {
+				"catv": [
+					"get-all"
+				]
+			}
+		}
+	}
+}

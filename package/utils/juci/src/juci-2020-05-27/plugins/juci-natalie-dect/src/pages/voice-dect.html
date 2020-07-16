@@ -1,0 +1,55 @@
+<body onload="updateDectStatus()">
+
+<juci-layout-with-sidebar>
+	<div ng-controller="PhoneDectPage">
+		<h2 translate>DECT Radio</h2>
+		<juci-config-info>{{'phone.dect.info'|translate}}</juci-config-info>
+		<juci-config-lines>
+			<juci-config-line title="{{'DECT Radio' | translate }}">
+				<juci-select on-change="changeRadio($value)" ng-items="dectModes" ng-model="dectRadioFix.value"></juci-select>
+			</juci-config-line>
+			<juci-config-line title="{{'Radio Status' | translate }}">
+				<label><b>{{status.radio|uppercase}}</b></label>
+			</juci-config-line>
+			<juci-config-line title="{{'Pair DECT Device (3 min)' | translate }}">
+				<button class="btn btn-default" ng-click="onStartPairing()" translate>Pair</button>
+			</juci-config-line>
+			<modal title="{{'Attempting to Pair'|translate}}" data-keyboard="false" data-backdrop="static" ng-show="(status.registration == 'pending active' || status.registration == 'active')" dismiss-label="Cancel" on-dismiss="onCancelDECT()">
+				<div style="text-align: center;">
+					<div ng-show="progress != 0" >
+						<i class="fa fa-spinner fa-spin fa-3x"></i>
+					</div>
+					<p>{{'Trying to Pair' | translate}}</p>
+				</div>
+			</modal>
+		</juci-config-lines>
+		<div>
+			<table class="table">
+				<thead style="text-align: center;">
+					<th style="width:1%" translate>ID</th>
+					<th class="hidden-xs" translate>IPUI</th>
+					<th class="hidden-xs" translate>Codecs</th>
+					<th translate>Hook</th>
+					<th style="width:1%" translate>Calling</th>
+					<th style="width:1%"></th>
+					<th style="width:1%"></th>
+				</thead>
+				<tr ng-repeat="hs in handset.handsets track by $index">
+					<td>{{hs.id}}</td>
+					<td class="hidden-xs">{{toHexString(hs.ipui)}}</td>
+					<td class="hidden-xs">{{hs.codecs.toString()}}</td>
+					<td>
+						<span ng-show="hs.hook == 'onhook'"><i class="juci juci-phone-down"></i></span>
+						<span ng-show="hs.hook == 'offhook'"><i class="juci juci-phone text-success"></i></span>
+					</td>
+					<th><span ng-show="hs.hook == 'offhook' && hscall[hs.id]">{{hscall[hs.id] || 'Unknown number'|translate}}</span></th>
+					<td>
+						<button ng-click="onPingHandset(hs)" class="btn btn-default" ng-show="hs.hook == 'onhook'">Ping</button>
+						<button ng-click="onPingHandset(hs)" class="btn btn-default" ng-show="hs.hook == 'offhook'">Hang up</button>
+					</td>
+					<td><button class="btn btn-default" ng-click="onUnpairHandset(hs)" translate>Unpair</button></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</juci-layout-with-sidebar>

@@ -1,0 +1,20 @@
+{
+	"juci-upnp": {
+		"description": "JUCI UPNPD module",
+		"read": {
+			"ubus": {	
+				"juci.upnpd": [
+					"ports"
+				]
+			}, 
+			"uci": [
+				"upnpd"
+			]
+		}, 
+		"write": {
+			"uci": [
+				"upnpd"
+			]
+		}
+	}
+}

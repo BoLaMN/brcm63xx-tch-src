@@ -1,0 +1,18 @@
+<div>
+	<juci-overview-widget title="{{'Voice'|translate}}" icon="juci juci-phone" href="{{href}}">
+		<div class="row" style="margin-bottom: 10px">
+			<div class="col-xs-2"><i class="juci juci-calendar juci-lg"></i></div>
+			<div class="col-xs-8">
+				<a class="overview-list-item-text" href="#!/voice-ringing-schedule"><strong>{{'Schedule'|translate}}</strong></a>
+			</div>
+			<div class="col-xs-2">
+				<a class="label label-{{(voice_client.RINGING_STATUS.enabled.value)?'success':'default'}} pull-right overview-list-item-label" href="" ng-click="onPhoneToggle()"><strong>{{phoneSchedStatus | translate}}</strong></a>
+			</div>
+		</div>
+		<div class="row" style="margin-bottom: 10px"  ng-repeat="sip in sipAccounts track by $index">
+			<div class="col-xs-2"><strong>S{{$index || '0' |uppercase}}: </strong></div>
+			<div class="col-xs-6"><strong>{{sip.name.value || sip.user.value|| str_unknown }}</strong></div>
+			<div class="col-xs-2 pull-right"><i class="{{sip.$icon}}"></i></div>
+		</div>
+	</juci-overview-widget>
+</div>

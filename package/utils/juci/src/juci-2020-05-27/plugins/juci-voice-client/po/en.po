@@ -1,0 +1,825 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "SIP users needs a name"
+msgstr ""
+
+msgid "SIP users needs a valid extension"
+msgstr ""
+
+msgid "Today"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Fixed"
+msgstr ""
+
+msgid "Adaptive"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Australia"
+msgstr ""
+
+msgid "Belgium"
+msgstr ""
+
+msgid "Brazil"
+msgstr ""
+
+msgid "Chile"
+msgstr ""
+
+msgid "China"
+msgstr ""
+
+msgid "Czech"
+msgstr ""
+
+msgid "Denmark"
+msgstr ""
+
+msgid "ETSI"
+msgstr ""
+
+msgid "Finland"
+msgstr ""
+
+msgid "France"
+msgstr ""
+
+msgid "Germany"
+msgstr ""
+
+msgid "Hungary"
+msgstr ""
+
+msgid "India"
+msgstr ""
+
+msgid "Italy"
+msgstr ""
+
+msgid "Japan"
+msgstr ""
+
+msgid "Netherlands"
+msgstr ""
+
+msgid "New Zealand"
+msgstr ""
+
+msgid "North America"
+msgstr ""
+
+msgid "Spain"
+msgstr ""
+
+msgid "Sweden"
+msgstr ""
+
+msgid "Switzerland"
+msgstr ""
+
+msgid "Norway"
+msgstr ""
+
+msgid "Taiwan"
+msgstr ""
+
+msgid "United Kingdom"
+msgstr ""
+
+msgid "United Arab Emirates"
+msgstr ""
+
+msgid "CFG TR57"
+msgstr ""
+
+msgid "off"
+msgstr ""
+
+msgid "Unknown"
+msgstr ""
+
+msgid "on"
+msgstr ""
+
+msgid "Off"
+msgstr ""
+
+msgid "Transparent"
+msgstr ""
+
+msgid "Conservative"
+msgstr ""
+
+msgid "Aggressive"
+msgstr ""
+
+msgid "White noise"
+msgstr ""
+
+msgid "Hot noise"
+msgstr ""
+
+msgid "Spectrum estimate"
+msgstr ""
+
+msgid "TLS v1"
+msgstr ""
+
+msgid "SSL v2"
+msgstr ""
+
+msgid "SSL v3"
+msgstr ""
+
+msgid "Listen on all interfaces"
+msgstr ""
+
+msgid "Congestion"
+msgstr ""
+
+msgid "Info"
+msgstr ""
+
+msgid "Compatibility"
+msgstr ""
+
+msgid "RFC 2833"
+msgstr ""
+
+msgid "SIP INFO"
+msgstr ""
+
+msgid "Inband"
+msgstr ""
+
+msgid "No Mailbox"
+msgstr ""
+
+msgid "Select Codec"
+msgstr ""
+
+msgid "G 723.1"
+msgstr ""
+
+msgid "GSM"
+msgstr ""
+
+msgid "G.711MuLaw"
+msgstr ""
+
+msgid "G. 726"
+msgstr ""
+
+msgid "iLBC"
+msgstr ""
+
+msgid "G. 729a"
+msgstr ""
+
+msgid "G.711ALaw"
+msgstr ""
+
+msgid "UDP"
+msgstr ""
+
+msgid "TCP"
+msgstr ""
+
+msgid "TLS"
+msgstr ""
+
+msgid "Account "
+msgstr ""
+
+msgid "Direct"
+msgstr ""
+
+msgid "No Account"
+msgstr ""
+
+msgid "Advanced Line Settings"
+msgstr ""
+
+msgid "Locale selecton"
+msgstr ""
+
+msgid "A restart is required for country changes to take effect"
+msgstr ""
+
+msgid "Enable Jitter Buffer"
+msgstr ""
+
+msgid "Force Jitter Buffer"
+msgstr ""
+
+msgid "Jitter Buffer implementation"
+msgstr ""
+
+msgid "Maximum Jitter Buffer size [ms]"
+msgstr ""
+
+msgid "Enable Packet Loss Concealment"
+msgstr ""
+
+msgid "Inter-digit timeout [ms]"
+msgstr ""
+
+msgid "Custom Dialplan"
+msgstr ""
+
+msgid "Enable incomming dialplan"
+msgstr ""
+
+msgid "Enable outgoing dialplan"
+msgstr ""
+
+msgid "Enable custom hangup"
+msgstr ""
+
+msgid "All ports Extension"
+msgstr ""
+
+msgid "Test Audio Extension"
+msgstr ""
+
+msgid "Test Echo Extension"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Schedule"
+msgstr ""
+
+msgid "ONLINE"
+msgstr ""
+
+msgid "OFFLINE"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Internal Number"
+msgstr ""
+
+msgid "Outgoing Calls Number"
+msgstr ""
+
+msgid "Select Outgoing Number"
+msgstr ""
+
+msgid "Call Waiting"
+msgstr ""
+
+msgid "Call ID Restriction"
+msgstr ""
+
+msgid "Voice Activity Detection"
+msgstr ""
+
+msgid "Comfort Noice Generation"
+msgstr ""
+
+msgid "Echo cancellation"
+msgstr ""
+
+msgid "Transmit gain"
+msgstr ""
+
+msgid "Receive gain"
+msgstr ""
+
+msgid "Voice Lines"
+msgstr ""
+
+msgid "phone.lines.info"
+msgstr "Configure Voice lines."
+
+msgid "Phone Lines"
+msgstr ""
+
+msgid "Advanced SIP Settings"
+msgstr ""
+
+msgid "Sip Proxy servers"
+msgstr ""
+
+msgid "Allow incomming calls from the specified proxies"
+msgstr ""
+
+msgid "Add SIP Proxy"
+msgstr ""
+
+msgid "Bind Interface"
+msgstr ""
+
+msgid "WAN Interface to bind to (listen on)"
+msgstr ""
+
+msgid "Bindport"
+msgstr ""
+
+msgid "UDP Port to bind to (listen on)"
+msgstr ""
+
+msgid "User Agent"
+msgstr ""
+
+msgid "Allow the SIP header User-Agent to be customized"
+msgstr ""
+
+msgid "RTP Port Range"
+msgstr ""
+
+msgid "DTMF Mode"
+msgstr ""
+
+msgid "Register Interval"
+msgstr ""
+
+msgid "Time in seconds between registration attempts"
+msgstr ""
+
+msgid "Realm"
+msgstr ""
+
+msgid ""
+"Realm for digest authentication, set this to your host name or domain name"
+msgstr ""
+
+msgid "Localnet"
+msgstr ""
+
+msgid "Network addresses that are considered inside of the NATted network"
+msgstr ""
+
+msgid "Add Localnet"
+msgstr ""
+
+msgid "Register Timeout"
+msgstr ""
+
+msgid "Time before giving up a registration attempt"
+msgstr ""
+
+msgid "Register Attempts"
+msgstr ""
+
+msgid ""
+"Number of registration attempts before giving up (Set to 0 or empty to try "
+"forever)"
+msgstr ""
+
+msgid "Register Back-off Attempts"
+msgstr ""
+
+msgid ""
+"Number of registration attempts before entering back-off state (Set to 0 or "
+"empty to disable)"
+msgstr ""
+
+msgid "Register Back-off Timeout"
+msgstr ""
+
+msgid "Time before giving up a registration attempt in back-off state"
+msgstr ""
+
+msgid "Remote Hold"
+msgstr ""
+
+msgid "Send hold events to proxy (Let network handle music on hold)"
+msgstr ""
+
+msgid "SRV Lookup"
+msgstr ""
+
+msgid "Enable DNS SRV lookup"
+msgstr ""
+
+msgid "DNS Manager"
+msgstr ""
+
+msgid "Enable Asterisk DNS manager"
+msgstr ""
+
+msgid "DNS Manager Refresh Interval"
+msgstr ""
+
+msgid "Refresh intervall"
+msgstr ""
+
+msgid "Line suffix in contact header"
+msgstr ""
+
+msgid ""
+"Add a suffix indicating which lines are called to the sip contact header"
+msgstr ""
+
+msgid "SIP DiffServ"
+msgstr ""
+
+msgid "Differentiated services/TOS for SIP data. Recommended value: cs3"
+msgstr ""
+
+msgid "Audio DiffServ"
+msgstr ""
+
+msgid "Differentiated services/TOS for Audio data. Recommended value: ef"
+msgstr ""
+
+msgid "Congestion tone"
+msgstr ""
+
+msgid "Tone to play on congestion"
+msgstr ""
+
+msgid "STUN server"
+msgstr ""
+
+msgid "Leave empty to disable the STUN monitor"
+msgstr ""
+
+msgid "TLS/SSL Version"
+msgstr ""
+
+msgid "Cipher string"
+msgstr ""
+
+msgid "Trusted CA"
+msgstr ""
+
+msgid "Don't forget to press save to save your changes"
+msgstr ""
+
+msgid "Account Name"
+msgstr ""
+
+msgid "Incoming calls to"
+msgstr ""
+
+msgid "SIP domain name"
+msgstr ""
+
+msgid "Domain name"
+msgstr ""
+
+msgid "SIP Username"
+msgstr ""
+
+msgid " The User id for the account, may be a phone number"
+msgstr ""
+
+msgid "User"
+msgstr ""
+
+msgid "SIP Authentication Name"
+msgstr ""
+
+msgid "Used in combination with password to register against SIP server"
+msgstr ""
+
+msgid "Auth User"
+msgstr ""
+
+msgid "SIP Password"
+msgstr ""
+
+msgid ""
+"When your password is saved, it disappears from this field and is not "
+"displayed for your protection. The previously saved password will be changed "
+"only when you enter a value different from the saved one."
+msgstr ""
+
+msgid "wifi-iface.show_password"
+msgstr "Show Key Text"
+
+msgid "Display Name"
+msgstr ""
+
+msgid "Display name used in Caller Id"
+msgstr ""
+
+msgid "SIP Server/Registrar"
+msgstr ""
+
+msgid "Optional"
+msgstr ""
+
+msgid "SIP Server"
+msgstr ""
+
+msgid "SIP Server/Registrar Port"
+msgstr ""
+
+msgid "SIP Server Port"
+msgstr ""
+
+msgid "SIP Outbound Proxy"
+msgstr ""
+
+msgid "SIP Proxy"
+msgstr ""
+
+msgid "SIP Outbound Proxy Port"
+msgstr ""
+
+msgid "SIP Proxy Port"
+msgstr ""
+
+msgid "Incoming Phone Lines"
+msgstr ""
+
+msgid "Preferred codecs"
+msgstr ""
+
+msgid "GSM packetization"
+msgstr ""
+
+msgid "G.723.1 packetization"
+msgstr ""
+
+msgid "G.711MuLaw packetization"
+msgstr ""
+
+msgid "G. 726 packetization"
+msgstr ""
+
+msgid "iLBC packetization"
+msgstr ""
+
+msgid "G. 729a packetization"
+msgstr ""
+
+msgid "G.711ALaw packetization"
+msgstr ""
+
+msgid "Autoframing"
+msgstr ""
+
+msgid "Negotiate packetization at call establishment"
+msgstr ""
+
+msgid "SIP Transport"
+msgstr ""
+
+msgid "Encryption"
+msgstr ""
+
+msgid "Use Secure Real-time Transport Protocol (SRTP)"
+msgstr ""
+
+msgid "Use as Fax"
+msgstr ""
+
+msgid ""
+"Indicate that this SIP account will be used for a fax machine. This will "
+"force some settings to enable inband fax."
+msgstr ""
+
+msgid "Mailbox"
+msgstr ""
+
+msgid "SIP Accounts"
+msgstr ""
+
+msgid "Extension"
+msgstr ""
+
+msgid "Extension for this user"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "The User id for the account (defaultuser)"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Call out using SIP provider"
+msgstr ""
+
+msgid "Host"
+msgstr ""
+
+msgid "Host for this user (leave empty for dynamic)"
+msgstr ""
+
+msgid "Qualify"
+msgstr ""
+
+msgid "Check that user is reachable"
+msgstr ""
+
+msgid "SIP Users"
+msgstr ""
+
+msgid "Voice Status"
+msgstr ""
+
+msgid "status.voice.info"
+msgstr ""
+"Here you find an overview of your active phone numbers. For any change you "
+"would like to make to the current section, please visit Phone menu."
+
+msgid "Your Phone Numbers"
+msgstr ""
+
+msgid "status.voice_lines.info"
+msgstr "Status of your voice lines."
+
+msgid "Your Phone Lines"
+msgstr ""
+
+msgid "Domain"
+msgstr ""
+
+msgid "Registration interval (s)"
+msgstr ""
+
+msgid "Last registration"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "State"
+msgstr ""
+
+msgid "Voice service is not available!"
+msgstr ""
+
+msgid "Custom Dialplan Settings"
+msgstr ""
+
+msgid "Call Log"
+msgstr ""
+
+msgid "phone.call_log.info"
+msgstr "Latest calls."
+
+msgid "Show calls for"
+msgstr ""
+
+msgid "Select phone"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Time"
+msgstr ""
+
+msgid "External Number"
+msgstr ""
+
+msgid "Your number"
+msgstr ""
+
+msgid "Duration"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Number Blocking"
+msgstr ""
+
+msgid "phone.number_blocking.info"
+msgstr ""
+"Stay in control of your bills and block outgoing calls to unwanted numbers."
+
+msgid "Outgoing Number Blocking"
+msgstr ""
+
+msgid "Phone Extension"
+msgstr ""
+
+msgid "Block connections to all foreign numbers"
+msgstr ""
+
+msgid "Block connections to all special rate numbers"
+msgstr ""
+
+msgid "Incoming Number Blocking"
+msgstr ""
+
+msgid "Do not allow connections from these numbers"
+msgstr ""
+
+msgid "Outgoing Calls"
+msgstr ""
+
+msgid ""
+"You can also block ranges of numbers.For example: '0160#' blocks all numbers "
+"starting with '0160'."
+msgstr ""
+
+msgid "Incoming Calls"
+msgstr ""
+
+msgid "Ringing Schedule"
+msgstr ""
+
+msgid "phone.schedule.info"
+msgstr "Define schedules when your phones should or should not ring."
+
+msgid "During this time ringing is"
+msgstr ""
+
+msgid "Select Schedule Mode"
+msgstr ""
+
+msgid "Add a new Ringing Schedule"
+msgstr ""
+
+msgid "Phone Number"
+msgstr ""
+
+msgid "Select Phone Number"
+msgstr ""
+
+msgid "Day"
+msgstr ""
+
+msgid "Number"
+msgstr ""
+
+msgid "Speed Dialing"
+msgstr ""
+
+msgid "phone.speed_dialing.info"
+msgstr ""
+"This feature activates speed dialing to connect you faster to your preferred "
+"contacts."
+
+msgid "Remove all entries from speed dial list"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
+
+msgid "menu-voice-sip-users-title"
+msgstr "SIP Users"
+
+msgid "menu-status-phone-title"
+msgstr "Voice"
+
+msgid "menu-voice-title"
+msgstr "Voice"
+
+msgid "menu-voice-number-blocking-title"
+msgstr "Number Blocking"
+
+msgid "menu-voice-advanced-settings-dialplan-title"
+msgstr "Custom Dialplan"
+
+msgid "menu-voice-advanced-settings-sip-title"
+msgstr "SIP Settings"
+
+msgid "menu-voice-call-log-title"
+msgstr "Call Log"
+
+msgid "menu-voice-advanced-settings-lines-title"
+msgstr "Line Settings"
+
+msgid "menu-voice-sip-accounts-title"
+msgstr "SIP Accounts"
+
+msgid "menu-voice-lines-title"
+msgstr "Voice Lines"
+
+msgid "menu-voice-speed-dialing-title"
+msgstr "Speed Dialing"
+
+msgid "menu-voice-ringing-schedule-title"
+msgstr "Ringing Schedule"
+
+msgid "menu-voice-advanced-settings-title"
+msgstr "Advanced Settings"

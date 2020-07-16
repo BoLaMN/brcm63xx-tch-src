@@ -1,0 +1,27 @@
+{
+	"juci-dropbear": {
+		"description": "JUCI dropbear module",
+		"read": {
+			"uci": [
+				"dropbear"
+			]
+		},
+		"write": {
+			"uci": [
+				"dropbear"
+			]
+		}
+	},
+	"juci-dropbear-keymanagement": {
+		"description": "Give access to get/add/del ssh keys",
+		"read": {
+			"ubus": {
+				"router.dropbear": [
+					"add_ssh_key",
+					"get_ssh_keys",
+					"del_ssh_key"
+				]
+			}
+		}
+	}
+}

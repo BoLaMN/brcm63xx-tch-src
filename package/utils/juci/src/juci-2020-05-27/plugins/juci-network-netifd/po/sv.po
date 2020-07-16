@@ -1,0 +1,1738 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Reidar Cederqvist <reidar.cederqvist@gmail.com>\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Unmanaged"
+msgstr ""
+
+msgid "Static Address"
+msgstr "Statisk IP-adress"
+
+msgid "DHCP v4"
+msgstr "DHCPv4"
+
+msgid "DHCP v6"
+msgstr "DHCPv6"
+
+msgid "PPP"
+msgstr "PPP"
+
+msgid "PPP over Ethernet"
+msgstr "PPP över Ethernet"
+
+msgid "PPP over ATM"
+msgstr "PPP över ATM"
+
+msgid "3G (ppp over GPRS/EvDO/CDMA or UTMS)"
+msgstr "3G (ppp över GPRS/EvDO/CDMA eller UTMS)"
+
+msgid "4G (LTE/HSPA+)"
+msgstr "4G (LTE/HSPA+)"
+
+msgid "QMI (USB modem)"
+msgstr ""
+
+msgid "NCM (USB modem)"
+msgstr ""
+
+msgid "HNET (self-managing home network)"
+msgstr ""
+
+msgid "Point-to-Point Tunnel"
+msgstr ""
+
+msgid "IPv6 tunnel in IPv4 (6in4)"
+msgstr ""
+
+msgid "IPv6 tunnel in IPv4 (6to4)"
+msgstr ""
+
+msgid "Automatic IPv6 Connectivity Client"
+msgstr ""
+
+msgid "IPv6 rapid deployment"
+msgstr ""
+
+msgid "Dual-Stack Lite"
+msgstr ""
+
+msgid "PPP over L2TP"
+msgstr ""
+
+msgid "Relayd Pseudo Bridge"
+msgstr ""
+
+msgid "GRE Tunnel over IPv4"
+msgstr ""
+
+msgid "Ethernet GRE over IPv4"
+msgstr ""
+
+msgid "GRE Tunnel over IPv6"
+msgstr ""
+
+msgid "Ethernet GRE over IPv6"
+msgstr "Ethernet GRE över IPv6"
+
+msgid ""
+"A new ethernet device has been connected to your router. Do you want to add "
+"it to a network?"
+msgstr ""
+"En ny enhet har identifierats på nätverket. Vill du konfigurera den nu? "
+
+msgid "no device or network given"
+msgstr ""
+
+msgid "valid values are: 'no' and 48-64"
+msgstr ""
+
+msgid "value must be a valid MAC-48 address"
+msgstr "värdet måste vara en giltig MAC-adress"
+
+msgid "Valid values are: auto, no, 0-64"
+msgstr ""
+
+msgid "Network interface "
+msgstr "Ny enhet"
+
+msgid "Unnamed interface"
+msgstr "Ny enhet"
+
+msgid " MUST have  a protocol set"
+msgstr "Måste ha ett protocol valt"
+
+msgid "Unmanaged networks need to be setup as a bridge"
+msgstr ""
+
+msgid "Unmanaged networks need at least one device in bridge"
+msgstr ""
+
+msgid "Either ipv4 or ipv6 address is needed"
+msgstr ""
+
+msgid "Physical interface unspecified"
+msgstr ""
+
+msgid "DHCP interface needs physical interface"
+msgstr ""
+
+msgid "DHCPv6 interface needs physical interface"
+msgstr ""
+
+msgid "Modem device needed for PPP interface"
+msgstr ""
+
+msgid "PPPoE interface needs physical interface"
+msgstr ""
+
+msgid "Modem device needed for 3G interface"
+msgstr ""
+
+msgid "Service type needed for 3G interface"
+msgstr ""
+
+msgid "APN needed for 3G interface"
+msgstr "Ny enhet"
+
+msgid "Device needed for 4G interface"
+msgstr ""
+
+msgid "VPN Server needed for Point-to-Point tunnel"
+msgstr ""
+
+msgid "Remote IPv4 address needed for 6in4 interface"
+msgstr ""
+
+msgid "Local IPv6 address needed for 6in4 interface"
+msgstr ""
+
+msgid "Remote IPv4 address needed for IPv6 rapid deployment interface"
+msgstr ""
+
+msgid "IPv6 prefix needed for IPv6 rapid deployment interface"
+msgstr ""
+
+msgid "IPv6 prefix length needed for IPv6 rapid deployment interface"
+msgstr ""
+
+msgid "DS-Lite AFTR address needed for DS lite interface"
+msgstr ""
+
+msgid "L2TP server needed for PPP over L2TP"
+msgstr ""
+
+msgid "Password needed when username is set"
+msgstr ""
+
+msgid "Unsupported protocol: "
+msgstr ""
+
+msgid "IPv4 Routes needs an interface"
+msgstr ""
+
+msgid "IPv4 Routes needs a Target"
+msgstr "IPv4 Routing Tabell"
+
+msgid "IPv4 Routes needs a Netmask"
+msgstr ""
+
+msgid "IPv4 Routes needs a Gateway"
+msgstr "IPv4 gateway"
+
+msgid "IPv6 Routes needs an interface"
+msgstr ""
+
+msgid "IPv6 Routes needs a Target"
+msgstr "IPv6 Routing Tabell"
+
+msgid "IPv6 Routes needs a Gateway"
+msgstr "IPv6 Gateway"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Cancel"
+msgstr "Avbryt"
+
+msgid "The new interface needs a name"
+msgstr ""
+
+msgid "The new interface needs an interface type"
+msgstr ""
+
+msgid "Pleace choose protocol for connection"
+msgstr ""
+
+msgid "Please select a connection in the list!"
+msgstr "Välj en uppkoppling från listan!"
+
+msgid "Are you sure you want to delete this connection?"
+msgstr "Är du säker på att du vill ta bort denna uppkoppling? "
+
+msgid "You need to select a device to add!"
+msgstr "Du måste välja en enhet du vill lägga till!"
+
+msgid "Standalone"
+msgstr "Standard"
+
+msgid "AnyWAN"
+msgstr "AnyWAN"
+
+msgid "Bridge"
+msgstr "Brygga"
+
+msgid "ERROR"
+msgstr ""
+
+msgid "PENDING"
+msgstr ""
+
+msgid "UP"
+msgstr ""
+
+msgid "DOWN"
+msgstr ""
+
+msgid ""
+"Are you sure you want to switch? Your settings will be lost!<br />The only "
+"way to get it back is to reload the page"
+msgstr ""
+"Är du säker på att du vill byta? Dina inställningar kommer att försvinna<br /"
+">Det enda sättet att få tillbaka dem är att ladda om sidan"
+
+msgid "You need to select a network!"
+msgstr "Du måste välja ett nätverk!"
+
+msgid "UMTS/GPRS"
+msgstr ""
+
+msgid "UMTS only"
+msgstr ""
+
+msgid "GPRS only"
+msgstr ""
+
+msgid "Try"
+msgstr "Försök"
+
+msgid "Force"
+msgstr "Tvinga"
+
+msgid "None"
+msgstr "Ingen"
+
+msgid "Auto"
+msgstr "Automatisk"
+
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+msgid "Uplink"
+msgstr ""
+
+msgid "Downlink"
+msgstr ""
+
+msgid "Address Allocation"
+msgstr "Address Allokering"
+
+msgid "Address Assignment"
+msgstr "Adress Tilldelning"
+
+msgid "Please select a device in the list!"
+msgstr "Vänligen välj en enhet från listan!"
+
+msgid "Are you sure you want to delete this device from bridge?"
+msgstr "Är du säker på att du vill ta bort denna enhet från bryggan? "
+
+msgid "network.interface.type.none.tab.title"
+msgstr "Statisk"
+
+msgid "You need to select a host!"
+msgstr "Du måste välja en enhet!"
+
+msgid "Unknown"
+msgstr "Okänd"
+
+msgid "Edit LAN Settings"
+msgstr "LAN-inställningar"
+
+msgid "Save"
+msgstr "Spara"
+
+msgid "Close"
+msgstr "Stäng"
+
+msgid "Edit DNS servers"
+msgstr "DNS-servrar"
+
+msgid "Network device"
+msgstr "Nätverksenhet"
+
+msgid "Select network device"
+msgstr "Välj nätverksenhet"
+
+msgid "Name"
+msgstr "Namn"
+
+msgid "Displayname"
+msgstr "Visad namn"
+
+msgid "VLAN Tag"
+msgstr "VLAN tagg"
+
+msgid "Device"
+msgstr "Enhet"
+
+msgid "Ports"
+msgstr "Portar"
+
+msgid "Do you want to:"
+msgstr "Vill du:"
+
+msgid "Interface Name"
+msgstr "Interface-namn"
+
+msgid "Protocol"
+msgstr "Protokol"
+
+msgid "Interface Type"
+msgstr "Uppkopplingstyp"
+
+msgid "Add/Remove custom DNS Servers"
+msgstr "Lägg till/Ta bort extra DNS servrar"
+
+msgid "General"
+msgstr "Inställningar"
+
+msgid "Choose Configuration Option"
+msgstr "Välj konfigurationsväg"
+
+msgid "Physical Settings"
+msgstr "IPv4 inställningar"
+
+msgid "Advanced"
+msgstr "Avancerat"
+
+msgid "Bring up on boot"
+msgstr "Starta upp vid systemstart"
+
+msgid "Use gateway metric"
+msgstr ""
+
+msgid "Override MAC address"
+msgstr "Anävnd annan MAC adress"
+
+msgid "Override MTU"
+msgstr "Använd annat MTU"
+
+msgid "Method"
+msgstr "Metod"
+
+msgid "DHCP"
+msgstr "DHCPv4"
+
+msgid "Select Network"
+msgstr "Välj nätverk"
+
+msgid "Enable IPv6 negotiation on the PPP link"
+msgstr ""
+
+msgid "Use default gateway"
+msgstr "IPv4 gateway"
+
+msgid "If unchecked, no default route is configured"
+msgstr ""
+
+msgid "Modem init timeout"
+msgstr "Timeout inaktivitet"
+
+msgid "Maximum amount of seconds to wait for the modem to become ready"
+msgstr ""
+
+msgid "Use DNS servers advertised by peer"
+msgstr ""
+
+msgid "LCP echo failure threshold"
+msgstr ""
+
+msgid ""
+"Presume peer to be dead after given amount of LCP echo failures, use 0 to "
+"ignore failures"
+msgstr ""
+
+msgid "LCP echo interval"
+msgstr ""
+
+msgid ""
+"Send LCP echo requests at the given interval in seconds, only effective in "
+"conjunction with failure threshold"
+msgstr ""
+
+msgid "Inactivity timeout"
+msgstr ""
+
+msgid ""
+"Close inactive connection after the given amount of seconds, use 0 to "
+"persist connection"
+msgstr ""
+
+msgid "Modem device"
+msgstr "Välj modem"
+
+msgid "Service Type"
+msgstr "Tjänstetyp"
+
+msgid "APN"
+msgstr "APN"
+
+msgid "PIN-code"
+msgstr "PIN-kod"
+
+msgid "PAP/CHAP Username"
+msgstr "Användarnamn"
+
+msgid "Username"
+msgstr "Användarnamn"
+
+msgid "PAP/CHAP Password"
+msgstr "Lösenord"
+
+msgid "Password"
+msgstr "Lösenord"
+
+msgid "Use broadcast flag"
+msgstr ""
+
+msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
+msgstr ""
+
+msgid "Client ID to send when requesting DHCP"
+msgstr "Klient-ID att skicka vid förfrågan om DHCP"
+
+msgid "Client ID"
+msgstr "Klient-ID"
+
+msgid "Vendor Class to send when requesting DHCP"
+msgstr "Klient-ID att skicka vid förfrågan om DHCP"
+
+msgid "Vendo Class"
+msgstr "Tillverkare"
+
+msgid "Hostname to send when requesting DHCP"
+msgstr "Klient-ID att skicka vid förfrågan om DHCP"
+
+msgid "Hostname"
+msgstr "Datornamn"
+
+msgid "Default gateway"
+msgstr "IPv4 gateway"
+
+msgid "Use TTL on tunnel interface"
+msgstr ""
+
+msgid "Local IPv4 address"
+msgstr "Lokal IP-adress"
+
+msgid "Leave empty to use the current WAN address"
+msgstr ""
+
+msgid "Remote IPv4 address"
+msgstr "Klientens IPv4-adress"
+
+msgid ""
+"This is usually the address of the nearest PoP operated by the tunnel broker"
+msgstr ""
+
+msgid "Local IPv6 address"
+msgstr "Lokal IP-adress"
+
+msgid ""
+"This is the local endpoint address assigned by the tunnel broker, it usually "
+"ends with :2"
+msgstr ""
+
+msgid "IPv6 routed prefix"
+msgstr "IPv6 Prefix"
+
+msgid ""
+"This is the prefix routed to you by the tunnel broker for use by clients"
+msgstr ""
+
+msgid "IPv6 prefix"
+msgstr "IPv6 Prefix"
+
+msgid "Dynamic tunnel"
+msgstr "Dynamisk DNS"
+
+msgid "Enable HE.net dynamic endpoint update"
+msgstr ""
+
+msgid "Tunnel ID"
+msgstr ""
+
+msgid "HE.net username"
+msgstr "Användarnamn"
+
+msgid "This is the plain username for logging into the account"
+msgstr ""
+
+msgid "HE.net password"
+msgstr "Skriv lösenord igen"
+
+msgid ""
+"This is either the Update Key configured for the tunnel or the account "
+"password if no update key has been configured"
+msgstr ""
+
+msgid "The IPv4 address of the relay"
+msgstr ""
+
+msgid "The IPv6 prefix assigned to the provider, usually ends with ::"
+msgstr ""
+
+msgid "IPv6 prefix length"
+msgstr "IPv6 tildelad prefixlängd"
+
+msgid "The length of the IPv6 prefix in bits"
+msgstr ""
+
+msgid "IPv4 prefix length"
+msgstr "IPv6 tildelad prefixlängd"
+
+msgid "If uncchecked, no default rout is configured"
+msgstr ""
+
+msgid "If unchecked, the advertised DNS server addresses are ignored"
+msgstr ""
+
+msgid "Additional DHCP options to request from the server"
+msgstr "Extra DHCP inställningar som skall hämtas från servern"
+
+msgid "Custom client ID"
+msgstr "Klient-ID"
+
+msgid "Custom Vendor class"
+msgstr ""
+
+msgid "Hostname to include in DHCP requests"
+msgstr ""
+
+msgid "Create default route"
+msgstr "Default-rutt"
+
+msgid "Automatically set up default route for this interface"
+msgstr ""
+
+msgid "Custom delegated IPv6-prefix"
+msgstr "Delegerad IPv6 prefix"
+
+msgid "Request IPv6 address"
+msgstr "Fråga efter IPv6 adress"
+
+msgid "Request Prefix Length"
+msgstr "Prefix Längd"
+
+msgid "Tunnel Link"
+msgstr ""
+
+msgid "DS-Lite AFTR address"
+msgstr ""
+
+msgid "Mode"
+msgstr "Inställning"
+
+msgid "IPv6 Assign"
+msgstr "IPv6 tilldelning"
+
+msgid "Prefix Size"
+msgstr "Prefixlängd"
+
+msgid "IPv4 Assign"
+msgstr "IPv4 tilldelning"
+
+msgid "DNS Name"
+msgstr "DNS Namn"
+
+msgid "L2TP Server"
+msgstr "SIP Server"
+
+msgid "PAP/CHAP username"
+msgstr ""
+
+msgid "PAP/CHAP password"
+msgstr "Lägg till lösenord"
+
+msgid "Enable IPv negotiation on the PPP link"
+msgstr ""
+
+msgid "Select Modem Device"
+msgstr "Välj modem"
+
+msgid "username"
+msgstr "Användarnamn"
+
+msgid "password"
+msgstr "Lösenord"
+
+msgid "Access Concentrator"
+msgstr "Access Concentrator"
+
+msgid "Leave empty to autodetect"
+msgstr ""
+
+msgid "auto"
+msgstr "automatisk"
+
+msgid "Service Name"
+msgstr "Enhetsnamn"
+
+msgid "VPN Server"
+msgstr "SIP Server"
+
+msgid "IPv4 Address"
+msgstr "IPv4 adress"
+
+msgid "IPv4 Subnet Mask"
+msgstr "IPv4-nätmask"
+
+msgid "IPv4 Broadcast"
+msgstr "IPv4-adress"
+
+msgid "IPv4 Default Gateway"
+msgstr "IPv4 gateway"
+
+msgid "IPv6 assignment length"
+msgstr "IPv6 tildelad prefixlängd"
+
+msgid "Leave empty for Disabled"
+msgstr ""
+
+msgid "IPv6 Assigned Prefix Hint"
+msgstr "IPv6 prefix hint"
+
+msgid "Prefix hint"
+msgstr "Prefixhint"
+
+msgid "IPv6 Address"
+msgstr "IPv6-adress"
+
+msgid "Static IPv6 Address"
+msgstr "Statisk IPv6-adress"
+
+msgid "IPv6 Default Gateway"
+msgstr "IPv6 Gateway"
+
+msgid "Default IPv6 Gateway"
+msgstr ""
+
+msgid "IPv6 Prefix"
+msgstr "IPv6 Prefix"
+
+msgid "IPv6 Address Mask"
+msgstr "IPv6-adress mask"
+
+msgid "IPv4 Settings"
+msgstr "IPv4 inställningar"
+
+msgid "IPv6 Settings"
+msgstr "IPv6 inställningar"
+
+msgid "Select Base Device"
+msgstr "Välj bas-enhet"
+
+msgid "Device ID"
+msgstr "Enhets-ID"
+
+msgid "Base Device"
+msgstr "Basenhet"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Select Connected Host"
+msgstr "Välj uppkopplad klient"
+
+msgid "Select a host"
+msgstr "Välj enhet"
+
+msgid "Aquired DNS servers"
+msgstr "DNS-servrar"
+
+msgid "Aquired from"
+msgstr "Tilldelats från"
+
+msgid "For {{interface['.name'].toUpperCase()}} interface"
+msgstr ""
+
+msgid "LAN"
+msgstr "LAN"
+
+msgid "No Lan networks"
+msgstr "Nätverk"
+
+msgid "No Clients in {{network['.name'].toUpperCase()}} network"
+msgstr ""
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "ONLINE"
+msgstr "ONLINE"
+
+msgid "OFFLINE"
+msgstr "OFFLINE"
+
+msgid "Connections"
+msgstr "Uppkopplingar"
+
+msgid "settings.network.info"
+msgstr "Grundläggande nätverskinställningar"
+
+msgid "Static Routes"
+msgstr "Statisk rutter"
+
+msgid "internet.lan.routes.info"
+msgstr "Inställningar för routing på LAN-sidan"
+
+msgid "IPv4 Routes"
+msgstr "IPv4 Routing Tabell"
+
+msgid "Target IP Address"
+msgstr "IP-adress"
+
+msgid "Netmask"
+msgstr "Nätmask"
+
+msgid "Default Gateway"
+msgstr ""
+
+msgid "0"
+msgstr "0"
+
+msgid "IP MTU"
+msgstr "Aktiverad"
+
+msgid "IPv6 Routes"
+msgstr "IPv6 Routing Tabell"
+
+msgid "IPv6 Gateway"
+msgstr "IPv6 Gateway"
+
+msgid "Interface"
+msgstr "Interface"
+
+msgid "Target"
+msgstr "Mål"
+
+msgid "Gateway"
+msgstr "Gateway"
+
+msgid "Metric"
+msgstr ""
+
+msgid "MTU"
+msgstr "MTU"
+
+msgid "Services"
+msgstr "Tjänster"
+
+msgid "internet.services.info"
+msgstr "Tjänster på lokala nätverket."
+
+msgid "Connected Clients"
+msgstr "Uppkopplade klienter"
+
+msgid "MAC Address"
+msgstr "MAC-adress"
+
+msgid "VLAN Configuration"
+msgstr "VLAN inställningar"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "status.status.info"
+msgstr "Statusinformation om routerns uppkopplingar."
+
+msgid "IP Address"
+msgstr "IP adress"
+
+msgid "Primary DNS"
+msgstr "Primär DNS"
+
+msgid "Secondary DNS"
+msgstr "Sekundär DNS"
+
+msgid "Line Status"
+msgstr "Linjestatus"
+
+msgid "Active Connections"
+msgstr "Aktiva uppkopplingar"
+
+msgid "Connections for each Device"
+msgstr "Uppkopplingar för varje enhet"
+
+msgid "status.nat.connections.info"
+msgstr "Aktiva NAT-uppkopplingar. "
+
+msgid "NAT Connection Table"
+msgstr "NAT-uppkopplingstabell"
+
+msgid "status.nat.info"
+msgstr "NAT information"
+
+msgid "status.network.routes.info"
+msgstr "Information om rutter"
+
+msgid "Routing Status"
+msgstr "Status"
+
+msgid "ARP Table"
+msgstr "ARP tabell"
+
+msgid "IP address"
+msgstr "IP adress"
+
+msgid "MAC address"
+msgstr "MAC-adress"
+
+msgid "IPv4 Routing Table"
+msgstr "IPv4 Routing Tabell"
+
+msgid "IPv4 address"
+msgstr "IPv4-adress"
+
+msgid "Genmask"
+msgstr "Nätmask"
+
+msgid "IPv6 Routing Table"
+msgstr "IPv6 Routing Tabell"
+
+msgid "IPv6 address"
+msgstr "IPv6-adress"
+
+msgid "Next Hop"
+msgstr "Nästa hopp"
+
+msgid "IPv6 Neighbors Table"
+msgstr "IPv6 granntabell"
+
+msgid "No IPv6 devices connected"
+msgstr "Inga IPv6 enheter är inkopplade"
+
+msgid "IPv6 status"
+msgstr "IPv6 status"
+
+msgid "Router"
+msgstr "Router"
+
+msgid "menu-internet-network-title"
+msgstr "Nätverk"
+
+msgid "menu-netifd-status-clients-title"
+msgstr "Klienter"
+
+msgid "menu-network-title"
+msgstr "Nätverk"
+
+msgid "menu-status-network-routes-title"
+msgstr "Routing"
+
+msgid "menu-internet-routes-title"
+msgstr "Routing"
+
+msgid "menu-status-network-title"
+msgstr "Nätverk"
+
+msgid "menu-netifd-vlan-config-title"
+msgstr "Switch"
+
+msgid "menu-status-network-nat-title"
+msgstr "NAT"
+
+msgid "menu-internet-services-title"
+msgstr "Tjänster"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
