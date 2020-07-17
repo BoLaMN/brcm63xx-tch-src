@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/lang/perl-html-parser/Makefile
 Package: perl-html-parser
 Submenu: Perl
-Version: 3.71-1
+Version: 3.72-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl +perl-html-tagset +perl-uri
 Conflicts: 
 Menu-Depends: 
@@ -10,7 +10,7 @@ Section: lang
 Category: Languages
 Title: A collection of modules that parse HTML text documents
 Maintainer: Marcel Denia <naoir@gmx.net>
-Source: HTML-Parser-3.71.tar.gz
+Source: HTML-Parser-3.72.tar.gz
 License: GPL-1.0+ Artistic-1.0-Perl
 Type: ipkg
 Description: A collection of modules that parse HTML text documents

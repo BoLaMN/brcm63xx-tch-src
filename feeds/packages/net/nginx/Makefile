@@ -231,7 +231,6 @@ define Build/Configure
 			--with-cc-opt="$(TARGET_CPPFLAGS) $(TARGET_CFLAGS)" \
 			--with-ld-opt="$(TARGET_LDFLAGS)" \
 			--without-http_upstream_zone_module \
-			--with-tproxy \
 	)
 endef
 

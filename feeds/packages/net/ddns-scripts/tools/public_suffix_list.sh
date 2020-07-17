@@ -35,5 +35,5 @@ cat ${TMPFILE} | while read LINE; do
 	printf %s\\n "$LINE" >> $DATFILE
 done
 rm -f $TMPFILE
-gzip -f9 $DATFILE
+#gzip -f9 $DATFILE
 

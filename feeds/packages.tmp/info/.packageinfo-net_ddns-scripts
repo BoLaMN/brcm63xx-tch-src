@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/ddns-scripts/Makefile
 Package: ddns-scripts
 Submenu: IP Addresses and Names
-Version: 2.7.6-14
+Version: 2.7.6-13
 Depends:  
 Conflicts: 
 Menu-Depends: 
@@ -26,13 +26,13 @@ Config:
 		  - Proxy server support
 		  - log file support
 		  - support to run once
-		Version: 2.7.6-14
+		Version: 2.7.6-13
 		Info   : http://wiki.openwrt.org/doc/howto/ddns.client
 @@
 
 Package: ddns-scripts_cloudflare
 Submenu: IP Addresses and Names
-Version: 2.7.6-14
+Version: 2.7.6-13
 Depends:  ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -50,7 +50,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_cloudflare.com-v4
 Submenu: IP Addresses and Names
-Version: 2.7.6-14
+Version: 2.7.6-13
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -68,7 +68,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_godaddy.com-v1
 Submenu: IP Addresses and Names
-Version: 2.7.6-14
+Version: 2.7.6-13
 Depends:  ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -86,7 +86,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_no-ip_com
 Submenu: IP Addresses and Names
-Version: 2.7.6-14
+Version: 2.7.6-13
 Depends:  ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -104,7 +104,7 @@ Christian Schoenebeck <christian.schoenebeck@gmail.com>
 
 Package: ddns-scripts_nsupdate
 Submenu: IP Addresses and Names
-Version: 2.7.6-14
+Version: 2.7.6-13
 Depends:  ddns-scripts +bind-client
 Conflicts: 
 Menu-Depends: 

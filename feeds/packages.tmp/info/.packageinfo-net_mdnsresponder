@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/mdnsresponder/Makefile
 Package: mdns-utils
 Submenu: IP Addresses and Names
-Version: 878.200.35-2
+Version: 567-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +mdnsd
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Section: net
 Category: Network
 Title: mDNS client utilities
 Maintainer: Steven Barth <cyrus@openwrt.org>
-Source: mDNSResponder-878.200.35.tar.gz
+Source: mDNSResponder-567.tar.gz
 License: Apache-2.0
 Type: ipkg
 Description:   Bonjour, also known as zero-configuration networking, enables
@@ -31,7 +31,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: mdnsd
 Submenu: IP Addresses and Names
-Version: 878.200.35-2
+Version: 567-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -41,7 +41,7 @@ Section: net
 Category: Network
 Title: mDNS server daemon
 Maintainer: Steven Barth <cyrus@openwrt.org>
-Source: mDNSResponder-878.200.35.tar.gz
+Source: mDNSResponder-567.tar.gz
 License: Apache-2.0
 Type: ipkg
 Description:   Bonjour, also known as zero-configuration networking, enables
@@ -55,7 +55,7 @@ Steven Barth <cyrus@openwrt.org>
 
 Package: mdnsresponder
 Submenu: IP Addresses and Names
-Version: 878.200.35-2
+Version: 567-2
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +mdns-utils +mdnsd
 Conflicts: 
 Menu-Depends: 
@@ -65,7 +65,7 @@ Section: net
 Category: Network
 Title: mDNS suite (meta)
 Maintainer: Steven Barth <cyrus@openwrt.org>
-Source: mDNSResponder-878.200.35.tar.gz
+Source: mDNSResponder-567.tar.gz
 License: Apache-2.0
 Type: ipkg
 Description:   Bonjour, also known as zero-configuration networking, enables

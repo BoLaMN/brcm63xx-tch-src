@@ -1057,7 +1057,7 @@ Section: net
 Category: Network
 Title: NDP Proxy Daemon
 Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
-Source: ndppd-0.2.3.tar.gz
+Source: 0.2.3.tar.gz
 License: GPL-3.0+
 Type: ipkg
 Description:  ndppd, or NDP Proxy Daemon, is a daemon that proxies NDP (Neighbor Discovery

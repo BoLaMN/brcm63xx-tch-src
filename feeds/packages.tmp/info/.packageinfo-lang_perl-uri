@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/lang/perl-uri/Makefile
 Package: perl-uri
 Submenu: Perl
-Version: 1.71-1
+Version: 1.74-1
 Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread perl
 Conflicts: 
 Menu-Depends: 
@@ -10,7 +10,7 @@ Section: lang
 Category: Languages
 Title: Manipulates and accesses URI strings
 Maintainer: Marcel Denia <naoir@gmx.net>
-Source: URI-1.71.tar.gz
+Source: URI-1.74.tar.gz
 License: GPL-1.0+ Artistic-1.0-Perl
 Type: ipkg
 Description: Manipulates and accesses URI strings
